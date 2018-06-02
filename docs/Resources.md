@@ -10,10 +10,10 @@ Upon being [required](http://wiki.roblox.com/index.php?title=Global_namespace/Ro
 Libraries with "Server" (case-sensitive) in their name or in the name of a parent folder are considered server-only libraries, and will not be moved to `ReplicatedStorage` with the rest of the libraries. Instead, these libraries will be moved to folder `ServerStorage.Resources`.
 
 !!! info
-	Internally, `LoadLibrary` caches and returns `require(Resources:GetLibrary(LibraryName))`. `GetLibrary` is the only function that can "retrieve" objects from both `ServerStorage` and `ReplicatedStorage`. This is because libraries tagged with either `ReplicatedLibraries` or `ServerLibraries` are added directly to its cache.
+	Internally, `LoadLibrary` caches and returns `require(Resources:GetLibrary(LibraryName))`. `GetLibrary` is the only function that can "retrieve" objects from both `ServerStorage` and `ReplicatedStorage`. This is because libraries are added directly to its cache.
 
 !!! note
-	Libraries will not be moved into `ReplicatedStorage` in Play-Solo.
+	Libraries will not be moved into `ReplicatedStorage` in Play-Solo (to allow for editing libraries during Play-Solo).
 
 
 ## API

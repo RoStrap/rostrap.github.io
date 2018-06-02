@@ -1166,11 +1166,11 @@
 <p>Libraries with "Server" (case-sensitive) in their name or in the name of a parent folder are considered server-only libraries, and will not be moved to <code>ReplicatedStorage</code> with the rest of the libraries. Instead, these libraries will be moved to folder <code>ServerStorage.Resources</code>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Internally, <code>LoadLibrary</code> caches and returns <code>require(Resources:GetLibrary(LibraryName))</code>. <code>GetLibrary</code> is the only function that can "retrieve" objects from both <code>ServerStorage</code> and <code>ReplicatedStorage</code>. This is because libraries tagged with either <code>ReplicatedLibraries</code> or <code>ServerLibraries</code> are added directly to its cache.</p>
+<p>Internally, <code>LoadLibrary</code> caches and returns <code>require(Resources:GetLibrary(LibraryName))</code>. <code>GetLibrary</code> is the only function that can "retrieve" objects from both <code>ServerStorage</code> and <code>ReplicatedStorage</code>. This is because libraries are added directly to its cache.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Libraries will not be moved into <code>ReplicatedStorage</code> in Play-Solo.</p>
+<p>Libraries will not be moved into <code>ReplicatedStorage</code> in Play-Solo (to allow for editing libraries during Play-Solo).</p>
 </div>
 <h2 id="api">API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
 <p>All methods of <a href="https://github.com/RoStrap/Resources/blob/master/Resources.module.lua">Resources</a> have hybrid syntax, meaning they can be called using either a <code>:</code> or <code>.</code></p>
