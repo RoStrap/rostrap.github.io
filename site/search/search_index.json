@@ -702,12 +702,12 @@
         },
         {
             "location": "/Contributing/Website/",
-            "text": "Website\n\u00b6\n\n\nThe website is compiled from markdown (\n.md\n) files, so anyone can help write documentation for this website! Click \nhere\n to visit the repository where the markdown files are kept.",
+            "text": "Website\n\u00b6\n\n\nThe website is compiled from markdown (\n.md\n) files, so anyone can help write documentation for this website! Click \nhere\n to visit the repository where the markdown files are kept. The \ndocumentation for the Signal library\n follows the format that will be standard.",
             "title": "Website"
         },
         {
             "location": "/Contributing/Website/#website",
-            "text": "The website is compiled from markdown ( .md ) files, so anyone can help write documentation for this website! Click  here  to visit the repository where the markdown files are kept.",
+            "text": "The website is compiled from markdown ( .md ) files, so anyone can help write documentation for this website! Click  here  to visit the repository where the markdown files are kept. The  documentation for the Signal library  follows the format that will be standard.",
             "title": "Website"
         }
     ]
