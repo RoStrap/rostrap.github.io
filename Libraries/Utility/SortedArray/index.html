@@ -1,0 +1,1332 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Reusable, unified resource networking to expedite game development on ROBLOX">
+      
+      
+        <link rel="canonical" href="https://rostrap.github.io/Libraries/Utility/SortedArray/">
+      
+      
+        <meta name="author" content="Validark">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/RoStrap.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>SortedArray - RoStrap</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.8d40d89b.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#sortedarray" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://rostrap.github.io/" title="RoStrap" class="md-header-nav__button md-logo">
+          
+            <img src="../../../assets/images/RoStrap.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                RoStrap
+              </span>
+              <span class="md-header-nav__topic">
+                SortedArray
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/RoStrap" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      RoStrap
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../../.." title="Introduction" class="md-tabs__link">
+        Introduction
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../" title="Libraries" class="md-tabs__link md-tabs__link--active">
+          Libraries
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../Contributing/" title="Contributing" class="md-tabs__link">
+          Contributing
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../../../assets/images/RoStrap.png" width="48" height="48">
+      
+    </span>
+    RoStrap
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/RoStrap" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      RoStrap
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../Getting-Started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../Resources/" title="Resources" class="md-nav__link">
+      Resources
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Libraries
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Libraries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Classes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Classes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Classes/Enumeration/" title="Enumeration" class="md-nav__link">
+      Enumeration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Events
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Events
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Events/Maid/" title="Maid" class="md-nav__link">
+      Maid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Events/Signal/" title="Signal" class="md-nav__link">
+      Signal
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../EvLightning/" title="EvLightning" class="md-nav__link">
+      EvLightning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Debug/" title="Debug" class="md-nav__link">
+      Debug
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Helper
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Helper
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Helper/FastSpawn/" title="FastSpawn" class="md-nav__link">
+      FastSpawn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Helper/Make/" title="Make" class="md-nav__link">
+      Make
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+    
+    <label class="md-nav__link" for="nav-4-7">
+      Input
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        Input
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Input/Keys/" title="Keys" class="md-nav__link">
+      Keys
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
+      Interpolation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-8">
+        Interpolation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Interpolation/Bezier/" title="Bezier" class="md-nav__link">
+      Bezier
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Interpolation/Easing/" title="Easing" class="md-nav__link">
+      Easing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Interpolation/Lerps/" title="Lerps" class="md-nav__link">
+      Lerps
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Interpolation/Tween/" title="Tween" class="md-nav__link">
+      Tween
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
+    
+    <label class="md-nav__link" for="nav-4-9">
+      Material
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-9">
+        Material
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Material/AsymmetricTransformation/" title="AsymmetricTransformation" class="md-nav__link">
+      AsymmetricTransformation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Material/Button/" title="Button" class="md-nav__link">
+      Button
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Material/Colors/" title="Colors" class="md-nav__link">
+      Colors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Material/SelectionControl/" title="SelectionControl" class="md-nav__link">
+      SelectionControl
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Material/Shadow/" title="Shadow" class="md-nav__link">
+      Shadow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Material/Snackbar/" title="Snackbar" class="md-nav__link">
+      Snackbar
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-10" type="checkbox" id="nav-4-10">
+    
+    <label class="md-nav__link" for="nav-4-10">
+      Math
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-10">
+        Math
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Math/Leveler/" title="Leveler" class="md-nav__link">
+      Leveler
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Math/Normal/" title="Normal" class="md-nav__link">
+      Normal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Math/WeightedProbabilityFunction/" title="WeightedProbabilityFunction" class="md-nav__link">
+      WeightedProbabilityFunction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Ready/" title="Ready" class="md-nav__link">
+      Ready
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Rbx_CustomFont/" title="Rbx_CustomFont" class="md-nav__link">
+      Rbx_CustomFont
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Sentry/" title="Sentry" class="md-nav__link">
+      Sentry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-14" type="checkbox" id="nav-4-14">
+    
+    <label class="md-nav__link" for="nav-4-14">
+      Time
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-14">
+        Time
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Time/Date/" title="Date" class="md-nav__link">
+      Date
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Time/SyncedPoller/" title="SyncedPoller" class="md-nav__link">
+      SyncedPoller
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Try/" title="Try" class="md-nav__link">
+      Try
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-16" type="checkbox" id="nav-4-16" checked>
+    
+    <label class="md-nav__link" for="nav-4-16">
+      Utility
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-16">
+        Utility
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../HTMLParser/" title="HTMLParser" class="md-nav__link">
+      HTMLParser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        SortedArray
+      </label>
+    
+    <a href="./" title="SortedArray" class="md-nav__link md-nav__link--active">
+      SortedArray
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api" title="API" class="md-nav__link">
+    API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sortedarraynewarray-initialset-function-sortfunction" title="SortedArray.new([array InitialSet], [function SortFunction])" class="md-nav__link">
+    SortedArray.new([array InitialSet], [function SortFunction])
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortedarrayinsert" title="SortedArray:Insert()" class="md-nav__link">
+    SortedArray:Insert()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortedarrayremove" title="SortedArray:Remove()" class="md-nav__link">
+    SortedArray:Remove()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortedarraytransforma2-f1-f2" title="SortedArray:Transform(a2 [, f1, f2])" class="md-nav__link">
+    SortedArray:Transform(a2 [, f1, f2])
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortedarraycopy" title="SortedArray:Copy()" class="md-nav__link">
+    SortedArray:Copy()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-sortedarray-methods" title="Other SortedArray methods" class="md-nav__link">
+    Other SortedArray methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Table/" title="Table" class="md-nav__link">
+      Table
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Contributing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Contributing/" title="Information" class="md-nav__link">
+      Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Contributing/Website/" title="Website" class="md-nav__link">
+      Website
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api" title="API" class="md-nav__link">
+    API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sortedarraynewarray-initialset-function-sortfunction" title="SortedArray.new([array InitialSet], [function SortFunction])" class="md-nav__link">
+    SortedArray.new([array InitialSet], [function SortFunction])
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortedarrayinsert" title="SortedArray:Insert()" class="md-nav__link">
+    SortedArray:Insert()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortedarrayremove" title="SortedArray:Remove()" class="md-nav__link">
+    SortedArray:Remove()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortedarraytransforma2-f1-f2" title="SortedArray:Transform(a2 [, f1, f2])" class="md-nav__link">
+    SortedArray:Transform(a2 [, f1, f2])
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortedarraycopy" title="SortedArray:Copy()" class="md-nav__link">
+    SortedArray:Copy()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-sortedarray-methods" title="Other SortedArray methods" class="md-nav__link">
+    Other SortedArray methods
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="sortedarray">SortedArray<a class="headerlink" href="#sortedarray" title="Permanent link">&para;</a></h1>
+<p>A class to create sorted arrays. Must contain objects comparable to one another (that can use the <code>&lt;</code> and <code>==</code> operators). Numbers and strings support these operators by default.
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
+<span class="kd">local</span> <span class="n">SortedArray</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;SortedArray&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Array</span> <span class="o">=</span> <span class="n">SortedArray</span><span class="p">.</span><span class="n">new</span><span class="p">()</span>
+
+<span class="c1">-- Alternatively</span>
+<span class="kd">local</span> <span class="n">Sorted</span> <span class="o">=</span> <span class="n">SortedArray</span><span class="p">.</span><span class="n">new</span><span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span> <span class="c1">-- Will get `table.sort`ed</span>
+</pre></div></p>
+<h2 id="api">API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
+<h4 id="sortedarraynewarray-initialset-function-sortfunction">SortedArray.new([array InitialSet], [function SortFunction])<a class="headerlink" href="#sortedarraynewarray-initialset-function-sortfunction" title="Permanent link">&para;</a></h4>
+<p>Instantiates and returns a new SortedArray, with optional parameters.
+- <code>InitialSet</code>: Pass in an array of data which will be sorted upon instantiation. If this is omitted, an empty array is used.
+- <code>SortFunction</code>: An optional comparison function which is used to customize the element sorting, which will be given two elements <code>a</code> and <code>b</code> from the array as parameters. The function should return a boolean value specifying whether the first argument should be before the second argument in the sequence. If no comparison function is passed, the Lua-default <code>a &lt; b</code> sorting is used.</p>
+<h4 id="sortedarrayinsert">SortedArray:Insert()<a class="headerlink" href="#sortedarrayinsert" title="Permanent link">&para;</a></h4>
+<p>Inserts an element in the proper place which would preserve the array's orderedness.
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Sorted</span> <span class="o">=</span> <span class="n">SortedArray</span><span class="p">.</span><span class="n">new</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="n">Sorted</span><span class="p">:</span><span class="n">Insert</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;{&quot;</span> <span class="o">..</span> <span class="n">Sorted</span><span class="p">:</span><span class="n">Concat</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&quot;}&quot;</span><span class="p">)</span>
+<span class="c1">-- {1, 2, 3, 4, 5}</span>
+</pre></div></p>
+<h4 id="sortedarrayremove">SortedArray:Remove()<a class="headerlink" href="#sortedarrayremove" title="Permanent link">&para;</a></h4>
+<p>If the parameter passed to <code>Remove</code> is an array, it will remove all values within the array from the <code>SortedArray</code>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Sorted</span> <span class="o">=</span> <span class="n">SortedArray</span><span class="p">.</span><span class="n">new</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="n">Sorted</span><span class="p">:</span><span class="n">Remove</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;{&quot;</span> <span class="o">..</span> <span class="n">Sorted</span><span class="p">:</span><span class="n">Concat</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="p">)</span> <span class="o">..</span> <span class="s2">&quot;}&quot;</span><span class="p">)</span>
+<span class="c1">-- {5}</span>
+</pre></div></p>
+<p>If the parameter is not of <code>type(table)</code> then it will fall back on table.remove</p>
+<h4 id="sortedarraytransforma2-f1-f2">SortedArray:Transform(a2 [, f1, f2])<a class="headerlink" href="#sortedarraytransforma2-f1-f2" title="Permanent link">&para;</a></h4>
+<p>Does the operations necessary to transform SortedArray into the <code>a2</code>, a second array. <code>f1</code> is an optional callback which fires for each addition operation necessary and <code>f2</code> for each removal. <code>f1</code> and <code>f2</code> will be called with <code>(number IndexWhereOperationTakesPlace, ValueWhichIsBeingRemovedOrAdded)</code>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Array</span> <span class="o">=</span> <span class="n">SortedArray</span><span class="p">.</span><span class="n">new</span><span class="p">{</span><span class="s2">&quot;Chromenium&quot;</span><span class="p">,</span> <span class="s2">&quot;GigsD4X&quot;</span><span class="p">,</span> <span class="s2">&quot;Validark&quot;</span><span class="p">}</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">f1</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;f1(&quot;</span> <span class="o">..</span> <span class="n">i</span> <span class="o">..</span> <span class="s2">&quot;, &quot;</span> <span class="o">..</span> <span class="n">v</span> <span class="o">..</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">f2</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;f2(&quot;</span> <span class="o">..</span> <span class="n">i</span> <span class="o">..</span> <span class="s2">&quot;, &quot;</span> <span class="o">..</span> <span class="n">v</span> <span class="o">..</span> <span class="s2">&quot;)&quot;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="n">Array</span><span class="p">:</span><span class="n">Transform</span><span class="p">(</span><span class="n">SortedArray</span><span class="p">.</span><span class="n">new</span><span class="p">{</span><span class="s2">&quot;Chromenium&quot;</span><span class="p">,</span> <span class="s2">&quot;Evaera&quot;</span><span class="p">,</span> <span class="s2">&quot;Validark&quot;</span><span class="p">},</span> <span class="n">f1</span><span class="p">,</span> <span class="n">f2</span><span class="p">)</span>
+
+<span class="c1">-- The first parameter MUST be sorted, but it doesn&#39;t need to have the `SortedArray` metatable</span>
+<span class="c1">-- This also works:</span>
+<span class="c1">-- Array:Transform({&quot;Chromenium&quot;, &quot;Evaera&quot;, &quot;Validark&quot;}, f1, f2)</span>
+
+<span class="cm">--[[</span>
+<span class="cm">Output:</span>
+<span class="cm">    f1(2, Evaera)</span>
+<span class="cm">    f2(3, GigsD4X)</span>
+
+<span class="cm">f1 indicates that &quot;Evaera&quot; must be inserted at index 2: table.insert(Array, 2, &quot;Evaera&quot;)</span>
+<span class="cm">f2 indicates that the 3rd element of Array (&quot;GigsD4X&quot;) must be removed (AFTER the previous operation shifted the array forward): table.remove(Array, 3)</span>
+<span class="cm">--]]</span>
+</pre></div></p>
+<h4 id="sortedarraycopy">SortedArray:Copy()<a class="headerlink" href="#sortedarraycopy" title="Permanent link">&para;</a></h4>
+<p>Shallow copy. Pretty straightforward.</p>
+<h3 id="other-sortedarray-methods">Other SortedArray methods<a class="headerlink" href="#other-sortedarray-methods" title="Permanent link">&para;</a></h3>
+<p>You can directly index functions from its index table, like <code>Concat</code>, <code>Next</code>, and <code>ForEach</code>. <a href="https://github.com/RoStrap/Utility/blob/master/SortedArray.lua#L9">View the full list in the source.</a></p>
+<p>Simply for convenience. It's also faster to do an <code>__index</code> lookup than a global lookup, so there's that too.</p>
+<div class="codehilite"><pre><span></span><span class="n">SortedArray</span><span class="p">.</span><span class="n">new</span><span class="p">{</span><span class="s2">&quot;Chromenium&quot;</span><span class="p">,</span> <span class="s2">&quot;GigsD4X&quot;</span><span class="p">,</span> <span class="s2">&quot;Validark&quot;</span><span class="p">}:</span><span class="n">ForEach</span><span class="p">(</span><span class="nb">print</span><span class="p">)</span>
+
+<span class="cm">--[[</span>
+<span class="cm">    1 Chromenium</span>
+<span class="cm">    2 GigsD4X</span>
+<span class="cm">    3 Validark</span>
+<span class="cm">--]]</span>
+</pre></div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../HTMLParser/" title="HTMLParser" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                HTMLParser
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Table/" title="Table" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Table
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://discord.gg/pjJw8s4" class="md-footer-social__link fa fa-discord"></a>
+    
+      <a href="https://github.com/RoStrap" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:"../../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

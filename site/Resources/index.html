@@ -1,0 +1,1453 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Reusable, unified resource networking to expedite game development on ROBLOX">
+      
+      
+        <link rel="canonical" href="https://rostrap.github.io/Resources/">
+      
+      
+        <meta name="author" content="Validark">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/RoStrap.png">
+      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.3">
+    
+    
+      
+        <title>Resources - RoStrap</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.8d40d89b.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.6079476c.css">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#resources" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://rostrap.github.io/" title="RoStrap" class="md-header-nav__button md-logo">
+          
+            <img src="../assets/images/RoStrap.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                RoStrap
+              </span>
+              <span class="md-header-nav__topic">
+                Resources
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/RoStrap" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      RoStrap
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Introduction" class="md-tabs__link md-tabs__link--active">
+        Introduction
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Libraries/" title="Libraries" class="md-tabs__link">
+          Libraries
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../Contributing/" title="Contributing" class="md-tabs__link">
+          Contributing
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <img src="../assets/images/RoStrap.png" width="48" height="48">
+      
+    </span>
+    RoStrap
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/RoStrap" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      RoStrap
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Getting-Started/" title="Getting Started" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Resources
+      </label>
+    
+    <a href="./" title="Resources" class="md-nav__link md-nav__link--active">
+      Resources
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functionality" title="Functionality" class="md-nav__link">
+    Functionality
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" title="API" class="md-nav__link">
+    API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loadlibrary" title="LoadLibrary" class="md-nav__link">
+    LoadLibrary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlocaltable" title="GetLocalTable" class="md-nav__link">
+    GetLocalTable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-functions" title="Get functions" class="md-nav__link">
+    Get functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getlocal-functions" title="GetLocal functions" class="md-nav__link">
+    GetLocal functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Libraries
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Libraries
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Classes
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Classes
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Classes/Enumeration/" title="Enumeration" class="md-nav__link">
+      Enumeration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Events
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Events
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Events/Maid/" title="Maid" class="md-nav__link">
+      Maid
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Events/Signal/" title="Signal" class="md-nav__link">
+      Signal
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/EvLightning/" title="EvLightning" class="md-nav__link">
+      EvLightning
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Debug/" title="Debug" class="md-nav__link">
+      Debug
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-6" type="checkbox" id="nav-4-6">
+    
+    <label class="md-nav__link" for="nav-4-6">
+      Helper
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-6">
+        Helper
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Helper/FastSpawn/" title="FastSpawn" class="md-nav__link">
+      FastSpawn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Helper/Make/" title="Make" class="md-nav__link">
+      Make
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+    
+    <label class="md-nav__link" for="nav-4-7">
+      Input
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-7">
+        Input
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Input/Keys/" title="Keys" class="md-nav__link">
+      Keys
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+    
+    <label class="md-nav__link" for="nav-4-8">
+      Interpolation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-8">
+        Interpolation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Interpolation/Bezier/" title="Bezier" class="md-nav__link">
+      Bezier
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Interpolation/Easing/" title="Easing" class="md-nav__link">
+      Easing
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Interpolation/Lerps/" title="Lerps" class="md-nav__link">
+      Lerps
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Interpolation/Tween/" title="Tween" class="md-nav__link">
+      Tween
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
+    
+    <label class="md-nav__link" for="nav-4-9">
+      Material
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-9">
+        Material
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Material/AsymmetricTransformation/" title="AsymmetricTransformation" class="md-nav__link">
+      AsymmetricTransformation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Material/Button/" title="Button" class="md-nav__link">
+      Button
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Material/Colors/" title="Colors" class="md-nav__link">
+      Colors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Material/SelectionControl/" title="SelectionControl" class="md-nav__link">
+      SelectionControl
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Material/Shadow/" title="Shadow" class="md-nav__link">
+      Shadow
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Material/Snackbar/" title="Snackbar" class="md-nav__link">
+      Snackbar
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-10" type="checkbox" id="nav-4-10">
+    
+    <label class="md-nav__link" for="nav-4-10">
+      Math
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-10">
+        Math
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Math/Leveler/" title="Leveler" class="md-nav__link">
+      Leveler
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Math/Normal/" title="Normal" class="md-nav__link">
+      Normal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Math/WeightedProbabilityFunction/" title="WeightedProbabilityFunction" class="md-nav__link">
+      WeightedProbabilityFunction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Ready/" title="Ready" class="md-nav__link">
+      Ready
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Rbx_CustomFont/" title="Rbx_CustomFont" class="md-nav__link">
+      Rbx_CustomFont
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Sentry/" title="Sentry" class="md-nav__link">
+      Sentry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-14" type="checkbox" id="nav-4-14">
+    
+    <label class="md-nav__link" for="nav-4-14">
+      Time
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-14">
+        Time
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Time/Date/" title="Date" class="md-nav__link">
+      Date
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Time/SyncedPoller/" title="SyncedPoller" class="md-nav__link">
+      SyncedPoller
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Try/" title="Try" class="md-nav__link">
+      Try
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-16" type="checkbox" id="nav-4-16">
+    
+    <label class="md-nav__link" for="nav-4-16">
+      Utility
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-16">
+        Utility
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Utility/HTMLParser/" title="HTMLParser" class="md-nav__link">
+      HTMLParser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Utility/SortedArray/" title="SortedArray" class="md-nav__link">
+      SortedArray
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Utility/Table/" title="Table" class="md-nav__link">
+      Table
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Contributing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Contributing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Contributing/" title="Information" class="md-nav__link">
+      Information
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Contributing/Website/" title="Website" class="md-nav__link">
+      Website
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functionality" title="Functionality" class="md-nav__link">
+    Functionality
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" title="API" class="md-nav__link">
+    API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loadlibrary" title="LoadLibrary" class="md-nav__link">
+    LoadLibrary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getlocaltable" title="GetLocalTable" class="md-nav__link">
+    GetLocalTable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get-functions" title="Get functions" class="md-nav__link">
+    Get functions
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#getlocal-functions" title="GetLocal functions" class="md-nav__link">
+    GetLocal functions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h1>
+<p><a href="https://github.com/RoStrap/Resources/blob/master/Resources.module.lua">Resources</a> is the core resource manager and library loader for RoStrap. It is designed to streamline the retrieval and networking of resources.</p>
+<h2 id="functionality">Functionality<a class="headerlink" href="#functionality" title="Permanent link">&para;</a></h2>
+<p>Upon being <a href="http://wiki.roblox.com/index.php?title=Global_namespace/Roblox_namespace#require">required</a> on the server for the first time, <a href="https://github.com/RoStrap/Resources/blob/master/Resources.module.lua">Resources</a> moves libraries within <code>ServerStorage.Repository</code> to folder <code>ReplicatedStorage.Resources.Libraries</code>, where both the client and server can <a href="http://wiki.roblox.com/index.php?title=Global_namespace/Roblox_namespace#require">require</a> them via the function <code>LoadLibrary</code>.</p>
+<p><img alt="" src="https://image.prntscr.com/image/ZonjgCDFQLabru0xbMBUNQ.png" /></p>
+<p>Libraries with "Server" (case-sensitive) in their name or in the name of a parent folder are considered server-only libraries, and will not be moved to <code>ReplicatedStorage</code> with the rest of the libraries. Instead, these libraries will be moved to folder <code>ServerStorage.Resources</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Internally, <code>LoadLibrary</code> caches and returns <code>require(Resources:GetLibrary(LibraryName))</code>. <code>GetLibrary</code> is the only function that can "retrieve" objects from both <code>ServerStorage</code> and <code>ReplicatedStorage</code>. This is because libraries tagged with either <code>ReplicatedLibraries</code> or <code>ServerLibraries</code> are added directly to its cache.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Libraries will not be moved into <code>ReplicatedStorage</code> in Play-Solo.</p>
+</div>
+<h2 id="api">API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
+<p>All methods of <a href="https://github.com/RoStrap/Resources/blob/master/Resources.module.lua">Resources</a> have hybrid syntax, meaning they can be called using either a <code>:</code> or <code>.</code></p>
+<h3 id="loadlibrary">LoadLibrary<a class="headerlink" href="#loadlibrary" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title">Summary</p>
+<p>A require-by-string function which internally calls <code>require(Resources:GetLibrary(string LibraryName))</code> and caches the results.</p>
+<p><pre><a href="http://wiki.roblox.com/index.php?title=API:Variant" title="API:Variant"><span style="color:blue;">Variant</span></a> Resources:LoadLibrary (
+    <a href="http://wiki.roblox.com/index.php?title=API:Type/string" class="mw-redirect" title="API:Type/string"><span>string</span></a> LibraryName
+)
+</pre></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">SortedArray</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;SortedArray&quot;</span><span class="p">)</span>
+
+<span class="c1">-- Some people like to overwrite the default require function</span>
+<span class="kd">local</span> <span class="nb">require</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">.</span><span class="n">LoadLibrary</span>
+
+<span class="kd">local</span> <span class="n">Signal</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;Signal&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This is the only function with a hard-coded name for its cache, so you may access cached require results using the following:</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- Resources uses this table to cache LoadLibrary results</span>
+<span class="kd">local</span> <span class="n">LoadedLibraries</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">GetLocalTable</span><span class="p">(</span><span class="s2">&quot;LoadedLibraries&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+<h3 id="getlocaltable">GetLocalTable<a class="headerlink" href="#getlocaltable" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title">Summary</p>
+<p>A function which caches a local table by string, and returns said table. Does not replicate. Useful for eliminating the need for <a href="http://wiki.roblox.com/index.php?title=Global_namespace/Basic_functions#G">_G</a> or ModuleScripts which return an empty table.</p>
+<p><pre><a href="http://wiki.roblox.com/index.php?title=Table" title="Table"><span style="color:blue;">Table</span></a> Resources:GetLocalTable (
+    <a href="http://wiki.roblox.com/index.php?title=API:Type/string" class="mw-redirect" title="API:Type/string"><span>string</span></a> TableName
+)
+</pre></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- Can be used in any script on the same machine to get this table</span>
+<span class="kd">local</span> <span class="n">MyItems</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">GetLocalTable</span><span class="p">(</span><span class="s2">&quot;MyItems&quot;</span><span class="p">)</span> <span class="c1">-- {}</span>
+</pre></div>
+
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Resources uses <code>GetLocalTable</code> internally, so you can access its internals using this function:</p>
+<div class="codehilite"><pre><span></span><span class="c1">-- Resources uses this table to cache LoadLibrary results</span>
+<span class="kd">local</span> <span class="n">LoadedLibraries</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">GetLocalTable</span><span class="p">(</span><span class="s2">&quot;LoadedLibraries&quot;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+<h3 id="get-functions">Get functions<a class="headerlink" href="#get-functions" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title">Summary</p>
+<p>Get functions can be procedurally generated by <a href="https://github.com/RoStrap/Resources/blob/master/Resources.module.lua">Resources</a> at run-time in the form of <code>Resources:GetCLASSNAME(string Name)</code>. These functions return an <a href="http://wiki.roblox.com/index.php?title=API:Class/Instance">Instance</a> of <code>Name</code> under <code>Resources:GetFolder(CLASSNAME:gsub(&quot;y$&quot;, &quot;ie&quot;) .. &quot;s&quot;)</code>.</p>
+<p><pre><a href="/index.php?title=API:Ref" title="API:Ref"><span style="color:blue;">Ref</span></a>&lt;<a href="/index.php?title=API:Class/Instance" title="API:Class/Instance"><span style="color:blue;">Instance</span></a>&gt; Resources:GetCLASSNAME (
+    <a href="/index.php?title=API:Type/string" class="mw-redirect" title="API:Type/string"><span>string</span></a> InstanceName
+)</pre></p>
+</div>
+<p>The following is the internal call tree. Keep in mind that these functions cache so the 3<sup>rd</sup> function will only run once per machine and <code>GetFolder</code> will only run once per function generation (e.g. the first time <code>GetRemoteEvent</code> is called).</p>
+<table>
+<thead>
+<tr>
+<th align="center">Step</th>
+<th align="center">Object to search for</th>
+<th align="center">Function call</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">RemoteEvent <code>Chatted</code> inside</td>
+<td align="center">GetRemoteEvent("Chatted")</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">Folder <code>RemoteEvents</code> in</td>
+<td align="center">GetFolder("RemoteEvents")</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center"><code>Resources</code></td>
+<td align="center">ROOT</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="https://user-images.githubusercontent.com/15217173/38775951-d6bfbeee-404b-11e8-8396-9666a0b20b98.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<ul>
+<li>
+<p>On the server, missing instances will be instantiated via <a href="http://wiki.roblox.com/index.php?title=Instance_(Data_Structure)">Instance.new</a>. On the client, the function will yield for the missing instances via <a href="http://wiki.roblox.com/index.php?title=API:Class/Instance/WaitForChild">WaitForChild</a>.</p>
+</li>
+<li>
+<p>Caches results in <code>Resources:GetLocalTable(CLASSNAME:gsub(&quot;y$&quot;, &quot;ie&quot;) .. &quot;s&quot;)</code></p>
+</li>
+</ul>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Get functions can also manage instance types that aren't instantiable by <code>Instance.new</code>. However, these instances must be preinstalled in the locations in which they would otherwise be instantiated because they cannot be generated at run-time. This allows you to do things like the following:</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Falchion</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">GetSword</span><span class="p">(</span><span class="s2">&quot;Falchion&quot;</span><span class="p">)</span>
+</pre></div>
+
+<p><img alt="" src="https://user-images.githubusercontent.com/15217173/38775984-64af0b2e-404c-11e8-9279-0adace656665.png" /></p>
+</div>
+<h4 id="getlocal-functions">GetLocal functions<a class="headerlink" href="#getlocal-functions" title="Permanent link">&para;</a></h4>
+<div class="admonition summary">
+<p class="admonition-title">Summary</p>
+<p>Get functions in the form of <code>GetLocalCLASSNAME</code> work in the same way as regular Get functions, except clients may also instantiate missing instances and <code>GetLocalFolder</code> searches in different locations. Not meant to be used very much.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th align="center"><strong>Machine</strong></th>
+<th align="center">LOCALSTORAGE</th>
+<th align="center">LOCALRESOURCES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>Server</strong></td>
+<td align="center"><code>ServerStorage</code></td>
+<td align="center"><code>ServerStorage.Resources</code></td>
+</tr>
+<tr>
+<td align="center"><strong>Client</strong></td>
+<td align="center"><code>Players.LocalPlayer.PlayerScripts</code></td>
+<td align="center"><code>Players.LocalPlayer.PlayerScripts.Resources</code></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="center">Step</th>
+<th align="center">Object to search for</th>
+<th align="center">Function call</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">BindableEvent <code>Attacking</code> inside</td>
+<td align="center">GetLocalBindableEvent("Attacking")</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">Folder <code>BindableEvents</code> in</td>
+<td align="center">GetLocalFolder("BindableEvents")</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">Folder <code>LOCALSTORAGE.Resources</code></td>
+<td align="center">LOCALRESOURCES</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Attacking</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">GetLocalBindableEvent</span><span class="p">(</span><span class="s2">&quot;Attacking&quot;</span><span class="p">)</span>
+</pre></div>
+
+<p>Here is what the above code would do if ran by the server versus what it would do if ran by a client:</p>
+<table>
+<thead>
+<tr>
+<th align="center">Server</th>
+<th align="center">Client</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="" src="https://user-images.githubusercontent.com/15217173/38918583-6a9dcf50-42ab-11e8-8dbd-a165595af63f.png" /></td>
+<td align="center"><img alt="" src="https://user-images.githubusercontent.com/15217173/38918817-00857d1a-42ac-11e8-9a3e-3176a2cb65b0.png" /></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In Play-Solo Mode, all local objects will go under <code>ServerStorage</code>, as there is no difference between the client and server. If you use identical Local-function calls on the client and server, this could cause conflicts in Play-Solo. The same problem applies to caches, which have "Local" appended to the front of the string to differentiate from regular caches. <code>LOCALSTORAGE</code> is typically just for <code>GetLocalBindableEvent</code> calls and having a place to store server-only Libraries, which are under <code>GetLocalFolder(&quot;Resources&quot;)</code>.</p>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Getting-Started/" title="Getting Started" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Getting Started
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Libraries/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Introduction
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://discord.gg/pjJw8s4" class="md-footer-social__link fa fa-discord"></a>
+    
+      <a href="https://github.com/RoStrap" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b438e6c5.js"></script>
+      
+      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>
