@@ -6,6 +6,8 @@ Libraries contributed to RoStrap must be useful, reusable, and reasonably univer
 
 Submitted Libraries may be subject to code review.
 
+All images must meet the [image standards]()
+
 # Plugin
 The following documentation outlines how the plugin works its magic.
 

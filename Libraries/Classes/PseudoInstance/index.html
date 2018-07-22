@@ -13,7 +13,7 @@
         <meta name="description" content="Reusable, unified resource networking to expedite game development on ROBLOX">
       
       
-        <link rel="canonical" href="https://rostrap.github.io/Libraries/Events/Maid/">
+        <link rel="canonical" href="https://rostrap.github.io/Libraries/Classes/PseudoInstance/">
       
       
         <meta name="author" content="Validark">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Maid - RoStrap</title>
+        <title>PseudoInstance - RoStrap</title>
       
     
     
@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="green">
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="pink">
   
     <svg class="md-svg">
       <defs>
@@ -99,7 +99,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
-      <a href="#maid" tabindex="1" class="md-skip">
+      <a href="#pseudoinstance" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -125,7 +125,7 @@
                 RoStrap
               </span>
               <span class="md-header-nav__topic">
-                Maid
+                PseudoInstance
               </span>
             
           
@@ -361,10 +361,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     
     <label class="md-nav__link" for="nav-4-2">
       Classes
@@ -382,37 +384,11 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Classes/Enumeration/" title="Enumeration" class="md-nav__link">
+    <a href="../Enumeration/" title="Enumeration" class="md-nav__link">
       Enumeration
     </a>
   </li>
 
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
-    
-    <label class="md-nav__link" for="nav-4-3">
-      Events
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
-        Events
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
         
           
           
@@ -429,11 +405,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Maid
+        PseudoInstance
       </label>
     
-    <a href="./" title="Maid" class="md-nav__link md-nav__link--active">
-      Maid
+    <a href="./" title="PseudoInstance" class="md-nav__link md-nav__link--active">
+      PseudoInstance
     </a>
     
       
@@ -451,12 +427,32 @@
     Library API
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maid-api" title="Maid API" class="md-nav__link">
-    Maid API
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pseudoinstancenew" title="PseudoInstance.new" class="md-nav__link">
+    PseudoInstance.new
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseudoinstancemake" title="PseudoInstance.Make" class="md-nav__link">
+    PseudoInstance.Make
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseudoinstanceregister" title="PseudoInstance:Register" class="md-nav__link">
+    PseudoInstance:Register
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -477,7 +473,55 @@
 
 
   <li class="md-nav__item">
-    <a href="../Signal/" title="Signal" class="md-nav__link">
+    <a href="../ReplicatedPseudoInstance/" title="ReplicatedPseudoInstance" class="md-nav__link">
+      ReplicatedPseudoInstance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Events
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Events
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Events/Janitor/" title="Janitor" class="md-nav__link">
+      Janitor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Events/Signal/" title="Signal" class="md-nav__link">
       Signal
     </a>
   </li>
@@ -705,8 +749,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Material/Button/" title="Button" class="md-nav__link">
-      Button
+    <a href="../../Material/RippleButton/" title="RippleButton" class="md-nav__link">
+      RippleButton
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Material/ChoiceDialog/" title="ChoiceDialog" class="md-nav__link">
+      ChoiceDialog
     </a>
   </li>
 
@@ -842,18 +898,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Rbx_CustomFont/" title="Rbx_CustomFont" class="md-nav__link">
-      Rbx_CustomFont
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../Sentry/" title="Sentry" class="md-nav__link">
       Sentry
     </a>
@@ -867,13 +911,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-14" type="checkbox" id="nav-4-14">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-13" type="checkbox" id="nav-4-13">
     
-    <label class="md-nav__link" for="nav-4-14">
+    <label class="md-nav__link" for="nav-4-13">
       Time
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-14">
+      <label class="md-nav__title" for="nav-4-13">
         Time
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -927,13 +971,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-16" type="checkbox" id="nav-4-16">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-15" type="checkbox" id="nav-4-15">
     
-    <label class="md-nav__link" for="nav-4-16">
+    <label class="md-nav__link" for="nav-4-15">
       Utility
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-16">
+      <label class="md-nav__title" for="nav-4-15">
         Utility
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1028,6 +1072,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Contributing/Image%20Standards/" title="Image Standards" class="md-nav__link">
+      Image Standards
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1058,12 +1114,32 @@
     Library API
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maid-api" title="Maid API" class="md-nav__link">
-    Maid API
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pseudoinstancenew" title="PseudoInstance.new" class="md-nav__link">
+    PseudoInstance.new
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseudoinstancemake" title="PseudoInstance.Make" class="md-nav__link">
+    PseudoInstance.Make
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pseudoinstanceregister" title="PseudoInstance:Register" class="md-nav__link">
+    PseudoInstance:Register
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1084,43 +1160,178 @@
               
                 
                 
-                <h1 id="maid">Maid<a class="headerlink" href="#maid" title="Permanent link">&para;</a></h1>
-<p>Manages the cleaning of events and other things.</p>
-<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Maid</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Maid&quot;</span><span class="p">)</span>
+                <h1 id="pseudoinstance">PseudoInstance<a class="headerlink" href="#pseudoinstance" title="Permanent link">&para;</a></h1>
+<div class="admonition summary">
+<p class="admonition-title">Summary</p>
+<p>Rigidly defined PseudoInstance class system based upon Roblox Instances. The goal is to create encapsulated instances whose state is simply a function of its externally accessible properties. In other words, a cloned instance should render exactly the same as the original instance.</p>
+</div>
+<h2 id="library-api">Library API<a class="headerlink" href="#library-api" title="Permanent link">&para;</a></h2>
+<h3 id="pseudoinstancenew">PseudoInstance.new<a class="headerlink" href="#pseudoinstancenew" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title"><span style="color:purple;">PseudoInstance</span> PseudoInstance.<span style="color:blue;">new</span>(<span style="color:green;">string</span> ClassName, ...)</p>
+<p>Instantiates a new PseudoInstance of type <code>ClassName</code>. Arguments (...) are passed to the <code>Init</code> constructor.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Shadow</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Shadow&quot;</span><span class="p">)</span>
+<span class="n">Shadow</span><span class="p">.</span><span class="n">Elevation</span> <span class="o">=</span> <span class="mi">8</span> <span class="c1">-- this will cast to Enumeration.ShadowElevation.Elevation8</span>
+<span class="n">Shadow</span><span class="p">.</span><span class="n">Parent</span> <span class="o">=</span> <span class="n">Background</span> <span class="c1">-- Whatever Gui you wish</span>
 </pre></div>
 
-<h3 id="library-api">Library API<a class="headerlink" href="#library-api" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>Maid Maid.new()
-    Generates a new Maid object
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only classes which have been <a href="https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstanceregister">Registered</a> may be instantiated. If you attempt to instantiate a class which has not been <a href="https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstanceregister">Registered</a>, it will call <code>Resources:LoadLibrary(ClassName)</code> and try again.</p>
+</div>
+<h3 id="pseudoinstancemake">PseudoInstance.Make<a class="headerlink" href="#pseudoinstancemake" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title"><span style="color:purple;">PseudoInstance</span> PseudoInstance.<span style="color:blue;">Make</span>(<span style="color:green;">string</span> ClassName, <span style="color:teal;">dictionary</span> Properties, ...)</p>
+<p><code>PseudoInstance.new</code> wrapper which automatically assigns properties in dictionary <code>Properties</code>. Arguments passed to (...) must be dictionaries of Properties too. The only downside is you cannot pass any parameters to the <code>Init</code> constructor, but you probably don't need to. <a href="https://rostrap.github.io/Libraries/Helper/Make/">See the Make library's documentation for more information, as it works identically.</a></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Shadow</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">Make</span><span class="p">(</span><span class="s2">&quot;Shadow&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">Elevation</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span> <span class="c1">-- this will cast to Enumeration.ShadowElevation.Elevation8</span>
+    <span class="n">Parent</span> <span class="o">=</span> <span class="n">Background</span><span class="p">;</span> <span class="c1">-- Parent is set last</span>
+<span class="p">})</span>
 </pre></div>
 
-<h3 id="maid-api">Maid API<a class="headerlink" href="#maid-api" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>number Maid:GiveTask(Task)
-    Adds a Task to the Maid table, incremented by 1
-    @returns index the Task was placed at
+</div>
+<h3 id="pseudoinstanceregister">PseudoInstance:Register<a class="headerlink" href="#pseudoinstanceregister" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title"><span style="color:purple;">PseudoTemplate</span> PseudoInstance:<span style="color:blue;">Register</span>(<span style="color:green;">string</span> ClassName, <span style="color:teal;">table</span> Template, <span style="color:green;">table</span> InheritsFrom = PseudoInstance)</p>
+<p>Registers a new class of PseudoInstances which can be instantiated via <code>PseudoInstance.new(ClassName)</code>. Please read all the documentation in the example below:</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
+<span class="kd">local</span> <span class="n">Enumeration</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Enumeration&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
 
-void Maid:LinkToInstance(Instance)
-    Makes the Maid clean up when the instance is destroyed
-    @param Instance Instance The Instance the Maid will wait for to be Destroyed
-    @returns table Connection that can be Disconnect()ed to unlink to Instance
+<span class="n">Enumeration</span><span class="p">.</span><span class="n">PastaStyle</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Spaghetti&quot;</span><span class="p">,</span> <span class="s2">&quot;Fusilli&quot;</span><span class="p">,</span> <span class="s2">&quot;Penne&quot;</span><span class="p">,</span> <span class="s2">&quot;Rigatoni&quot;</span><span class="p">,</span> <span class="s2">&quot;Rotelle&quot;</span><span class="p">}</span>
 
-void Maid:DoCleaning()
-    Disconnects all Events, Destroys all Objects, and calls all functions stored as Tasks
-    Maid:Destroy() and Maid:Disconnect() are the same thing
+<span class="kd">local</span> <span class="n">ClassNameTemplate</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">:</span><span class="n">Register</span><span class="p">(</span><span class="s2">&quot;ClassName&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">Events</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1">-- These are the events (see: Signal) of the PseudoInstance. These can be Connect()ed to,</span>
+        <span class="c1">-- Fire()d, Wait()ed on, etc</span>
 
-void Maid:Destroy()
-    Same as DoCleaning()
+        <span class="c1">-- implicit numerical indeces define an Event member without Constuctors or Destructors</span>
+        <span class="s2">&quot;OnPressed&quot;</span><span class="p">;</span>
 
-void Maid:Disconnect()
-    Same as DoCleaning()
+        <span class="n">OnRightPressed</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+            <span class="c1">-- self is the PseudoInstance for which this Event is being constructed.</span>
+            <span class="c1">-- Must return two functions, one constuctor and</span>
+            <span class="c1">-- one destructor with which to call Signal.new (see docs)</span>
+            <span class="kr">return</span> <span class="kr">function</span><span class="p">()</span>
+            <span class="kr">end</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+            <span class="kr">end</span>
+        <span class="kr">end</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="n">Internals</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1">-- These values are internal-only and not externally accessible</span>
+
+        <span class="c1">-- implicit numerical indeces are set by default to false, to be defined at run-time</span>
+        <span class="s2">&quot;NumChildren&quot;</span><span class="p">;</span>
+
+        <span class="n">Set</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Bool</span><span class="p">)</span> <span class="c1">-- These can be set to anything</span>
+            <span class="kr">return</span> <span class="n">Bool</span> <span class="o">==</span> <span class="kc">true</span> <span class="ow">and</span> <span class="mi">1</span> <span class="ow">or</span> <span class="mi">0</span>
+        <span class="kr">end</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="n">Methods</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">Kill</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+            <span class="c1">-- Methods and the Init functions are sent an internal-access table version of self</span>
+
+            <span class="n">self</span><span class="p">.</span><span class="n">OnPressed</span><span class="p">:</span><span class="n">Fire</span><span class="p">()</span> <span class="c1">-- Internal Signal-access has full control</span>
+            <span class="kr">return</span> <span class="n">self</span><span class="p">:</span><span class="n">Set</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+        <span class="kr">end</span><span class="p">;</span>
+
+        <span class="n">Destroy</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="p">...)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are being destroyed!&quot;</span><span class="p">)</span>
+
+            <span class="c1">-- self:super() calls the superclass&#39;s method by the name of the first parameter</span>
+            <span class="c1">-- In this case, this calls Superclass.Destroy(self, ...)</span>
+            <span class="n">self</span><span class="p">:</span><span class="n">super</span><span class="p">(</span><span class="s2">&quot;Destroy&quot;</span><span class="p">,</span> <span class="p">...)</span>
+        <span class="kr">end</span><span class="p">;</span>
+
+        <span class="c1">-- When set to 0, it makes the class Abstract</span>
+        <span class="n">FunctionWhichMustBeImplementedByAClassThatInheritsFromThisOne</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="n">Properties</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1">-- Can be set to a ValueType Enumeration for typechecking (see PseudoInstance Library)</span>
+        <span class="n">Name</span> <span class="o">=</span> <span class="n">Enumeration</span><span class="p">.</span><span class="n">ValueType</span><span class="p">.</span><span class="n">String</span><span class="p">;</span>
+
+        <span class="c1">-- Can also be constrained to a certain EnumerationType</span>
+        <span class="n">Style</span> <span class="o">=</span> <span class="n">Enumeration</span><span class="p">.</span><span class="n">PastaStyle</span><span class="p">;</span>
+
+        <span class="n">Parent</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Parent</span><span class="p">)</span>
+            <span class="c1">-- Always called with the Object and the Property value it is being set to</span>
+
+            <span class="kr">if</span> <span class="n">Parent</span> <span class="o">==</span> <span class="kc">true</span> <span class="kr">then</span>
+                <span class="kr">return</span> <span class="kc">true</span> <span class="c1">-- internally does self:rawset(&quot;Parent&quot;, Parent) afterwards</span>
+            <span class="kr">elseif</span> <span class="n">Parent</span> <span class="o">==</span> <span class="kc">nil</span> <span class="kr">then</span>
+                <span class="kr">return</span> <span class="kc">false</span> <span class="c1">-- errors from a bad set</span>
+            <span class="kr">else</span>
+                <span class="n">self</span><span class="p">:</span><span class="nb">rawset</span><span class="p">(</span><span class="s2">&quot;Parent&quot;</span><span class="p">,</span> <span class="n">Parent</span><span class="p">)</span>
+
+                <span class="kr">return</span> <span class="c1">-- Does nothing, everything should be implemented manually</span>
+            <span class="kr">end</span>
+        <span class="kr">end</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="n">Init</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+        <span class="c1">-- Called by PseudoInstance.new()</span>
+
+        <span class="c1">-- Every PseudoInstance comes with a built-in Janitor which is called upon Destruction</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">Janitor</span><span class="p">:</span><span class="n">Add</span><span class="p">(</span><span class="n">workspace</span><span class="p">.</span><span class="n">ChildAdded</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span> <span class="kr">end</span><span class="p">))</span>
+
+
+        <span class="c1">-- Sets externally-accessible Value of PseudoInstance directly</span>
+        <span class="c1">-- without calling a Property setting function</span>
+        <span class="c1">-- This can also be used for read-only values</span>
+        <span class="n">self</span><span class="p">:</span><span class="nb">rawset</span><span class="p">(</span><span class="s2">&quot;IsPlayer&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+
+        <span class="c1">-- Must be in your init function, to run the constructor in the superclass</span>
+        <span class="c1">-- Will not exist after the Init function runs if the constructors resolved properly</span>
+        <span class="n">self</span><span class="p">:</span><span class="n">superinit</span><span class="p">()</span>
+    <span class="kr">end</span><span class="p">;</span>
+<span class="p">})</span>
+
+<span class="c1">-- Will Error, because `ClassName` is Abstract</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">pcall</span><span class="p">(</span><span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">,</span> <span class="s2">&quot;ClassName&quot;</span><span class="p">))</span>
+
+<span class="kd">local</span> <span class="n">MyClass</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">:</span><span class="n">Register</span><span class="p">(</span><span class="s2">&quot;MyClass&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">Methods</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">FunctionWhichMustBeImplementedByAClassThatInheritsFromThisOne</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+        <span class="kr">end</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="n">Init</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">:</span><span class="n">superinit</span><span class="p">()</span>
+    <span class="kr">end</span><span class="p">;</span>
+<span class="p">},</span> <span class="n">ClassNameTemplate</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">MyInstance</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;MyClass&quot;</span><span class="p">)</span>
+<span class="n">MyInstance</span><span class="p">.</span><span class="n">Style</span> <span class="o">=</span> <span class="s2">&quot;Rigatoni&quot;</span> <span class="c1">-- Gets cast to Enumeration</span>
+<span class="n">MyInstance</span><span class="p">.</span><span class="n">Style</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1">-- Gets cast to Rigatoni</span>
+<span class="n">MyInstance</span><span class="p">:</span><span class="n">Kill</span><span class="p">()</span>
+
+<span class="c1">-- Externally, one only may Connect() and Wait() on events</span>
+<span class="n">MyInstance</span><span class="p">.</span><span class="n">OnPressed</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="nb">print</span><span class="p">)</span>
+
+<span class="c1">-- Error: Cannot `Fire` externally.</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">pcall</span><span class="p">(</span><span class="n">MyInstance</span><span class="p">.</span><span class="n">OnPressed</span><span class="p">.</span><span class="n">Fire</span><span class="p">,</span> <span class="n">MyInstance</span><span class="p">.</span><span class="n">OnPressed</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">pcall</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
+    <span class="n">MyInstance</span><span class="p">:</span><span class="n">Set</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">))</span> <span class="c1">-- Set does not exist externally</span>
 </pre></div>
 
-<div class="codehilite"><pre><span></span>Maid[key] = (function)            Adds a function to call at cleanup
-Maid[key] = (Instance)            Adds an Object to be Destroyed at cleanup
-Maid[key] = (RBXScriptConnection) Adds a connection to be Disconnected at cleanup
-Maid[key] = (Maid)                Maids can act as an event connection, allowing a Maid to clean up other maids
-Maid[key] = nil                   Removes a named task. This cleans up the previous Maid[key]
-</pre></div>
+</div>
                 
                   
                 
@@ -1141,7 +1352,7 @@ Maid[key] = nil                   Removes a named task. This cleans up the previ
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../Classes/Enumeration/" title="Enumeration" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Enumeration/" title="Enumeration" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1156,13 +1367,13 @@ Maid[key] = nil                   Removes a named task. This cleans up the previ
           </a>
         
         
-          <a href="../Signal/" title="Signal" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../ReplicatedPseudoInstance/" title="ReplicatedPseudoInstance" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Signal
+                ReplicatedPseudoInstance
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

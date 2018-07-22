@@ -15,34 +15,49 @@ local Date = Resources:LoadLibrary("Date")
 print(Date("!%c", tick())) -- Thu Jan 31 08:55:48 2020
 ```
 
-Or a beautiful checkbox:
+Or use a beautiful Choice Dialog:
 
-![](https://user-images.githubusercontent.com/15217173/40769612-128acd1e-647e-11e8-8d64-5c570a6566b2.png)
+<div align="center">
+	<video autoplay loop>
+	<source src="assets/videos/ChoiceDialog.mp4" type="video/mp4">
+	</source>
+	</video>
+</div>
+
 ```lua
+-- If this is in a Script, it will Replicate this ChoiceDialog to every
+-- Player in the game and everyone who joins
+-- If this is in a LocalScript, it will generate it on the client only
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
-local Colors = Resources:LoadLibrary("Colors")
-local SelectionControl = Resources:LoadLibrary("SelectionControl")
 
-local LocalPlayer = game:GetService("Players").LocalPlayer
-local PlayerGui = LocalPlayer:FindFirstChildOfClass("PlayerGui")
+Resources:LoadLibrary("ReplicatedPseudoInstance")
 
-local Screen = Instance.new("ScreenGui", PlayerGui)
+local Color = Resources:LoadLibrary("Color")
+local PseudoInstance = Resources:LoadLibrary("PseudoInstance")
 
-local Frame = Instance.new("Frame", Screen)
-Frame.BackgroundColor3 = Colors.Grey[200]
-Frame.BorderSizePixel = 0
-Frame.Size = UDim2.new(1, 0, 1, 0)
+local PrimaryColor3 = Color.Teal[500]
 
-local ReceiveUpdates = SelectionControl.new("Checkbox")
-ReceiveUpdates.EnabledColor = "Teal"
-ReceiveUpdates.State = true
-ReceiveUpdates.AnchorPoint = Vector2.new(0.5, 0.5)
-ReceiveUpdates.Position = UDim2.new(0.5, 0, 0.5, 0)
-ReceiveUpdates.Parent = Frame
+local Dialog = PseudoInstance.new("ChoiceDialog")
+Dialog.HeaderText = "Repository Location"
+Dialog.Options = {"ServerStorage", "ServerScriptService"}
+Dialog.DismissText = "CANCEL"
+Dialog.ConfirmText = "INSTALL"
+Dialog.PrimaryColor3 = PrimaryColor3
+
+Dialog.OnConfirmed:Connect(function(Player, Choice)
+	print(Player, Choice)
+
+	if Choice then
+		-- Choice is a string of the option they chose
+	else
+		-- They chose Dismiss, so Choice is false
+	end
+end)
+
+Dialog.Parent = ReplicatedStorage
 ```
-
-<div align="right" style="width:100%;height:0px;position:relative;padding-bottom:50%;"><iframe src="https://streamable.com/s/9lt8o/ohhazy" frameborder="0" style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden;"></iframe></div>
 
 Or manage your RemoteEvents and RemoteFunctions!
 ```lua

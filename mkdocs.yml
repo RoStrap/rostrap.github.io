@@ -8,14 +8,18 @@ repo_url: https://github.com/RoStrap
 edit_uri: ""
 
 theme:
-  name: material
+  name: 'material'
   logo: 'assets/images/RoStrap.png'
   favicon: 'assets/images/RoStrap.png'
   palette:
-    primary: 'Green'
-    accent: 'Green'
+    primary: 'Teal'
+    accent: 'Pink'
   feature:
     tabs: true
+  language: 'en'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
 
 pages:
   - Introduction: index.md
@@ -25,8 +29,10 @@ pages:
       - Introduction: Libraries/index.md
       - Classes:
         - Enumeration: Libraries/Classes/Enumeration.md
+        - PseudoInstance: Libraries/Classes/PseudoInstance.md
+        - ReplicatedPseudoInstance: Libraries/Classes/ReplicatedPseudoInstance.md
       - Events:
-        - Maid: Libraries/Events/Maid.md
+        - Janitor: Libraries/Events/Janitor.md
         - Signal: Libraries/Events/Signal.md
       - EvLightning: Libraries/EvLightning.md
       - Debug: Libraries/Debug.md
@@ -42,7 +48,8 @@ pages:
         - Tween: Libraries/Interpolation/Tween.md
       - Material:
         - AsymmetricTransformation: Libraries/Material/AsymmetricTransformation.md
-        - Button: Libraries/Material/Button.md
+        - RippleButton: Libraries/Material/RippleButton.md
+        - ChoiceDialog: Libraries/Material/ChoiceDialog.md
         - Colors: Libraries/Material/Colors.md
         - SelectionControl: Libraries/Material/SelectionControl.md
         - Shadow: Libraries/Material/Shadow.md
@@ -52,7 +59,6 @@ pages:
         - Normal: Libraries/Math/Normal.md
         - WeightedProbabilityFunction: Libraries/Math/WeightedProbabilityFunction.md
       - Ready: Libraries/Ready.md
-      - Rbx_CustomFont: Libraries/Rbx_CustomFont.md
       - Sentry: Libraries/Sentry.md
       - Time:
         - Date: Libraries/Time/Date.md
@@ -65,6 +71,7 @@ pages:
   - Contributing:
     - Information: Contributing/index.md
     - Website: Contributing/Website.md
+    - Image Standards: Contributing/Image Standards.md
 
 markdown_extensions:
   - attr_list

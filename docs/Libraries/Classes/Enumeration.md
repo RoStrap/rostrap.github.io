@@ -1,5 +1,6 @@
 # Enumeration
-Pure-lua Enumeration implementation that function identically to Roblox Enums, except one may declare their own:
+
+Pure-lua Enumeration implementation that function identically to Roblox Enums, except one may declare their own. Enumerations are a set of named reference constants for when a value must be a discrete value from a list. For example:
 
 ```lua
 local Enumeration = Resources:LoadLibrary("Enumeration")
@@ -10,7 +11,7 @@ Enumeration.SelectionControllerType = {"Checkbox", "Radio", "Switch"}
 local Radio = Enumeration.SelectionControllerType.Radio
 
 print(Radio)
-print(Radio.EnumType)
+print(Radio.EnumerationType)
 print(Radio.Name)
 print(Radio.Value)
 ```
@@ -40,12 +41,10 @@ for i, EnumType in ipairs(Enum:GetEnums()) do
 end
 
 print("All RoStrap Enumerations:")
-for i, EnumType in ipairs(Enumeration:GetEnumerations()) do
-	print(i, EnumType)
-	for j, EnumName in ipairs(EnumType:GetEnumerationItems()) do
+for i, EnumerationType in ipairs(Enumeration:GetEnumerations()) do
+	print(i, EnumerationType)
+	for j, EnumName in ipairs(EnumerationType:GetEnumerationItems()) do
 		print("   ", j, EnumName)
 	end
 end
 ```
-
-[Further documentation on Enumerations here.](http://wiki.roblox.com/index.php?title=Enumeration)

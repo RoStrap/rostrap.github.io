@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="green">
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="pink">
   
     <svg class="md-svg">
       <defs>
@@ -399,6 +399,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PseudoInstance/" title="PseudoInstance" class="md-nav__link">
+      PseudoInstance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ReplicatedPseudoInstance/" title="ReplicatedPseudoInstance" class="md-nav__link">
+      ReplicatedPseudoInstance
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -429,8 +453,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Events/Maid/" title="Maid" class="md-nav__link">
-      Maid
+    <a href="../../Events/Janitor/" title="Janitor" class="md-nav__link">
+      Janitor
     </a>
   </li>
 
@@ -669,8 +693,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Material/Button/" title="Button" class="md-nav__link">
-      Button
+    <a href="../../Material/RippleButton/" title="RippleButton" class="md-nav__link">
+      RippleButton
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Material/ChoiceDialog/" title="ChoiceDialog" class="md-nav__link">
+      ChoiceDialog
     </a>
   </li>
 
@@ -806,18 +842,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Rbx_CustomFont/" title="Rbx_CustomFont" class="md-nav__link">
-      Rbx_CustomFont
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../Sentry/" title="Sentry" class="md-nav__link">
       Sentry
     </a>
@@ -831,13 +855,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-14" type="checkbox" id="nav-4-14">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-13" type="checkbox" id="nav-4-13">
     
-    <label class="md-nav__link" for="nav-4-14">
+    <label class="md-nav__link" for="nav-4-13">
       Time
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-14">
+      <label class="md-nav__title" for="nav-4-13">
         Time
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -891,13 +915,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-16" type="checkbox" id="nav-4-16">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-15" type="checkbox" id="nav-4-15">
     
-    <label class="md-nav__link" for="nav-4-16">
+    <label class="md-nav__link" for="nav-4-15">
       Utility
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-16">
+      <label class="md-nav__title" for="nav-4-15">
         Utility
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -992,6 +1016,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Contributing/Image%20Standards/" title="Image Standards" class="md-nav__link">
+      Image Standards
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -1026,7 +1062,7 @@
                 
                 
                 <h1 id="enumeration">Enumeration<a class="headerlink" href="#enumeration" title="Permanent link">&para;</a></h1>
-<p>Pure-lua Enumeration implementation that function identically to Roblox Enums, except one may declare their own:</p>
+<p>Pure-lua Enumeration implementation that function identically to Roblox Enums, except one may declare their own. Enumerations are a set of named reference constants for when a value must be a discrete value from a list. For example:</p>
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Enumeration</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Enumeration&quot;</span><span class="p">)</span>
 
 <span class="n">Enumeration</span><span class="p">.</span><span class="n">ButtonType</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Custom&quot;</span><span class="p">,</span> <span class="s2">&quot;Flat&quot;</span><span class="p">,</span> <span class="s2">&quot;Raised&quot;</span><span class="p">}</span>
@@ -1035,7 +1071,7 @@
 <span class="kd">local</span> <span class="n">Radio</span> <span class="o">=</span> <span class="n">Enumeration</span><span class="p">.</span><span class="n">SelectionControllerType</span><span class="p">.</span><span class="n">Radio</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">Radio</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">Radio</span><span class="p">.</span><span class="n">EnumType</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Radio</span><span class="p">.</span><span class="n">EnumerationType</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Radio</span><span class="p">.</span><span class="n">Name</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Radio</span><span class="p">.</span><span class="n">Value</span><span class="p">)</span>
 </pre></div>
@@ -1077,15 +1113,13 @@
 <span class="kr">end</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;All RoStrap Enumerations:&quot;</span><span class="p">)</span>
-<span class="kr">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">EnumType</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">Enumeration</span><span class="p">:</span><span class="n">GetEnumerations</span><span class="p">())</span> <span class="kr">do</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">EnumType</span><span class="p">)</span>
-    <span class="kr">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">EnumName</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">EnumType</span><span class="p">:</span><span class="n">GetEnumerationItems</span><span class="p">())</span> <span class="kr">do</span>
+<span class="kr">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">EnumerationType</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">Enumeration</span><span class="p">:</span><span class="n">GetEnumerations</span><span class="p">())</span> <span class="kr">do</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">EnumerationType</span><span class="p">)</span>
+    <span class="kr">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">EnumName</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">EnumerationType</span><span class="p">:</span><span class="n">GetEnumerationItems</span><span class="p">())</span> <span class="kr">do</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;   &quot;</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">EnumName</span><span class="p">)</span>
     <span class="kr">end</span>
 <span class="kr">end</span>
 </pre></div>
-
-<p><a href="http://wiki.roblox.com/index.php?title=Enumeration">Further documentation on Enumerations here.</a></p>
                 
                   
                 
@@ -1121,13 +1155,13 @@
           </a>
         
         
-          <a href="../../Events/Maid/" title="Maid" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../PseudoInstance/" title="PseudoInstance" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Maid
+                PseudoInstance
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

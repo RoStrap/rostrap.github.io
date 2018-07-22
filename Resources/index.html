@@ -68,7 +68,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="green" data-md-color-accent="green">
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="pink">
   
     <svg class="md-svg">
       <defs>
@@ -469,6 +469,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Classes/PseudoInstance/" title="PseudoInstance" class="md-nav__link">
+      PseudoInstance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Classes/ReplicatedPseudoInstance/" title="ReplicatedPseudoInstance" class="md-nav__link">
+      ReplicatedPseudoInstance
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -499,8 +523,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../Libraries/Events/Maid/" title="Maid" class="md-nav__link">
-      Maid
+    <a href="../Libraries/Events/Janitor/" title="Janitor" class="md-nav__link">
+      Janitor
     </a>
   </li>
 
@@ -739,8 +763,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../Libraries/Material/Button/" title="Button" class="md-nav__link">
-      Button
+    <a href="../Libraries/Material/RippleButton/" title="RippleButton" class="md-nav__link">
+      RippleButton
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Libraries/Material/ChoiceDialog/" title="ChoiceDialog" class="md-nav__link">
+      ChoiceDialog
     </a>
   </li>
 
@@ -876,18 +912,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../Libraries/Rbx_CustomFont/" title="Rbx_CustomFont" class="md-nav__link">
-      Rbx_CustomFont
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../Libraries/Sentry/" title="Sentry" class="md-nav__link">
       Sentry
     </a>
@@ -901,13 +925,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-14" type="checkbox" id="nav-4-14">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-13" type="checkbox" id="nav-4-13">
     
-    <label class="md-nav__link" for="nav-4-14">
+    <label class="md-nav__link" for="nav-4-13">
       Time
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-14">
+      <label class="md-nav__title" for="nav-4-13">
         Time
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -961,13 +985,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-16" type="checkbox" id="nav-4-16">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-15" type="checkbox" id="nav-4-15">
     
-    <label class="md-nav__link" for="nav-4-16">
+    <label class="md-nav__link" for="nav-4-15">
       Utility
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-16">
+      <label class="md-nav__title" for="nav-4-15">
         Utility
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1058,6 +1082,18 @@
   <li class="md-nav__item">
     <a href="../Contributing/Website/" title="Website" class="md-nav__link">
       Website
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Contributing/Image%20Standards/" title="Image Standards" class="md-nav__link">
+      Image Standards
     </a>
   </li>
 
@@ -1166,7 +1202,7 @@
 <p>Libraries with "Server" (case-sensitive) in their name or in the name of a parent folder are considered server-only libraries, and will not be moved to <code>ReplicatedStorage</code> with the rest of the libraries. Instead, these libraries will be moved to folder <code>ServerStorage.Resources</code>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Internally, <code>LoadLibrary</code> caches and returns <code>require(Resources:GetLibrary(LibraryName))</code>. <code>GetLibrary</code> is the only function that can "retrieve" objects from both <code>ServerStorage</code> and <code>ReplicatedStorage</code>. This is because libraries are added directly to its cache.</p>
+<p>Internally, <code>LoadLibrary</code> caches and returns <code>require(Resources:GetLibrary(LibraryName))</code>. <code>GetLibrary</code> is the only function that can "retrieve" objects from both <code>ServerStorage</code> and <code>ReplicatedStorage</code>. This is because server libraries are added directly to its cache.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

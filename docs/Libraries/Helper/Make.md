@@ -14,6 +14,7 @@ Make("TextLabel"){
 }
 ```
 You can also create multiple instances at once. When you pass subsequent tables as parameters, the object created by the first table is Cloned and modified by the properties in its table. Each subsequent table generates a new instance.
+
 ```lua
 Make("TextLabel")({
     TextSize = 11;
