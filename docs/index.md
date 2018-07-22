@@ -1,6 +1,6 @@
 # RoStrap
 
-RoStrap is the name of the GitHub organization and resource management system designed to expidite game development on Roblox. It's main goals are to increase code reusability and simplify the networking of resources without penalty for not using features. It allows for easy access and installation of incredibly useful libraries.
+RoStrap is the name of the GitHub organization and resource management system designed to expedite game development on Roblox. It's main goals are to increase code reusability and simplify the networking of resources without penalty for not using features. It allows for easy access and installation of incredibly useful libraries.
 
 
 With the click of a button you can start using an optimized rewrite of the vanilla Lua `os.date` function:
