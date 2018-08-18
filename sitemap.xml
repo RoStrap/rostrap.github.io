@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://rostrap.github.io//</loc>
-     <lastmod>2018-07-21</lastmod>
+     <lastmod>2018-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>https://rostrap.github.io//Getting-Started/</loc>
-     <lastmod>2018-07-21</lastmod>
+     <lastmod>2018-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,7 +20,7 @@
     
     <url>
      <loc>https://rostrap.github.io//Resources/</loc>
-     <lastmod>2018-07-21</lastmod>
+     <lastmod>2018-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -29,7 +29,19 @@
         
     <url>
      <loc>https://rostrap.github.io//Libraries/</loc>
-     <lastmod>2018-07-21</lastmod>
+     <lastmod>2018-08-18</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://rostrap.github.io/</loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://rostrap.github.io/</loc>
+     <lastmod></lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -47,13 +59,7 @@
         
     <url>
      <loc>https://rostrap.github.io//Libraries/EvLightning/</loc>
-     <lastmod>2018-07-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://rostrap.github.io//Libraries/Debug/</loc>
-     <lastmod>2018-07-21</lastmod>
+     <lastmod>2018-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -89,13 +95,13 @@
         
     <url>
      <loc>https://rostrap.github.io//Libraries/Ready/</loc>
-     <lastmod>2018-07-21</lastmod>
+     <lastmod>2018-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://rostrap.github.io//Libraries/Sentry/</loc>
-     <lastmod>2018-07-21</lastmod>
+     <lastmod>2018-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -107,13 +113,7 @@
         
     <url>
      <loc>https://rostrap.github.io//Libraries/Try/</loc>
-     <lastmod>2018-07-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>https://rostrap.github.io/</loc>
-     <lastmod></lastmod>
+     <lastmod>2018-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -123,19 +123,19 @@
         
     <url>
      <loc>https://rostrap.github.io//Contributing/</loc>
-     <lastmod>2018-07-21</lastmod>
+     <lastmod>2018-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://rostrap.github.io//Contributing/Website/</loc>
-     <lastmod>2018-07-21</lastmod>
+     <loc>https://rostrap.github.io//Website/</loc>
+     <lastmod>2018-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>https://rostrap.github.io//Contributing/Image Standards/</loc>
-     <lastmod>2018-07-21</lastmod>
+     <loc>https://rostrap.github.io//Image Standards/</loc>
+     <lastmod>2018-08-18</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

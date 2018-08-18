@@ -60,3 +60,27 @@ local Janitor = Resources:LoadLibrary("Janitor")
 	Obliterator:Cleanup()
 	Obliterator()
 	```
+
+### Janitor:LinkToInstance
+
+!!! summary "<span style="color:purple;">RbxScriptConnection</span> Janitor:<span style="color:blue;">LinkToInstance</span>(<span style="color:green;">RbxObject</span> Instance [, <span style="color:teal;">boolean</span> AllowMultiple])"
+	"Links" this Janitor to an Instance, such that the Janitor will `Cleanup` when the Instance is `Destroyed()` and garbage collected. A Janitor may only be linked to one instance at a time, unless `AllowMultiple` is true.
+
+	When called with a truthy `AllowMultiple` parameter, the Janitor will "link" the Instance without overwriting any previous links, and will also not be overwritable. When called with a falsy `AllowMultiple` parameter, the Janitor will overwrite the previous link which was also called with a falsy `AllowMultiple` parameter, if applicable.
+
+!!! example
+	```lua
+	local Janitor = Janitor.new()
+
+	Janitor:Add(function()
+		print("Cleaning up!")
+	end)
+
+	do
+		local Folder = Instance.new("Folder")
+		Janitor:LinkToInstance(Folder)
+		Folder:Destroy()
+	end
+
+	-- Cleaning up!
+	```

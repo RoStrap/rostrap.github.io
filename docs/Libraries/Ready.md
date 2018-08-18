@@ -1,4 +1,4 @@
-# RbxReady
+# Ready
 A Library for yielding until an object's descendants have finished replicating. This is still imperfect, but it seems to be the best option if you want this kind of functionality.
 
 # Usage

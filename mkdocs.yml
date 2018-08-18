@@ -26,16 +26,22 @@ pages:
   - Getting Started: Getting-Started.md
   - Resources: Resources.md
   - Libraries:
-      - Introduction: Libraries/index.md
+      - Introduction: Libraries.md
       - Classes:
         - Enumeration: Libraries/Classes/Enumeration.md
         - PseudoInstance: Libraries/Classes/PseudoInstance.md
         - ReplicatedPseudoInstance: Libraries/Classes/ReplicatedPseudoInstance.md
+      - DataTypes:
+        - HTMLParser: Libraries/DataTypes/HTMLParser.md
+        - SortedArray: Libraries/DataTypes/SortedArray.md
+        - Table: Libraries/DataTypes/Table.md
+      - Debugging:
+        - Debug: Libraries/Debugging/Debug.md
+        - Typer: Libraries/Debugging/Typer.md
       - Events:
         - Janitor: Libraries/Events/Janitor.md
         - Signal: Libraries/Events/Signal.md
       - EvLightning: Libraries/EvLightning.md
-      - Debug: Libraries/Debug.md
       - Helper:
         - FastSpawn: Libraries/Helper/FastSpawn.md
         - Make: Libraries/Helper/Make.md
@@ -43,17 +49,21 @@ pages:
         - Keys: Libraries/Input/Keys.md
       - Interpolation:
         - Bezier: Libraries/Interpolation/Bezier.md
-        - Easing: Libraries/Interpolation/Easing.md
+        - EasingFunctions: Libraries/Interpolation/EasingFunctions.md
         - Lerps: Libraries/Interpolation/Lerps.md
         - Tween: Libraries/Interpolation/Tween.md
-      - Material:
-        - AsymmetricTransformation: Libraries/Material/AsymmetricTransformation.md
-        - RippleButton: Libraries/Material/RippleButton.md
-        - ChoiceDialog: Libraries/Material/ChoiceDialog.md
-        - Colors: Libraries/Material/Colors.md
-        - SelectionControl: Libraries/Material/SelectionControl.md
-        - Shadow: Libraries/Material/Shadow.md
-        - Snackbar: Libraries/Material/Snackbar.md
+      - RoStrapUI:
+        - AsymmetricTransformation: Libraries/RoStrapUI/AsymmetricTransformation.md
+        - Checkbox: Libraries/RoStrapUI/Checkbox.md
+        - ChoiceDialog: Libraries/RoStrapUI/ChoiceDialog.md
+        - Color: Libraries/RoStrapUI/Color.md
+        - Radio: Libraries/RoStrapUI/Radio.md
+        - RadioGroup: Libraries/RoStrapUI/RadioGroup.md
+        - RippleButton: Libraries/RoStrapUI/RippleButton.md
+        - Rippler: Libraries/RoStrapUI/Rippler.md
+        - SelectionController: Libraries/RoStrapUI/SelectionController.md
+        - Shadow: Libraries/RoStrapUI/Shadow.md
+        - Snackbar: Libraries/RoStrapUI/Snackbar.md
       - Math:
         - Leveler: Libraries/Math/Leveler.md
         - Normal: Libraries/Math/Normal.md
@@ -64,14 +74,10 @@ pages:
         - Date: Libraries/Time/Date.md
         - SyncedPoller: Libraries/Time/SyncedPoller.md
       - Try: Libraries/Try.md
-      - Utility:
-        - HTMLParser: Libraries/Utility/HTMLParser.md
-        - SortedArray: Libraries/Utility/SortedArray.md
-        - Table: Libraries/Utility/Table.md
   - Contributing:
-    - Information: Contributing/index.md
-    - Website: Contributing/Website.md
-    - Image Standards: Contributing/Image Standards.md
+    - Information: Contributing.md
+    - Website: Website.md
+    - Image Standards: Image Standards.md
 
 markdown_extensions:
   - attr_list

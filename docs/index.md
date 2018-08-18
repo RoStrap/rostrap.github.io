@@ -65,6 +65,6 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
 
 local Chatted = Resources:GetRemoteEvent("Chatted")
-local ClientLoaded = Resources:GetRemoteEvent("ClientLoaded")
+local ClientLoaded = Resources:GetRemoteFunction("ClientLoaded")
 ```
 ![](https://user-images.githubusercontent.com/15217173/38775951-d6bfbeee-404b-11e8-8396-9666a0b20b98.png)

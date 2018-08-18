@@ -47,6 +47,7 @@
 	```lua
 	local ReplicatedStorage = game:GetService("ReplicatedStorage")
 	local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
+	local Typer = Resources:LoadLibrary("Typer")
 	local Enumeration = Resources:LoadLibrary("Enumeration")
 	local PseudoInstance = Resources:LoadLibrary("PseudoInstance")
 
@@ -102,24 +103,22 @@
 		};
 
 		Properties = {
-			-- Can be set to a ValueType Enumeration for typechecking (see PseudoInstance Library)
-			Name = Enumeration.ValueType.String;
+			-- Can be set to a Typer value for typechecking
+			Name = Typer.String;
+
+			-- This is equivalent to the previous declaration
+			Name = Typer.AssignSignature(2, Typer.String, function(self, Value)
+				self:rawset("Name", Value)
+			end)
 
 			-- Can also be constrained to a certain EnumerationType
-			Style = Enumeration.PastaStyle;
+			Style = Typer.EnumerationOfTypePastaStyle;
 
 			Parent = function(self, Parent)
 				-- Always called with the Object and the Property value it is being set to
 
-				if Parent == true then
-					return true -- internally does self:rawset("Parent", Parent) afterwards
-				elseif Parent == nil then
-					return false -- errors from a bad set
-				else
-					self:rawset("Parent", Parent)
-
-					return -- Does nothing, everything should be implemented manually
-				end
+				-- Do stuff
+				self:rawset("Parent", Parent) -- Make sure to rawset the Property to what it should be
 			end;
 		};
 
