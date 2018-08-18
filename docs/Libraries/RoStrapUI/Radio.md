@@ -2,6 +2,13 @@
 
 Registers a Material Design Radio PseudoInstance which can be instantiated via `PseudoInstance.new("Radio")`
 
+<div align="center">
+	<video autoplay loop>
+	<source src="../../../assets/videos/RadioButtons.mp4" type="video/mp4">
+	</source>
+	</video>
+</div>
+
 ```lua
 local Resources = require(game:GetService("ReplicatedStorage"):WaitForChild("Resources"))
 local PsuedoInstance = Resources:LoadLibrary("PsuedoInstance")

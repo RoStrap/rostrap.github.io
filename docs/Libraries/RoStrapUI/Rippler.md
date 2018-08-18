@@ -32,3 +32,5 @@ Registers a Material Design Rippler PseudoInstance which can be instantiated via
 |RippleColor3|Color3|The Color of the Ripples|
 |RippleTransparency|number|The Transparency of the Ripples|
 |Container|GuiObject|The parent to which Ripples are Parented|
+
+When the `Style` is set to `Enumeration.RipplerStyle.Icon`, it will constrain the diameter of the Ripples to twice the height of the Container.

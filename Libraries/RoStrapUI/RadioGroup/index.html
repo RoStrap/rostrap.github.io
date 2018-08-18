@@ -883,6 +883,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1222,6 +1229,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#example" title="Example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1246,6 +1260,13 @@
                 
                 <h1 id="radiogroup">RadioGroup<a class="headerlink" href="#radiogroup" title="Permanent link">&para;</a></h1>
 <p>Registers a Material Design RadioGroup PseudoInstance which can be instantiated via <code>PseudoInstance.new(&quot;RadioGroup&quot;)</code>. It acts as an interface for a set of Radio elements.</p>
+<div align="center">
+    <video autoplay loop>
+    <source src="../../../assets/videos/RadioButtons.mp4" type="video/mp4">
+    </source>
+    </video>
+</div>
+
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
 <span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
 <span class="kd">local</span> <span class="n">PsuedoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PsuedoInstance&quot;</span><span class="p">)</span>
@@ -1278,6 +1299,51 @@
 </tr>
 </tbody>
 </table>
+<h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Players</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;Players&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
+
+<span class="kd">local</span> <span class="n">Color</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Color&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">LocalPlayer</span> <span class="kr">repeat</span> <span class="n">LocalPlayer</span> <span class="o">=</span> <span class="n">Players</span><span class="p">.</span><span class="n">LocalPlayer</span> <span class="kr">until</span> <span class="n">LocalPlayer</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">wait</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">PlayerGui</span> <span class="kr">repeat</span> <span class="n">PlayerGui</span> <span class="o">=</span> <span class="n">LocalPlayer</span><span class="p">:</span><span class="n">FindFirstChildOfClass</span><span class="p">(</span><span class="s2">&quot;PlayerGui&quot;</span><span class="p">)</span> <span class="kr">until</span> <span class="n">PlayerGui</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">wait</span><span class="p">()</span>
+
+<span class="kd">local</span> <span class="n">Screen</span> <span class="o">=</span> <span class="n">Instance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;ScreenGui&quot;</span><span class="p">,</span> <span class="n">PlayerGui</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Frame</span> <span class="o">=</span> <span class="n">Instance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Frame&quot;</span><span class="p">,</span> <span class="n">Screen</span><span class="p">)</span>
+<span class="n">Frame</span><span class="p">.</span><span class="n">BackgroundColor3</span> <span class="o">=</span> <span class="n">Color3</span><span class="p">.</span><span class="n">fromRGB</span><span class="p">(</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">Frame</span><span class="p">.</span><span class="n">BorderSizePixel</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">Frame</span><span class="p">.</span><span class="n">Size</span> <span class="o">=</span> <span class="n">UDim2</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Template</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Radio&quot;</span><span class="p">)</span>
+<span class="n">Template</span><span class="p">.</span><span class="n">AnchorPoint</span> <span class="o">=</span> <span class="n">Vector2</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<span class="n">Template</span><span class="p">.</span><span class="n">Theme</span> <span class="o">=</span> <span class="s2">&quot;Dark&quot;</span>
+
+<span class="kd">local</span> <span class="n">RadioGroup</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;RadioGroup&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Choice1</span> <span class="o">=</span> <span class="n">Template</span><span class="p">:</span><span class="n">Clone</span><span class="p">()</span>
+<span class="n">Choice1</span><span class="p">.</span><span class="n">PrimaryColor3</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Red</span><span class="p">[</span><span class="mi">500</span><span class="p">]</span>
+<span class="n">Choice1</span><span class="p">.</span><span class="n">Position</span> <span class="o">=</span> <span class="n">UDim2</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mi">32</span><span class="p">)</span>
+<span class="n">Choice1</span><span class="p">.</span><span class="n">Parent</span> <span class="o">=</span> <span class="n">Frame</span>
+
+<span class="kd">local</span> <span class="n">Choice2</span> <span class="o">=</span> <span class="n">Template</span><span class="p">:</span><span class="n">Clone</span><span class="p">()</span>
+<span class="n">Choice2</span><span class="p">.</span><span class="n">PrimaryColor3</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Yellow</span><span class="p">[</span><span class="mi">500</span><span class="p">]</span>
+<span class="n">Choice2</span><span class="p">.</span><span class="n">Position</span> <span class="o">=</span> <span class="n">UDim2</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">Choice2</span><span class="p">.</span><span class="n">Parent</span> <span class="o">=</span> <span class="n">Frame</span>
+
+<span class="kd">local</span> <span class="n">Choice3</span> <span class="o">=</span> <span class="n">Template</span><span class="p">:</span><span class="n">Clone</span><span class="p">()</span>
+<span class="n">Choice3</span><span class="p">.</span><span class="n">PrimaryColor3</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Green</span><span class="p">[</span><span class="mi">500</span><span class="p">]</span>
+<span class="n">Choice3</span><span class="p">.</span><span class="n">Position</span> <span class="o">=</span> <span class="n">UDim2</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">32</span><span class="p">)</span>
+<span class="n">Choice3</span><span class="p">.</span><span class="n">Parent</span> <span class="o">=</span> <span class="n">Frame</span>
+
+<span class="n">RadioGroup</span><span class="p">:</span><span class="n">Add</span><span class="p">(</span><span class="n">Choice1</span><span class="p">,</span> <span class="s2">&quot;Apples&quot;</span><span class="p">)</span>
+<span class="n">RadioGroup</span><span class="p">:</span><span class="n">Add</span><span class="p">(</span><span class="n">Choice2</span><span class="p">,</span> <span class="s2">&quot;Bananas&quot;</span><span class="p">)</span>
+<span class="n">RadioGroup</span><span class="p">:</span><span class="n">Add</span><span class="p">(</span><span class="n">Choice3</span><span class="p">,</span> <span class="s2">&quot;Carrots&quot;</span><span class="p">)</span>
+
+<span class="n">RadioGroup</span><span class="p">.</span><span class="n">SelectionChanged</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="nb">print</span><span class="p">)</span>
+</pre></div>
                 
                   
                 

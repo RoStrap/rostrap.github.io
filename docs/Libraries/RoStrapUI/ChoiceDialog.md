@@ -1,5 +1,7 @@
 # ChoiceDialog
 
+A two-step, single-choice Dialog with built-in Replication
+
 <div align="center">
 	<video autoplay loop>
 	<source src="../../../assets/videos/ChoiceDialog.mp4" type="video/mp4">
