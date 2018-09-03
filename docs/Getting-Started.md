@@ -13,7 +13,7 @@ Next, navigate to the `PLUGINS` tab. Click the RoStrap logo.
 
 ![](https://user-images.githubusercontent.com/15217173/40772147-d11332fc-6484-11e8-8448-c50c0ed9d3bc.png)
 
-The plugin will install the [Resources](https://github.com/RoStrap/Resources/blob/master/Resources.module.lua) library and create an example "Repository" folder in [ServerStorage](http://wiki.roblox.com/index.php?title=API:Class/ServerStorage) from which libraries may be loaded using `LoadLibrary`
+The plugin will install the [Resources](https://github.com/RoStrap/Resources/blob/master/Resources.lua) library and create an example "Repository" folder in [ServerStorage](http://wiki.roblox.com/index.php?title=API:Class/ServerStorage) from which libraries may be loaded using `LoadLibrary`
 
 !!! note ""
 	* Only [Folders](http://wiki.roblox.com/index.php?title=API:Class/Folder) and libraries should go in this repository.
