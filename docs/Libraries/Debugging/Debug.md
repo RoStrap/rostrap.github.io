@@ -25,7 +25,7 @@ local Debug = Resources:LoadLibrary("Debug")
 ### Debug.EscapeString
 
 !!! summary "<span style="color:purple;">string</span> Debug.<span style="color:blue;">EscapeString</span>(<span style="color:green;">string</span> String)"
-	Turns strings into Lua-readble format. Returns Objects location in proper Lua format. Useful for when you are doing string-intensive coding. Those minus signs are so tricky!
+	Turns strings into Lua-readable format. Returns Objects location in proper Lua format. Useful for when you are doing string-intensive coding. Those minus signs are so tricky!
 
 ### Debug.AlphabeticalOrder
 
