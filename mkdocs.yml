@@ -41,7 +41,6 @@ pages:
       - Events:
         - Janitor: Libraries/Events/Janitor.md
         - Signal: Libraries/Events/Signal.md
-      - EvLightning: Libraries/EvLightning.md
       - Helper:
         - FastSpawn: Libraries/Helper/FastSpawn.md
         - Make: Libraries/Helper/Make.md
@@ -68,7 +67,6 @@ pages:
         - Leveler: Libraries/Math/Leveler.md
         - Normal: Libraries/Math/Normal.md
         - WeightedProbabilityFunction: Libraries/Math/WeightedProbabilityFunction.md
-      - Ready: Libraries/Ready.md
       - Sentry: Libraries/Sentry.md
       - Time:
         - Date: Libraries/Time/Date.md
@@ -76,8 +74,8 @@ pages:
       - Try: Libraries/Try.md
   - Contributing:
     - Information: Contributing.md
-    - Website: Website.md
-    - Image Standards: Image Standards.md
+    - Website: Contributing/Website.md
+    - Image Standards: Contributing/Image Standards.md
 
 markdown_extensions:
   - attr_list
