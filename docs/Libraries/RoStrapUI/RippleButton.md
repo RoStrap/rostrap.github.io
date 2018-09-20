@@ -52,7 +52,7 @@ Properties which access its Shadow:
 #### RippleButton Properties
 |Property|Type|Description|
 |:-:|:-:|:-:|
-|Disabled|Boolean|Whether the Radio is Disabled|
+|Disabled|Boolean|Whether the RippleButton is Disabled|
 |Tooltip|string|The tip to display upon hover, with "" being the disabled value|
 |BorderRadius|Enumeration.BorderRadius|How rounded the corners should be (0, 2, 4, or 8)|
 |Style|Enumeration.ButtonStyle|"Flat", "Outlined", or "Contained" style|

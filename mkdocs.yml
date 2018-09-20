@@ -13,7 +13,7 @@ theme:
   favicon: 'assets/images/RoStrap.png'
   palette:
     primary: 'Teal'
-    accent: 'Pink'
+    accent: 'Red'
   feature:
     tabs: true
   language: 'en'
@@ -21,7 +21,7 @@ theme:
     text: 'Roboto'
     code: 'Roboto Mono'
 
-pages:
+nav:
   - Introduction: index.md
   - Getting Started: Getting-Started.md
   - Resources: Resources.md
@@ -32,6 +32,7 @@ pages:
         - PseudoInstance: Libraries/Classes/PseudoInstance.md
         - ReplicatedPseudoInstance: Libraries/Classes/ReplicatedPseudoInstance.md
       - DataTypes:
+        - Array: Libraries/DataTypes/Array.md
         - HTMLParser: Libraries/DataTypes/HTMLParser.md
         - SortedArray: Libraries/DataTypes/SortedArray.md
         - Table: Libraries/DataTypes/Table.md
