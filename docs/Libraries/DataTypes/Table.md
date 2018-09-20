@@ -1,5 +1,7 @@
 # Table
 
+A few utility functions which operate on Tables. Purposefully light.
+
 ## Library API
 ### Table.Move
 

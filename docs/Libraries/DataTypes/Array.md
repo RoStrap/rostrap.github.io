@@ -1,15 +1,15 @@
 # Array
 
-A few utility functions which can operate on Arrays.
+A few utility functions which can operate on Arrays. Purposefully light.
 
 ## Library API
 
 ### Array.Flatten
 
-!!! summary "<span style="color:purple;">array</span>&nbsp;Array&period;<span style="color:blue;">Flatten</span>&lpar;<span style="color:green;">array</span>&nbsp;a1&rpar;"
+!!! summary "<span style="color:purple;">a1</span>&nbsp;Array&period;<span style="color:blue;">Flatten</span>&lpar;<span style="color:green;">array</span>&nbsp;a1&rpar;"
 	Takes in an array, a1, which may have arrays inside of it.
 	Unpacks all arrays in their proper place into a1.
-	Returns a1
+	Returns a1.
 
 !!! example
 	```lua
