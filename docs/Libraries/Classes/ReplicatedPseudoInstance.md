@@ -3,7 +3,11 @@
 !!! summary
 	A ReplicatedPseudoInstance is an Instance which, when instantiated on the server, has built-in replication. While the parent is set to `Workspace`, `ReplicatedStorage`, or descendants of these, or set to `Players`, it will be Replicated to all players (including those who join the server later). If it is parented to an individual player or a descendant of an individual Player, it will replicate solely to that Player.
 
-	Instances which are replicated to one or more players are sent to Players via a ClassName, an Id, and a dictionary of properties. If a property changes on the server, clients will be sent that update and will update their local version of the instance with the new property. Events which are fired on the client (by replicating instances originating from the server) are automatically fired on the server via a RemoteEvent.
+	If a property changes on the server, clients will be sent the new property's value and update their local version of the instance with the new property.
+
+	Events which are fired on the client (by replicating instances originating from the server) are automatically fired on the server via a RemoteEvent.
+
+	Currently, ReplicatedPseudoInstances which are Destroyed on the server do not have their destruction replicated. This behavior will be implemented in the future, however it is currently unnecessary as `ChoiceDialog` is the only RoStrap ReplicatedPseudoInstance. Feel free to submit a PR
 
 !!! warning
 	In order for replication to work, the `ReplicatedPseudoInstance` library **must** be loaded on the client.

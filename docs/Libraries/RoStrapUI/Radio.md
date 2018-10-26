@@ -11,7 +11,7 @@ Registers a Material Design Radio PseudoInstance which can be instantiated via `
 
 ```lua
 local Resources = require(game:GetService("ReplicatedStorage"):WaitForChild("Resources"))
-local PsuedoInstance = Resources:LoadLibrary("PsuedoInstance")
+local PsuedoInstance = Resources:LoadLibrary("PseudoInstance")
 local Radio = PseudoInstance.new("Radio")
 ```
 

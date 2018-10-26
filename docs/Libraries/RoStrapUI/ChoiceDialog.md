@@ -1,6 +1,6 @@
 # ChoiceDialog
 
-A two-step, single-choice Dialog with built-in Replication
+A two-step, single-choice Dialog with built-in Replication.
 
 <div align="center">
 	<video autoplay loop>
@@ -8,6 +8,19 @@ A two-step, single-choice Dialog with built-in Replication
 	</source>
 	</video>
 </div>
+
+This library registers a Material Design RadioGroup PseudoInstance which can be instantiated via `PseudoInstance.new("ChoiceDialog")`.
+
+```lua
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
+local PsuedoInstance = Resources:LoadLibrary("PseudoInstance")
+local ChoiceDialog = PseudoInstance.new("ChoiceDialog")
+```
+
+## ChoiceDialog API
+
+ChoiceDialog inherits from [ReplicatedPseudoInstance](../../Classes/ReplicatedPseudoInstance)
 
 ## Demo
 ```lua
@@ -18,12 +31,12 @@ A two-step, single-choice Dialog with built-in Replication
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
 
-Resources:LoadLibrary("ReplicatedPseudoInstance")
-
 local Color = Resources:LoadLibrary("Color")
 local PseudoInstance = Resources:LoadLibrary("PseudoInstance")
 
-local PrimaryColor3 = Color.Teal[500]
+Resources:LoadLibrary("ReplicatedPseudoInstance")
+
+local PrimaryColor3 = Color.Teal[500] -- This is just a Color3 value
 
 local Dialog = PseudoInstance.new("ChoiceDialog")
 Dialog.HeaderText = "Repository Location"

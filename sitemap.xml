@@ -2,217 +2,217 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://rostrap.github.io/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Getting-Started/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Resources/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Classes/Enumeration/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Classes/PseudoInstance/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Classes/ReplicatedPseudoInstance/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/DataTypes/Array/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/DataTypes/HTMLParser/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/DataTypes/SortedArray/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/DataTypes/Table/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Debugging/Debug/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Debugging/Typer/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Events/Janitor/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Events/Signal/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Helper/FastSpawn/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Helper/Make/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Input/Keys/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Interpolation/Bezier/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Interpolation/EasingFunctions/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Interpolation/Lerps/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Interpolation/Tween/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/AsymmetricTransformation/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/Checkbox/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/ChoiceDialog/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/Color/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/Radio/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/RadioGroup/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/RippleButton/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/Rippler/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/SelectionController/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/Shadow/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/RoStrapUI/Snackbar/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Math/Leveler/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Math/Normal/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Math/WeightedProbabilityFunction/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Sentry/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Time/Date/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Time/SyncedPoller/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Libraries/Try/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Contributing/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Contributing/Website/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://rostrap.github.io/Contributing/Image Standards/</loc>
-     <lastmod>2018-09-20</lastmod>
+     <lastmod>2018-10-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
