@@ -14,7 +14,7 @@ This library registers a Material Design RadioGroup PseudoInstance which can be 
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
-local PsuedoInstance = Resources:LoadLibrary("PseudoInstance")
+local PseudoInstance = Resources:LoadLibrary("PseudoInstance")
 local ChoiceDialog = PseudoInstance.new("ChoiceDialog")
 ```
 
