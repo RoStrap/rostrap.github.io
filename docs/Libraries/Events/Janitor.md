@@ -16,8 +16,8 @@ local Janitor = Resources:LoadLibrary("Janitor")
 
 ### Janitor:Add
 
-!!! summary "<span style="color:purple;">void</span> Janitor:<span style="color:blue;">Add</span>(<span style="color:green;">any</span> Object, <<span style="color:teal;">string</span>, <span style="color:green;">true</span>> MethodName = "Destroy" [, <span style="color:green;">string</span> Index])"
-	Adds an `Object` to Janitor for later cleanup, where `MethodName` is the key of the method within `Object` which should be called at cleanup time. If the `MethodName` is `true` the `Object` itself will be called instead. If passed an index it will occupy a namespace which can be Remove()d or overwritten.
+!!! summary "<span style="color:green;">any</span> Janitor:<span style="color:blue;">Add</span>(<span style="color:green;">any</span> Object, <<span style="color:teal;">string</span>, <span style="color:green;">true</span>> MethodName = "Destroy" [, <span style="color:green;">string</span> Index])"
+	Adds an `Object` to Janitor for later cleanup, where `MethodName` is the key of the method within `Object` which should be called at cleanup time. If the `MethodName` is `true` the `Object` itself will be called instead. If passed an index it will occupy a namespace which can be Remove()d or overwritten. Returns the Object.
 
 !!! example
 	```lua
