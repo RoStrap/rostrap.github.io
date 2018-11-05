@@ -1305,8 +1305,8 @@
 <h2 id="janitor-api">Janitor API<a class="headerlink" href="#janitor-api" title="Permanent link">&para;</a></h2>
 <h3 id="janitoradd">Janitor:Add<a class="headerlink" href="#janitoradd" title="Permanent link">&para;</a></h3>
 <div class="admonition summary">
-<p class="admonition-title"><span style="color:purple;">void</span> Janitor:<span style="color:blue;">Add</span>(<span style="color:green;">any</span> Object, &lt;<span style="color:teal;">string</span>, <span style="color:green;">true</span>&gt; MethodName = "Destroy" [, <span style="color:green;">string</span> Index])</p>
-<p>Adds an <code>Object</code> to Janitor for later cleanup, where <code>MethodName</code> is the key of the method within <code>Object</code> which should be called at cleanup time. If the <code>MethodName</code> is <code>true</code> the <code>Object</code> itself will be called instead. If passed an index it will occupy a namespace which can be Remove()d or overwritten.</p>
+<p class="admonition-title"><span style="color:green;">any</span> Janitor:<span style="color:blue;">Add</span>(<span style="color:green;">any</span> Object, &lt;<span style="color:teal;">string</span>, <span style="color:green;">true</span>&gt; MethodName = "Destroy" [, <span style="color:green;">string</span> Index])</p>
+<p>Adds an <code>Object</code> to Janitor for later cleanup, where <code>MethodName</code> is the key of the method within <code>Object</code> which should be called at cleanup time. If the <code>MethodName</code> is <code>true</code> the <code>Object</code> itself will be called instead. If passed an index it will occupy a namespace which can be Remove()d or overwritten. Returns the Object.</p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
