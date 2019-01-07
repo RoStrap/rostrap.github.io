@@ -9,7 +9,7 @@ A two-step, single-choice Dialog with built-in Replication.
 	</video>
 </div>
 
-This library registers a Material Design RadioGroup PseudoInstance which can be instantiated via `PseudoInstance.new("ChoiceDialog")`.
+This library registers a Material Design `ChoiceDialog` PseudoInstance which can be instantiated via `PseudoInstance.new("ChoiceDialog")`.
 
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
@@ -22,8 +22,27 @@ local ChoiceDialog = PseudoInstance.new("ChoiceDialog")
 
 ChoiceDialog inherits from [ReplicatedPseudoInstance](../../Classes/ReplicatedPseudoInstance)
 
+### Fields
+
+|Property|Type|Description|
+|:-:|:-:|:-:|
+|PrimaryColor3|Color3|The color of the radio/ripple buttons|
+|Options|array of strings|The options presented|
+|HeaderText|string|The Dialog title|
+|DismissText|string|The Dismiss text (the left button)|
+|ConfirmText|string|The Confirm text (the right button)|
+
+### Events
+
+|Event|Description|Signature|
+|:-:|:-:|:-:|
+|OnConfirmed|Fires after the ChoiceDialog was Confirmed/Dismissed: if confirmed, passes in string `OptionChosen`|(Player Player, string Choice)|
+
 ## Demo
 ```lua
+-- This code is valid on the client and server
+-- Just make sure that both call `Resources:LoadLibrary("ReplicatedPseudoInstance")`
+
 -- If this is in a Script, it will Replicate this ChoiceDialog to every
 -- Player in the game and everyone who joins
 -- If this is in a LocalScript, it will generate it on the client only

@@ -65,6 +65,7 @@ nav:
         - Shadow: Libraries/RoStrapUI/Shadow.md
         - Snackbar: Libraries/RoStrapUI/Snackbar.md
       - Math:
+        - BigNum: Libraries/Math/BigNum.md
         - Leveler: Libraries/Math/Leveler.md
         - Normal: Libraries/Math/Normal.md
         - WeightedProbabilityFunction: Libraries/Math/WeightedProbabilityFunction.md

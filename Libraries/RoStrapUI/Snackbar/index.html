@@ -104,6 +104,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="../../../#snackbar" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -894,10 +898,61 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Snackbar
+      </label>
     
     <a href="./" title="Snackbar" class="md-nav__link md-nav__link--active">
       Snackbar
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#snackbar-api" title="Snackbar API" class="md-nav__link">
+    Snackbar API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields" title="Fields" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" title="Events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -925,6 +980,18 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Math/BigNum/" title="BigNum" class="md-nav__link">
+      BigNum
+    </a>
+  </li>
+
         
           
           
@@ -1111,15 +1178,167 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#snackbar-api" title="Snackbar API" class="md-nav__link">
+    Snackbar API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields" title="Fields" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" title="Events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Snackbar</h1>
-                
-                <p>WIP</p>
+                <h1 id="snackbar">Snackbar<a class="headerlink" href="#snackbar" title="Permanent link">&para;</a></h1>
+<p>A <a href="https://material.io/design/components/snackbars.html#">Snackbar</a> is a light-weight feedback bar appearing from the bottom of the screen. This implementation has built-in replication.</p>
+<div align="center">
+    <video autoplay loop>
+    <source src="../../../assets/videos/Snackbar.mp4" type="video/mp4">
+    </source>
+    </video>
+</div>
+
+<p>This library registers a Material Design <code>Snackbar</code> PseudoInstance which can be instantiated via <code>PseudoInstance.new(&quot;Snackbar&quot;)</code>.</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
+<span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Snackbar</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Snackbar&quot;</span><span class="p">)</span>
+</pre></div>
+
+<h2 id="snackbar-api">Snackbar API<a class="headerlink" href="#snackbar-api" title="Permanent link">&para;</a></h2>
+<p>Snackbar inherits from <a href="../../Classes/ReplicatedPseudoInstance">ReplicatedPseudoInstance</a>.</p>
+<p>Only one can be present on the screen at once.</p>
+<h3 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Property</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Text</td>
+<td align="center">string</td>
+<td align="center">The main text of the snackbar (required)</td>
+</tr>
+<tr>
+<td align="center">ActionText</td>
+<td align="center">string</td>
+<td align="center">The text on the button. <code>&quot;&quot;</code> will remove the button</td>
+</tr>
+</tbody>
+</table>
+<h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Event</th>
+<th align="center">Description</th>
+<th align="center">Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">OnAction</td>
+<td align="center">Fires after the Action button on the Snackbar was pressed</td>
+<td align="center">(Player Player)</td>
+</tr>
+</tbody>
+</table>
+<p>Video Demo code:
+<div class="codehilite"><pre><span></span><span class="c1">-- This code is valid on the client and server</span>
+<span class="c1">-- Just make sure that both call `Resources:LoadLibrary(&quot;ReplicatedPseudoInstance&quot;)`</span>
+
+<span class="kd">local</span> <span class="n">Players</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;Players&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
+
+<span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">ReplicatedPseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;ReplicatedPseudoInstance&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Color</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Color&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Snackbar</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Snackbar&quot;</span><span class="p">)</span>
+<span class="n">Snackbar</span><span class="p">.</span><span class="n">ActionText</span> <span class="o">=</span> <span class="s2">&quot;CANCEL&quot;</span>
+<span class="n">Snackbar</span><span class="p">.</span><span class="n">OnAction</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Canceled!&quot;</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">)</span>
+
+<span class="c1">-- If this is in a Script, it will Replicate this ChoiceDialog to every</span>
+<span class="c1">-- Player in the game and everyone who joins</span>
+<span class="c1">-- If this is in a LocalScript, it will generate it on the client only</span>
+
+<span class="kd">local</span> <span class="n">PrimaryColor3</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Teal</span><span class="p">[</span><span class="mi">500</span><span class="p">]</span> <span class="c1">-- This is just a Color3 value</span>
+
+<span class="kd">local</span> <span class="n">Dialog</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;ChoiceDialog&quot;</span><span class="p">)</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">HeaderText</span> <span class="o">=</span> <span class="s2">&quot;Repository Location&quot;</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">Options</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;ServerStorage&quot;</span><span class="p">,</span> <span class="s2">&quot;ServerScriptService&quot;</span><span class="p">}</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">DismissText</span> <span class="o">=</span> <span class="s2">&quot;CANCEL&quot;</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">ConfirmText</span> <span class="o">=</span> <span class="s2">&quot;INSTALL&quot;</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">PrimaryColor3</span> <span class="o">=</span> <span class="n">PrimaryColor3</span>
+
+<span class="n">Dialog</span><span class="p">.</span><span class="n">OnConfirmed</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">Player</span><span class="p">,</span> <span class="n">Choice</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Player</span><span class="p">,</span> <span class="n">Choice</span><span class="p">)</span>
+    <span class="n">Snackbar</span><span class="p">.</span><span class="n">Text</span> <span class="o">=</span> <span class="s2">&quot;Chosen: &quot;</span> <span class="o">..</span> <span class="n">Choice</span>
+    <span class="n">Snackbar</span><span class="p">.</span><span class="n">Parent</span> <span class="o">=</span> <span class="n">Player</span>
+
+    <span class="kr">if</span> <span class="n">Choice</span> <span class="kr">then</span>
+        <span class="c1">-- Choice is a string of the option they chose</span>
+    <span class="kr">else</span>
+        <span class="c1">-- They chose Dismiss, so Choice is false</span>
+    <span class="kr">end</span>
+<span class="kr">end</span><span class="p">)</span>
+
+<span class="n">Dialog</span><span class="p">.</span><span class="n">Parent</span> <span class="o">=</span> <span class="n">ReplicatedStorage</span>
+</pre></div></p>
                 
                   
                 
@@ -1155,13 +1374,13 @@
           </a>
         
         
-          <a href="../../Math/Leveler/" title="Leveler" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Math/BigNum/" title="BigNum" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Leveler
+                BigNum
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

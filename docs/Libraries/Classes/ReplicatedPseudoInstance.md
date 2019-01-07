@@ -7,7 +7,9 @@
 
 	Events which are fired on the client (by replicating instances originating from the server) are automatically fired on the server via a RemoteEvent.
 
-	Currently, ReplicatedPseudoInstances which are Destroyed on the server do not have their destruction replicated. This behavior will be implemented in the future, however it is currently unnecessary as `ChoiceDialog` is the only RoStrap ReplicatedPseudoInstance. Feel free to submit a PR
+	ReplicatedPseudoInstances which are Destroyed on the server have their destruction replicated.
+
+	Inherits from [PseudoInstance](../PseudoInstance)
 
 !!! warning
 	In order for replication to work, the `ReplicatedPseudoInstance` library **must** be loaded on the client.

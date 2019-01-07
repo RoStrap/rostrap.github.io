@@ -828,6 +828,26 @@
     ChoiceDialog API
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields" title="Fields" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" title="Events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -967,6 +987,18 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Math/BigNum/" title="BigNum" class="md-nav__link">
+      BigNum
+    </a>
+  </li>
+
         
           
           
@@ -1171,6 +1203,26 @@
     ChoiceDialog API
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields" title="Fields" class="md-nav__link">
+    Fields
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#events" title="Events" class="md-nav__link">
+    Events
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1206,7 +1258,7 @@
     </video>
 </div>
 
-<p>This library registers a Material Design RadioGroup PseudoInstance which can be instantiated via <code>PseudoInstance.new(&quot;ChoiceDialog&quot;)</code>.</p>
+<p>This library registers a Material Design <code>ChoiceDialog</code> PseudoInstance which can be instantiated via <code>PseudoInstance.new(&quot;ChoiceDialog&quot;)</code>.</p>
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
 <span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
 <span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
@@ -1215,8 +1267,65 @@
 
 <h2 id="choicedialog-api">ChoiceDialog API<a class="headerlink" href="#choicedialog-api" title="Permanent link">&para;</a></h2>
 <p>ChoiceDialog inherits from <a href="../../Classes/ReplicatedPseudoInstance">ReplicatedPseudoInstance</a></p>
+<h3 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Property</th>
+<th align="center">Type</th>
+<th align="center">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">PrimaryColor3</td>
+<td align="center">Color3</td>
+<td align="center">The color of the radio/ripple buttons</td>
+</tr>
+<tr>
+<td align="center">Options</td>
+<td align="center">array of strings</td>
+<td align="center">The options presented</td>
+</tr>
+<tr>
+<td align="center">HeaderText</td>
+<td align="center">string</td>
+<td align="center">The Dialog title</td>
+</tr>
+<tr>
+<td align="center">DismissText</td>
+<td align="center">string</td>
+<td align="center">The Dismiss text (the left button)</td>
+</tr>
+<tr>
+<td align="center">ConfirmText</td>
+<td align="center">string</td>
+<td align="center">The Confirm text (the right button)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="center">Event</th>
+<th align="center">Description</th>
+<th align="center">Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">OnConfirmed</td>
+<td align="center">Fires after the ChoiceDialog was Confirmed/Dismissed: if confirmed, passes in string <code>OptionChosen</code></td>
+<td align="center">(Player Player, string Choice)</td>
+</tr>
+</tbody>
+</table>
 <h2 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><span class="c1">-- If this is in a Script, it will Replicate this ChoiceDialog to every</span>
+<div class="codehilite"><pre><span></span><span class="c1">-- This code is valid on the client and server</span>
+<span class="c1">-- Just make sure that both call `Resources:LoadLibrary(&quot;ReplicatedPseudoInstance&quot;)`</span>
+
+<span class="c1">-- If this is in a Script, it will Replicate this ChoiceDialog to every</span>
 <span class="c1">-- Player in the game and everyone who joins</span>
 <span class="c1">-- If this is in a LocalScript, it will generate it on the client only</span>
 

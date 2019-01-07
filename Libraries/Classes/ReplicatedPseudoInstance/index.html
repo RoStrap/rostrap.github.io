@@ -938,6 +938,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../Math/BigNum/" title="BigNum" class="md-nav__link">
+      BigNum
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../Math/Leveler/" title="Leveler" class="md-nav__link">
       Leveler
     </a>
@@ -1144,7 +1156,8 @@
 <p>A ReplicatedPseudoInstance is an Instance which, when instantiated on the server, has built-in replication. While the parent is set to <code>Workspace</code>, <code>ReplicatedStorage</code>, or descendants of these, or set to <code>Players</code>, it will be Replicated to all players (including those who join the server later). If it is parented to an individual player or a descendant of an individual Player, it will replicate solely to that Player.</p>
 <p>If a property changes on the server, clients will be sent the new property's value and update their local version of the instance with the new property.</p>
 <p>Events which are fired on the client (by replicating instances originating from the server) are automatically fired on the server via a RemoteEvent.</p>
-<p>Currently, ReplicatedPseudoInstances which are Destroyed on the server do not have their destruction replicated. This behavior will be implemented in the future, however it is currently unnecessary as <code>ChoiceDialog</code> is the only RoStrap ReplicatedPseudoInstance. Feel free to submit a PR</p>
+<p>ReplicatedPseudoInstances which are Destroyed on the server have their destruction replicated.</p>
+<p>Inherits from <a href="../PseudoInstance">PseudoInstance</a></p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>

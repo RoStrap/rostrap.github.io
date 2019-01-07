@@ -169,3 +169,23 @@
 		MyInstance:Set(true)
 	end)) -- Set does not exist externally
 	```
+
+## PseudoInstance API
+
+|Properties|type|
+|:-:|:-:|
+|Archivable|Boolean|
+|Parent|OptionalInstance|
+|Name|String|
+|ClassName|*read-only* String|
+
+|Methods|
+|:-:|
+|Clone|
+|GetFullName|
+|IsDescendantOf|
+|GetPropertyChangedSignal|
+|FindFirstChild|
+|GetChildren|
+|IsA|
+|Destroy|
