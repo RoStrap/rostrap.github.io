@@ -1152,53 +1152,35 @@
 <span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
 <span class="kd">local</span> <span class="n">Date</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Date&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">Date</span><span class="p">(</span><span class="s2">&quot;!%c&quot;</span><span class="p">,</span> <span class="n">tick</span><span class="p">()))</span> <span class="c1">-- Thu Jan 31 08:55:48 2020</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Date</span><span class="p">(</span><span class="s2">&quot;!%c&quot;</span><span class="p">,</span> <span class="n">tick</span><span class="p">()))</span> <span class="c1">--&gt; Thu Jan 31 08:55:48 2020</span>
 </pre></div>
 
-<p>Or use a beautiful Choice Dialog:</p>
+<p>Gain access to a variety of beautiful Material Design elements, like the <a href="../Libraries/RoStrapUI/ChoiceDialog">Choice Dialog</a>:</p>
 <div align="center">
-    <video autoplay loop>
+    <video muted autoplay loop>
     <source src="assets/videos/ChoiceDialog.mp4" type="video/mp4">
     </source>
     </video>
 </div>
 
-<div class="codehilite"><pre><span></span><span class="c1">-- If this is in a Script, it will Replicate this ChoiceDialog to every</span>
-<span class="c1">-- Player in the game and everyone who joins</span>
-<span class="c1">-- If this is in a LocalScript, it will generate it on the client only</span>
+<p>Or some very clickable Material Design <a href="../Libraries/RoStrapUI/RippleButton">RippleButtons</a>, <a href="../Libraries/RoStrapUI/Checkbox">Checkboxes</a>, and <a href="../Libraries/RoStrapUI/Radio">Radio buttons</a>:</p>
+<div align="center">
+    <video muted autoplay loop height=200>
+        <source src="assets/videos/RippleButton.mp4" type="video/mp4">
+        </source>
+    </video>
+    <video muted autoplay loop height=200>
+        <source src="assets/videos/Checkboxes.mp4" type="video/mp4">
+        </source>
+    </video>
+    <video muted autoplay loop height=200>
+        <source src="assets/videos/RadioButtons.mp4" type="video/mp4">
+        </source>
+    </video>
+</div>
 
-<span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
-<span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
-
-<span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;ReplicatedPseudoInstance&quot;</span><span class="p">)</span>
-
-<span class="kd">local</span> <span class="n">Color</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Color&quot;</span><span class="p">)</span>
-<span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
-
-<span class="kd">local</span> <span class="n">PrimaryColor3</span> <span class="o">=</span> <span class="n">Color</span><span class="p">.</span><span class="n">Teal</span><span class="p">[</span><span class="mi">500</span><span class="p">]</span>
-
-<span class="kd">local</span> <span class="n">Dialog</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;ChoiceDialog&quot;</span><span class="p">)</span>
-<span class="n">Dialog</span><span class="p">.</span><span class="n">HeaderText</span> <span class="o">=</span> <span class="s2">&quot;Repository Location&quot;</span>
-<span class="n">Dialog</span><span class="p">.</span><span class="n">Options</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;ServerStorage&quot;</span><span class="p">,</span> <span class="s2">&quot;ServerScriptService&quot;</span><span class="p">}</span>
-<span class="n">Dialog</span><span class="p">.</span><span class="n">DismissText</span> <span class="o">=</span> <span class="s2">&quot;CANCEL&quot;</span>
-<span class="n">Dialog</span><span class="p">.</span><span class="n">ConfirmText</span> <span class="o">=</span> <span class="s2">&quot;INSTALL&quot;</span>
-<span class="n">Dialog</span><span class="p">.</span><span class="n">PrimaryColor3</span> <span class="o">=</span> <span class="n">PrimaryColor3</span>
-
-<span class="n">Dialog</span><span class="p">.</span><span class="n">OnConfirmed</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">Player</span><span class="p">,</span> <span class="n">Choice</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">Player</span><span class="p">,</span> <span class="n">Choice</span><span class="p">)</span>
-
-    <span class="kr">if</span> <span class="n">Choice</span> <span class="kr">then</span>
-        <span class="c1">-- Choice is a string of the option they chose</span>
-    <span class="kr">else</span>
-        <span class="c1">-- They chose Dismiss, so Choice is false</span>
-    <span class="kr">end</span>
-<span class="kr">end</span><span class="p">)</span>
-
-<span class="n">Dialog</span><span class="p">.</span><span class="n">Parent</span> <span class="o">=</span> <span class="n">ReplicatedStorage</span>
-</pre></div>
-
-<p>Or manage your RemoteEvents and RemoteFunctions!
-<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
+<p>RoStrap's central library, <a href="../Resources">Resources</a>, can also be used to manage your RemoteEvents and RemoteFunctions!</p>
+<p><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
 <span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
 
 <span class="kd">local</span> <span class="n">Chatted</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">GetRemoteEvent</span><span class="p">(</span><span class="s2">&quot;Chatted&quot;</span><span class="p">)</span>

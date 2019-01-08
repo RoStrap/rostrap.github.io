@@ -1309,10 +1309,9 @@
 <p class="admonition-title">Info</p>
 <p>Internally, <code>LoadLibrary</code> caches and returns <code>require(Resources:GetLibrary(LibraryName))</code>. <code>GetLibrary</code> is the only function that can "retrieve" objects from both <code>ServerStorage</code> and <code>ReplicatedStorage</code>. This is because server libraries are added directly to its cache.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Libraries will not be moved into <code>ReplicatedStorage</code> in Play-Solo (to allow for editing libraries during Play-Solo).</p>
-</div>
+<!-- !!! note
+    Libraries will not be moved into `ReplicatedStorage` in Play-Solo (to allow for editing libraries during Play-Solo). -->
+
 <h2 id="api">API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h2>
 <p>All methods of <a href="https://github.com/RoStrap/Resources/blob/master/Resources.lua">Resources</a> have hybrid syntax, meaning they can be called using either a <code>:</code> or <code>.</code></p>
 <h3 id="loadlibrary">LoadLibrary<a class="headerlink" href="#loadlibrary" title="Permanent link">&para;</a></h3>
