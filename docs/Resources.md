@@ -19,8 +19,8 @@ Upon being [required](http://wiki.roblox.com/index.php?title=Global_namespace/Ro
 !!! info
 	Internally, `LoadLibrary` caches and returns `require(Resources:GetLibrary(LibraryName))`. `GetLibrary` is the only function that can "retrieve" objects from both `ServerStorage` and `ReplicatedStorage`. This is because server libraries are added directly to its cache.
 
-!!! note
-	Libraries will not be moved into `ReplicatedStorage` in Play-Solo (to allow for editing libraries during Play-Solo).
+<!-- !!! note
+	Libraries will not be moved into `ReplicatedStorage` in Play-Solo (to allow for editing libraries during Play-Solo). -->
 
 ## API
 All methods of [Resources](https://github.com/RoStrap/Resources/blob/master/Resources.lua) have hybrid syntax, meaning they can be called using either a `:` or `.`
