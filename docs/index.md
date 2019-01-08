@@ -12,10 +12,10 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
 local Date = Resources:LoadLibrary("Date")
 
-print(Date("!%c", tick())) -- Thu Jan 31 08:55:48 2020
+print(Date("!%c", tick())) --> Thu Jan 31 08:55:48 2020
 ```
 
-Or use a beautiful Choice Dialog:
+Gain access to a variety of beautiful Material Design elements, like the [Choice Dialog](../Libraries/RoStrapUI/ChoiceDialog):
 
 <div align="center">
 	<video autoplay loop>
@@ -24,42 +24,25 @@ Or use a beautiful Choice Dialog:
 	</video>
 </div>
 
-```lua
--- If this is in a Script, it will Replicate this ChoiceDialog to every
--- Player in the game and everyone who joins
--- If this is in a LocalScript, it will generate it on the client only
+Or some very clickable Material Design [RippleButtons](../Libraries/RoStrapUI/RippleButton), [Checkboxes](../Libraries/RoStrapUI/Checkbox), and [Radio buttons](../Libraries/RoStrapUI/Radio):
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
-
-Resources:LoadLibrary("ReplicatedPseudoInstance")
-
-local Color = Resources:LoadLibrary("Color")
-local PseudoInstance = Resources:LoadLibrary("PseudoInstance")
-
-local PrimaryColor3 = Color.Teal[500]
-
-local Dialog = PseudoInstance.new("ChoiceDialog")
-Dialog.HeaderText = "Repository Location"
-Dialog.Options = {"ServerStorage", "ServerScriptService"}
-Dialog.DismissText = "CANCEL"
-Dialog.ConfirmText = "INSTALL"
-Dialog.PrimaryColor3 = PrimaryColor3
-
-Dialog.OnConfirmed:Connect(function(Player, Choice)
-	print(Player, Choice)
-
-	if Choice then
-		-- Choice is a string of the option they chose
-	else
-		-- They chose Dismiss, so Choice is false
-	end
-end)
-
-Dialog.Parent = ReplicatedStorage
-```
+<div align="center">
+	<video autoplay loop height=200>
+		<source src="assets/videos/RippleButton.mp4" type="video/mp4">
+		</source>
+	</video>
+	<video autoplay loop height=200>
+		<source src="assets/videos/Checkboxes.mp4" type="video/mp4">
+		</source>
+	</video>
+	<video autoplay loop height=200>
+		<source src="assets/videos/RadioButtons.mp4" type="video/mp4">
+		</source>
+	</video>
+</div>
 
 Or manage your RemoteEvents and RemoteFunctions!
+
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
