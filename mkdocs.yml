@@ -33,7 +33,6 @@ nav:
         - ReplicatedPseudoInstance: Libraries/Classes/ReplicatedPseudoInstance.md
       - DataTypes:
         - Array: Libraries/DataTypes/Array.md
-        - HTMLParser: Libraries/DataTypes/HTMLParser.md
         - SortedArray: Libraries/DataTypes/SortedArray.md
         - Table: Libraries/DataTypes/Table.md
       - Debugging:

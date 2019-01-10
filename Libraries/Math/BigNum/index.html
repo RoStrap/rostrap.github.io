@@ -459,18 +459,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../DataTypes/HTMLParser/" title="HTMLParser" class="md-nav__link">
-      HTMLParser
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../DataTypes/SortedArray/" title="SortedArray" class="md-nav__link">
       SortedArray
     </a>
@@ -978,6 +966,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#bignumnewfraction" title="BigNum.newFraction" class="md-nav__link">
+    BigNum.newFraction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#bignumgetrange" title="BigNum:GetRange" class="md-nav__link">
     BigNum:GetRange
   </a>
@@ -1012,6 +1007,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#bignumtoconstantform" title="BigNum:toConstantForm" class="md-nav__link">
+    BigNum:toConstantForm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#bignumstringify" title="BigNum:stringify" class="md-nav__link">
     BigNum:stringify
   </a>
@@ -1020,6 +1022,40 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bignumfraction-api" title="BigNumFraction API" class="md-nav__link">
+    BigNumFraction API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bignumfractionreduce" title="BigNumFraction:Reduce" class="md-nav__link">
+    BigNumFraction:Reduce
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bignumfractiontoscientificnotation" title="BigNumFraction:toScientificNotation" class="md-nav__link">
+    BigNumFraction:toScientificNotation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" title="Demo" class="md-nav__link">
+    Demo
+  </a>
   
 </li>
       
@@ -1269,6 +1305,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#bignumnewfraction" title="BigNum.newFraction" class="md-nav__link">
+    BigNum.newFraction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#bignumgetrange" title="BigNum:GetRange" class="md-nav__link">
     BigNum:GetRange
   </a>
@@ -1303,6 +1346,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#bignumtoconstantform" title="BigNum:toConstantForm" class="md-nav__link">
+    BigNum:toConstantForm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#bignumstringify" title="BigNum:stringify" class="md-nav__link">
     BigNum:stringify
   </a>
@@ -1311,6 +1361,40 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bignumfraction-api" title="BigNumFraction API" class="md-nav__link">
+    BigNumFraction API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bignumfractionreduce" title="BigNumFraction:Reduce" class="md-nav__link">
+    BigNumFraction:Reduce
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bignumfractiontoscientificnotation" title="BigNumFraction:toScientificNotation" class="md-nav__link">
+    BigNumFraction:toScientificNotation
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" title="Demo" class="md-nav__link">
+    Demo
+  </a>
   
 </li>
       
@@ -1352,7 +1436,7 @@
 <span class="c1">--&gt; 1250212389547080859766804627957328989496357747253559363</span>
 </pre></div>
 
-<p>The BigNum library utilizes Lua's doubles to hold place values, called "radix" (similar to digits but in a different base). Each double represents a single "radix" of the BigNum. By default, the BigNum library instantiates BigNums with 32 radix (256 bytes) to do calculations. This is big enough for numbers as large as <code>7.76e230</code>. If you need integers higher than that, simply pass in how many doubles it should allocate.</p>
+<p>The BigNum library utilizes Lua's doubles to hold place values, called "radix" (similar to digits but in a different base). Each double represents a single "radix" of the BigNum. By default, the BigNum library instantiates BigNums with 32 radix (256 bytes) to do calculations. This is big enough for numbers as large as <code>7.76e230</code> (see <code>BigNum:GetRange()</code>). If you need integers higher than that, simply pass in how many doubles it should allocate.</p>
 <div class="codehilite"><pre><span></span><span class="c1">-- Explicitly allocate 128 doubles (1024 bytes) for each BigNum</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">BigNum</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;8&quot;</span><span class="p">,</span> <span class="mi">128</span><span class="p">)</span> <span class="o">^</span> <span class="n">BigNum</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;900&quot;</span><span class="p">,</span> <span class="mi">128</span><span class="p">))</span>
 </pre></div>
@@ -1361,6 +1445,7 @@
 <div class="codehilite"><pre><span></span><span class="n">BigNum</span><span class="p">:</span><span class="n">SetDefaultRadix</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span>
 </pre></div>
 
+<p>The library also ships with a data type called BigNumFractions, which can be used for exact calculations with Fractions.</p>
 <h2 id="library-api">Library API<a class="headerlink" href="#library-api" title="Permanent link">&para;</a></h2>
 <h3 id="bignumnew">BigNum.new<a class="headerlink" href="#bignumnew" title="Permanent link">&para;</a></h3>
 <div class="admonition summary">
@@ -1371,6 +1456,11 @@
 <div class="admonition summary">
 <p class="admonition-title"><span style="color:purple;">BigNum</span>&nbsp;BigNum&period;<span style="color:blue;">fromString64</span>&lpar;<span style="color:green;">string</span>&nbsp;Base64String&rpar;</p>
 <p>Meant to instantiate BigNums from strings returned via the <code>toString64</code> method.</p>
+</div>
+<h3 id="bignumnewfraction">BigNum.newFraction<a class="headerlink" href="#bignumnewfraction" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title"><span style="color:purple;">BigNumFraction</span>&nbsp;BigNum&period;<span style="color:blue;">newFraction</span>&lpar;<span style="color:green;">BigNum</span>&nbsp;Numerator&comma;&nbsp;<span style="color:teal;">BigNum</span>&nbsp;Denominator&rpar;</p>
+<p>Instantiates a new Fraction in the form <code>(Numerator / Denominator)</code></p>
 </div>
 <h3 id="bignumgetrange">BigNum:GetRange<a class="headerlink" href="#bignumgetrange" title="Permanent link">&para;</a></h3>
 <div class="admonition summary">
@@ -1393,6 +1483,7 @@
 <p class="admonition-title"><span style="color:purple;">string</span>&nbsp;BigNum&colon;<span style="color:blue;">toString64</span>&lpar;&rpar;</p>
 <p>Returns a string-base64 encoding of the BigNum, which can be reproduced using <code>BigNum.fromString64</code></p>
 </div>
+<h3 id="bignumtoconstantform">BigNum:toConstantForm<a class="headerlink" href="#bignumtoconstantform" title="Permanent link">&para;</a></h3>
 <div class="admonition summary">
 <p class="admonition-title"><span style="color:purple;">void</span>&nbsp;BigNum&colon;<span style="color:blue;">toConstantForm</span>&lpar;<span style="color:green;">integer</span>&nbsp;<span style="color:teal;">NumberOfDoublesPerLine</span>&nbsp;&equals;&nbsp;16&rpar;</p>
 <p>Creates a file (or on Roblox, a script in the Lighting) with a constant representation of the BigNum. This is useful for directly instantiating BigNums with Big values which would take a lot of processing at run-time to convert from a base10 string to the internal representation.</p>
@@ -1408,6 +1499,37 @@
 <p class="admonition-title"><span style="color:purple;">string</span>&nbsp;BigNum&colon;<span style="color:blue;">stringify</span>&lpar;&rpar;</p>
 <p>Returns a representation of the internal format of how BigNums are stored in their array.</p>
 </div>
+<h2 id="bignumfraction-api">BigNumFraction API<a class="headerlink" href="#bignumfraction-api" title="Permanent link">&para;</a></h2>
+<h3 id="bignumfractionreduce">BigNumFraction:Reduce<a class="headerlink" href="#bignumfractionreduce" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title"><span style="color:purple;">BigNumFraction</span>&nbsp;BigNumFraction&colon;<span style="color:blue;">Reduce</span>&lpar;&rpar;</p>
+<p>Reduces the Fraction and returns it.</p>
+</div>
+<h3 id="bignumfractiontoscientificnotation">BigNumFraction:toScientificNotation<a class="headerlink" href="#bignumfractiontoscientificnotation" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title"><span style="color:purple;">string</span>&nbsp;BigNumFraction&colon;<span style="color:blue;">toScientificNotation</span>&lpar;<span style="color:green;">integer</span>&nbsp;<span style="color:teal;">NumDigitsAfterDecimalPoint</span>&nbsp;&equals;&nbsp;2&rpar;</p>
+<p>Returns a string representation of the Fraction in scientific notation with the given number of digits after the decimal. If there aren't enough digits to format it will just return the unformatted string.</p>
+</div>
+<h2 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h2>
+<p>Here the library is used to calculate the <a href="https://en.wikipedia.org/wiki/Birthday_problem">Birthday problem</a>.</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">BigNum</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;BigNum&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">_1</span> <span class="o">=</span> <span class="n">BigNum</span><span class="p">.</span><span class="n">newFraction</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">DaysInYear</span> <span class="o">=</span> <span class="n">BigNum</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;365&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">BirthdayProblem</span><span class="p">(</span><span class="n">NumPeople</span><span class="p">)</span>
+    <span class="kd">local</span> <span class="n">Chance</span> <span class="o">=</span> <span class="n">BigNum</span><span class="p">.</span><span class="n">newFraction</span><span class="p">(</span><span class="n">DaysInYear</span><span class="p">,</span> <span class="n">DaysInYear</span><span class="p">)</span>
+
+    <span class="kr">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="n">NumPeople</span> <span class="kr">do</span>
+        <span class="n">Chance</span> <span class="o">=</span> <span class="n">Chance</span> <span class="o">*</span> <span class="n">BigNum</span><span class="p">.</span><span class="n">newFraction</span><span class="p">(</span><span class="n">DaysInYear</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">),</span> <span class="n">DaysInYear</span><span class="p">)</span>
+    <span class="kr">end</span>
+
+    <span class="kr">return</span> <span class="n">_1</span> <span class="o">-</span> <span class="n">Chance</span>
+<span class="kr">end</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">BirthdayProblem</span><span class="p">(</span><span class="mi">70</span><span class="p">):</span><span class="n">toScientificNotation</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+<span class="c1">--&gt; 2.291582e179 / 2.293509e179</span>
+</pre></div>
+
 <h2 id="writing-optimal-code-with-bignum">Writing Optimal Code with BigNum<a class="headerlink" href="#writing-optimal-code-with-bignum" title="Permanent link">&para;</a></h2>
 <p>Sometimes, you will need to perform a massive calculation which might take up too much time to calculate on Roblox without having the thread scheduler cut you off.</p>
 <p>What follows is a list of what this library is optimized for and what this library is slow at.</p>
