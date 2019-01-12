@@ -1,5 +1,5 @@
-# Sentry
-A library for reporting errors/warnings/messages to your [Sentry](https://sentry.io) account
+# [Sentry](https://github.com/RoStrap/Sentry)
+A library for reporting errors/warnings/messages to your [Sentry account](https://sentry.io).
 
 ![](https://sentry.io/_assets/og/default-ece813046f72308a5f52e8ed4f5ff498920320ef76bbad88df5d1de0469cb185.jpg)
 

@@ -1,4 +1,4 @@
-# Make
+# [Make](https://github.com/RoStrap/Helper/blob/master/Make.lua)
 Shorthand for instance declarations.
 
 You probably shouldn't use this function, but if you really really like it, here it is.

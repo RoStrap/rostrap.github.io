@@ -1,4 +1,4 @@
-# Keys
+# [Keys](https://github.com/RoStrap/Input/blob/master/Keys.lua)
 A light-weight library for simplifying Key input.
 ## API
 ### Keys

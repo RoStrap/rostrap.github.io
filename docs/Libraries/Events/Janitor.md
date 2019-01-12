@@ -1,4 +1,4 @@
-# Janitor
+# [Janitor](https://github.com/RoStrap/Events/blob/master/Janitor.lua)
 Light-weight, flexible object for cleaning up connections, instances, or anything. This implementation covers all use cases, as it doesn't force you to rely on naive typechecking to guess how an instance should be cleaned up. Instead, the developer may specify any behavior for any object.
 
 ```lua

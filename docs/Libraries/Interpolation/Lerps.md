@@ -1,4 +1,4 @@
-# Lerps
+# [Lerps](https://github.com/RoStrap/Interpolation/blob/master/Lerps.lua)
 
 Holds all Lerp functions for Roblox objects, with a special color lerping function by Fractality.
 

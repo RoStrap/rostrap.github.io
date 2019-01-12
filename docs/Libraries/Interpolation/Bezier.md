@@ -1,5 +1,7 @@
-# Bezier Module
+# [Bezier](https://github.com/RoStrap/Interpolation/blob/master/Bezier.lua)
+
 Used to create Bezier functions.
+
 ## API
 ```lua
 local EasingFunc = Bezier.new(0.17, 0.67, 0.83, 0.67)

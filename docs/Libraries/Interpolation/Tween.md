@@ -1,4 +1,4 @@
-# Tween
+# [Tween](https://github.com/RoStrap/Interpolation/blob/master/Tween.lua)
 RoStrap's premier Tween Module built for Roblox. Allows you to write interpolation code faster with a clear and simple API.
 
 ## Declaration

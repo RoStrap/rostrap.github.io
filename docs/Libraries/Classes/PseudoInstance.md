@@ -1,4 +1,4 @@
-# PseudoInstance
+# [PseudoInstance](https://github.com/RoStrap/Classes/blob/master/PseudoInstance.lua)
 
 !!! summary
 	Rigidly defined PseudoInstance class system based upon Roblox Instances. The goal is to create encapsulated instances whose state is simply a function of its externally accessible properties. In other words, a cloned instance should render exactly the same as the original instance.

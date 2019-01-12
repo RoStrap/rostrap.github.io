@@ -937,9 +937,71 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Leveler
+      </label>
+    
     <a href="./" title="Leveler" class="md-nav__link md-nav__link--active">
       Leveler
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#library-api" title="Library API" class="md-nav__link">
+    Library API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#levelernew" title="Leveler.new" class="md-nav__link">
+    Leveler.new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leveler-api" title="Leveler API" class="md-nav__link">
+    Leveler API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#leveleraward" title="Leveler:Award" class="md-nav__link">
+    Leveler:Award
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1127,6 +1189,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#library-api" title="Library API" class="md-nav__link">
+    Library API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#levelernew" title="Leveler.new" class="md-nav__link">
+    Leveler.new
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#leveler-api" title="Leveler API" class="md-nav__link">
+    Leveler API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#leveleraward" title="Leveler:Award" class="md-nav__link">
+    Leveler:Award
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1138,20 +1249,57 @@
               
                 
                 
-                <h1 id="leveler">Leveler<a class="headerlink" href="#leveler" title="Permanent link">&para;</a></h1>
-<p>Level and Experience class. WIP documentation:</p>
-<p><code>table Leveler.new(number PointsToStartWith or 0)</code>
-Creates a <code>Leveler</code> object with the following API</p>
-<p><code>Leveler:Award(Points)</code>
-The amount of points to add to <code>Total</code></p>
+                <h1 id="leveler"><a href="https://github.com/RoStrap/Math/blob/master/Leveler.lua">Leveler</a><a class="headerlink" href="#leveler" title="Permanent link">&para;</a></h1>
+<p>Level and Experience class.</p>
+<h2 id="library-api">Library API<a class="headerlink" href="#library-api" title="Permanent link">&para;</a></h2>
+<h3 id="levelernew">Leveler.new<a class="headerlink" href="#levelernew" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title"><span style="color:purple;">LevelerObject</span>&nbsp;Leveler&period;<span style="color:blue;">new</span>&lpar;<span style="color:green;">number</span>&nbsp;<span style="color:teal;">PointsToStartWith</span>&nbsp;&equals;&nbsp;0&rpar;</p>
+<p>Returns a Leveler Object.</p>
+</div>
+<h2 id="leveler-api">Leveler API<a class="headerlink" href="#leveler-api" title="Permanent link">&para;</a></h2>
+<h3 id="leveleraward">Leveler:Award<a class="headerlink" href="#leveleraward" title="Permanent link">&para;</a></h3>
+<div class="admonition summary">
+<p class="admonition-title"><span style="color:orange;">self</span>&nbsp;Leveler&colon;<span style="color:blue;">Award</span>&lpar;<span style="color:green;">number</span>&nbsp;<span style="color:teal;">Points</span>&nbsp;&equals;&nbsp;1&rpar;</p>
+<p>Awards Points to Leveler, recalculating its Fields.</p>
+</div>
 <p>Fields:</p>
-<ul>
-<li><code>Total</code>: Total Exp</li>
-<li><code>Lvl</code>: Current level</li>
-<li><code>Exp</code>: Current Exp within level</li>
-<li><code>Next</code>: Total Exp required to advance from this level to the next level</li>
-<li><code>Percent</code>: decimal progress to next level</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Field</th>
+<th align="center">Description</th>
+<th align="center">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Total</td>
+<td align="center">Total Exp</td>
+<td align="center">number</td>
+</tr>
+<tr>
+<td align="center">Lvl</td>
+<td align="center">Current level</td>
+<td align="center">number</td>
+</tr>
+<tr>
+<td align="center">Exp</td>
+<td align="center">Current Exp within level</td>
+<td align="center">number</td>
+</tr>
+<tr>
+<td align="center">Next</td>
+<td align="center">Total Exp required to advance from this level to the next level</td>
+<td align="center">number</td>
+</tr>
+<tr>
+<td align="center">Percent</td>
+<td align="center">Decimal progress to next level</td>
+<td align="center">number</td>
+</tr>
+</tbody>
+</table>
 <p>Run this little demo and you will learn everything you need to know.
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="nb">require</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">):</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">)).</span><span class="n">LoadLibrary</span>
 <span class="kd">local</span> <span class="n">Leveler</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;Leveler&quot;</span><span class="p">)</span>

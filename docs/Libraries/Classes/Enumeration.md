@@ -1,4 +1,4 @@
-# Enumeration
+# [Enumeration](https://github.com/RoStrap/Classes/blob/master/Enumeration.lua)
 
 Pure-lua Enumeration implementation that function identically to Roblox Enums, except one may declare their own. Enumerations are a set of named reference constants for when a value must be a discrete value from a list. For example:
 

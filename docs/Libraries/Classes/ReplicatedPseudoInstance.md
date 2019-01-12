@@ -1,4 +1,4 @@
-# ReplicatedPseudoInstance
+# [ReplicatedPseudoInstance](https://github.com/RoStrap/Classes/blob/master/ReplicatedPseudoInstance.lua)
 
 !!! summary
 	A ReplicatedPseudoInstance is an Instance which, when instantiated on the server, has built-in replication. While the parent is set to `Workspace`, `ReplicatedStorage`, or descendants of these, or set to `Players`, it will be Replicated to all players (including those who join the server later). If it is parented to an individual player or a descendant of an individual Player, it will replicate solely to that Player.

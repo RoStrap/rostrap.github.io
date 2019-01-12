@@ -1,4 +1,4 @@
-# SyncedPoller
+# [SyncedPoller](https://github.com/RoStrap/Time/blob/master/SyncedPoller.lua)
 Calls functions on an interval along `os.time` (for cross-server simultaneous calls)
 
 ```lua

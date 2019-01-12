@@ -1,4 +1,4 @@
-# ChoiceDialog
+# [ChoiceDialog](https://github.com/RoStrap/RoStrapUI/blob/master/ChoiceDialog.lua)
 
 A two-step, single-choice Dialog with built-in Replication.
 

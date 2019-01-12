@@ -1,4 +1,4 @@
-# Array
+# [Array](https://github.com/RoStrap/DataTypes/blob/master/Array.lua)
 
 A few utility functions which can operate on Arrays. Purposefully light.
 

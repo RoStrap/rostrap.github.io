@@ -1,4 +1,4 @@
-# Typer
+# [Typer](https://github.com/RoStrap/Debugging/blob/master/Typer.lua)
 Type Checker and Function Signature Assigner
 
 ## Library API

@@ -1,4 +1,4 @@
-# Checkbox
+# [Checkbox](https://github.com/RoStrap/RoStrapUI/blob/master/Checkbox.lua)
 
 Registers a Material Design Checkbox PseudoInstance which can be instantiated via `PseudoInstance.new("Checkbox")`
 

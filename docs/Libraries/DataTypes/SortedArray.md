@@ -1,4 +1,4 @@
-# SortedArray
+# [SortedArray](https://github.com/RoStrap/DataTypes/blob/master/SortedArray.lua)
 A class to create sorted arrays. Must contain objects comparable to one another (that can use the `<` and `==` operators). Numbers and strings support these operators by default.
 ```lua
 local ReplicatedStorage = game:GetService("ReplicatedStorage")

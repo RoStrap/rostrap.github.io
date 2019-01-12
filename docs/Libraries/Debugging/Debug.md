@@ -1,4 +1,4 @@
-# Debug
+# [Debug](https://github.com/RoStrap/Debugging/blob/master/Debug.lua)
 Standard RoStrap debugging library. Contains better error/warn functions and an implementation of `TableToString`.
 
 ```lua

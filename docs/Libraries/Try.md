@@ -1,4 +1,4 @@
-# Try
+# [Try](https://github.com/Validark/RBX-Try-Library/tree/patch-4)
 (DEPRECATED) An asynchronous pcall-wrapper library for controlling the flow of error-prone, interdependent functions.
 
 ## How to use

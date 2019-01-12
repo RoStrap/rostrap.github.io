@@ -1,4 +1,4 @@
-# WeightedProbabilityFunction
+# [WeightedProbabilityFunction](https://github.com/RoStrap/Math/blob/master/WeightedProbabilityFunction.lua)
 
 A syntactically pleasing way of creating functions which randomly pick an option based upon its relative probability
 

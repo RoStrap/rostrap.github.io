@@ -1,4 +1,4 @@
-# BigNum
+# [BigNum](https://github.com/RoStrap/Math/blob/master/BigNum.lua)
 
 A BigNum with Fractions implementation for big-integer calculations, optimized for DataStore storage and networking.
 

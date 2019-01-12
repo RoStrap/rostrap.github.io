@@ -1,4 +1,4 @@
-# Table
+# [Table](https://github.com/RoStrap/DataTypes/blob/master/Table.lua)
 
 A few utility functions which operate on Tables. Purposefully light.
 

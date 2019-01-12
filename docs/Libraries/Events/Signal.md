@@ -1,4 +1,4 @@
-# Signal
+# [Signal](https://github.com/RoStrap/Events/blob/master/Signal.lua)
 
 !!! summary
 	A class for creating API-compatible Roblox Events

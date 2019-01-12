@@ -1,6 +1,6 @@
 # Overview
 
-What follows is an overview of the libraries RoStrap provides:
+What follows is an overview of the [libraries installable by RoStrap](https://github.com/RoStrap/Libraries/blob/master/Libraries.lua):
 
 ## RoStrap-owned Libraries
 #### Classes
