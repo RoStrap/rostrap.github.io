@@ -178,8 +178,6 @@ print(Date("ISO 8601: %FT%T%#z")) --> ISO 8601: 2020-12-31T01:03:05-05:00
 
 #### Sentry
 <h6><a href="../Libraries/Sentry">Sentry</a> - A library for reporting errors/warnings/messages to your <a href="https://sentry.io">Sentry account</a></h6>
-
-#### Try
 <h6><a href="../Libraries/Try">Try</a> - (DEPRECATED in favor of Promise) An asynchronous pcall-wrapper library for controlling the flow of error-prone, interdependent functions.</h6>
 
 ## Roblox-owned Libraries
