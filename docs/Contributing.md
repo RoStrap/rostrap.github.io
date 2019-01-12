@@ -2,11 +2,11 @@
 If you wish to contribute a Library, simply submit a pull request to [Libraries.lua](https://github.com/RoStrap/Libraries/blob/master/Libraries.lua). Simply insert a new table with fields `URL` (you can leave off https://github.com) and an optional `Description` and you are good to go!
 
 ## Library Standards
-Libraries contributed to RoStrap must be useful, reusable, and reasonably universal. The code must be stable, maintained, readable, and speedy. It must have a readme or documentation website that clearly outlines its use and includes functioning demo code. Images help.
+Libraries contributed to RoStrap must be useful, reusable, and reasonably universal. The code must be stable, maintained, readable, and speedy. It must have a readme or documentation website that clearly outlines its use and includes functioning demo code. Images/Videos help.
 
-Submitted Libraries may be subject to code review.
+Submitted Libraries may or may not be subject to code review.
 
-All images must meet the [image standards]()
+All images must meet the [image standards](../Contributing/ImageStandards)
 
 # Plugin
 The following documentation outlines how the plugin works its magic.
@@ -31,3 +31,13 @@ local require = Resources.LoadLibrary -- You can localize LoadLibrary
 local Tween = require("Tween") -- Either of these work
 local Maid = Resources:LoadLibrary('Maid')
 ```
+
+## RoStrap Discord
+
+Questions? Comments? Concerns? Join us!
+
+<div align="left">
+	<a href="https://discord.gg/pjJw8s4">
+		<img src="https://discordapp.com/assets/94db9c3c1eba8a38a1fcf4f223294185.png" alt="Discord" width=200 height=68 />
+	</a>
+</div>

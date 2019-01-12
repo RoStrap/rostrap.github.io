@@ -2,7 +2,7 @@
 
 What follows is an overview of the [libraries installable by RoStrap](https://github.com/RoStrap/Libraries/blob/master/Libraries.lua):
 
-## RoStrap-owned Libraries
+## RoStrap-owned Libraries by category
 #### Classes
 <h6><a href="../Libraries/Classes/Enumeration">Enumeration</a> - A Lua implementation of Roblox Enums with the ability to declare new ones</h6>
 
@@ -210,3 +210,13 @@ print(Date("ISO 8601: %FT%T%#z")) --> ISO 8601: 2020-12-31T01:03:05-05:00
 <h6><a href="https://github.com/RoStrap/Events/blob/master/ReplicatedValue.lua">ReplicatedValue</a> - A server-authoritative value replicated across the network</h6>
 
 <h6><a href="https://github.com/RoStrap/Math/blob/master/Spring.lua">Spring</a> - Simulates the motion of a critically damped spring</h6>
+
+## RoStrap Discord
+
+<h6>Questions? Comments? Concerns? Join us!</h6>
+
+<div align="left">
+	<a href="https://discord.gg/pjJw8s4">
+		<img src="https://discordapp.com/assets/94db9c3c1eba8a38a1fcf4f223294185.png" alt="Discord" width=200 height=68 />
+	</a>
+</div>

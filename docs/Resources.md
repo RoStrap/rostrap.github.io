@@ -158,3 +158,13 @@ The following is the internal call tree. Keep in mind that these functions cache
 	-- Resources uses this table to cache LoadLibrary results
 	local LoadedLibraries = Resources:GetLocalTable("LoadedLibraries")
 	```
+
+## RoStrap Discord
+
+Questions? Comments? Concerns? Join us!
+
+<div align="left">
+	<a href="https://discord.gg/pjJw8s4">
+		<img src="https://discordapp.com/assets/94db9c3c1eba8a38a1fcf4f223294185.png" alt="Discord" width=200 height=68 />
+	</a>
+</div>
