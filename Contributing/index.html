@@ -1097,6 +1097,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-to-package-libraries" title="How to Package Libraries" class="md-nav__link">
+    How to Package Libraries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rostrap-discord" title="RoStrap Discord" class="md-nav__link">
+    RoStrap Discord
+  </a>
+  
+</li>
+      
       
       
       
@@ -1164,6 +1185,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-to-package-libraries" title="How to Package Libraries" class="md-nav__link">
+    How to Package Libraries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rostrap-discord" title="RoStrap Discord" class="md-nav__link">
+    RoStrap Discord
+  </a>
+  
+</li>
+      
       
       
       
@@ -1186,14 +1228,9 @@
 <h2 id="library-standards">Library Standards<a class="headerlink" href="#library-standards" title="Permanent link">&para;</a></h2>
 <p>Libraries contributed to RoStrap must be useful, reusable, and reasonably universal. The code must be stable, maintained, readable, and speedy. It must have a readme or documentation website that clearly outlines its use and includes functioning demo code. Images/Videos help.</p>
 <p>Submitted Libraries may or may not be subject to code review.</p>
-<p>All images must meet the <a href="../Contributing/ImageStandards">image standards</a></p>
-<h1 id="plugin">Plugin<a class="headerlink" href="#plugin" title="Permanent link">&para;</a></h1>
-<p>The following documentation outlines how the plugin works its magic.</p>
-<h2 id="library-discrimination">Library Discrimination<a class="headerlink" href="#library-discrimination" title="Permanent link">&para;</a></h2>
-<p>When the RoStrap plugin sees your <code>URL</code> within <a href="https://github.com/RoStrap/Libraries/blob/master/Libraries.lua">Libraries.lua</a>, it will figure out how many Libraries exist within the directory located at the <code>URL</code> (which can be a link to a single file). If Lua files are descendants of another Lua file, they will be considered a single Library. Find the definition of a Library <a href="https://github.com/RoStrap/Resources#library">here</a>.</p>
-<p>To indicate to the plugin's installer that a Lua file is a descendant of another, simply make a folder with the name of the parent Lua file, and place the parent Lua file inside with the name "init" (or "main" or "_"). Here is <a href="https://github.com/evaera/EvLightning">an example of a single Library that has ModuleScripts within it.</a></p>
-<p>Folders containing multiple Lua files with names containing the name of a ancestor folder will also be considered a single installable-package by the plugin. Examples of this to come.</p>
-<p>Libraries that should be installed and packaged differently from all of the already-integrated Libraries may require adjustment on the Plugin's part. In this case, do what makes the most sense for your GitHub repository or consider adding fields to the <a href="https://github.com/RoStrap/Libraries/blob/master/Libraries.lua">Libraries table</a> and the installer will be adjusted.</p>
+<p>All images must meet the <a href="../Contributing/Image Standards">image standards</a></p>
+<h2 id="how-to-package-libraries">How to Package Libraries<a class="headerlink" href="#how-to-package-libraries" title="Permanent link">&para;</a></h2>
+<p>To indicate to the plugin's installer that a Lua file is a descendant of another, simply make a folder with the name of the parent Lua file, and place the parent Lua file inside with the name "init" (or "main" or "_"). Here is <a href="https://github.com/evaera/EvLightning">an example of a single Library that has ModuleScripts within it using this method.</a></p>
 <h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h2>
 <p>Dependencies are detected by the plugin using <a href="https://github.com/RoStrap/Libraries/blob/GetDeps/GetDependencies.ignore.lua">this handy script</a>. It can detect from the following source code that <code>Tween</code> and <code>Maid</code> are the names a Library will need to have installed in order to work. If your source code intends to rely on dependencies from the RoStrap system, <a href="https://github.com/RoStrap/Libraries/blob/GetDeps/GetDependencies.ignore.lua">the detection script</a> <em>must</em> be able to successfully determine the dependencies of your Libraries.</p>
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span> <span class="c1">-- You have to use game:GetService</span>
