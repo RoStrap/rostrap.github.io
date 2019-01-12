@@ -1,5 +1,5 @@
 # Date
-Time and Date formatter mimicking the vanilla `os.date` function.
+A reimplementation of the vanilla Lua os.date function built upon the one exposed by RobloxLua
 
 ```lua
 local Date = Resources:LoadLibrary("Date")

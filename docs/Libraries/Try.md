@@ -1,5 +1,5 @@
 # Try
-An asynchronous pcall-wrapper library for controlling the flow of error-prone, interdependent functions.
+(DEPRECATED) An asynchronous pcall-wrapper library for controlling the flow of error-prone, interdependent functions.
 
 ## How to use
 Upon requiring the Library, it returns a function called Try:

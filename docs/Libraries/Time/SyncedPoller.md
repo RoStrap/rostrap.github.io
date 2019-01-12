@@ -1,5 +1,5 @@
 # SyncedPoller
-Polling synced to `os.time()`
+Calls functions on an interval along `os.time` (for cross-server simultaneous calls)
 
 ```lua
 local Resources = require(game:GetService("ReplicatedStorage"):WaitForChild("Resources"))

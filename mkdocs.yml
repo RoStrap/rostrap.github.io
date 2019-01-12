@@ -26,7 +26,7 @@ nav:
   - Getting Started: Getting-Started.md
   - Resources: Resources.md
   - Libraries:
-      - Introduction: Libraries.md
+      - Overview: Libraries.md
       - Classes:
         - Enumeration: Libraries/Classes/Enumeration.md
         - PseudoInstance: Libraries/Classes/PseudoInstance.md

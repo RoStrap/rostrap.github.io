@@ -1,5 +1,5 @@
 # Debug
-Standard RoStrap debugging library
+Standard RoStrap debugging library. Contains better error/warn functions and an implementation of `TableToString`.
 
 ```lua
 local Debug = Resources:LoadLibrary("Debug")

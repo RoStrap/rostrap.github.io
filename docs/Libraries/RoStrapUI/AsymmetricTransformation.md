@@ -1,5 +1,6 @@
 # AsymmetricTransformation
-Transform function for Paper
+
+Transform function for Paper from the Material Design specifications
 
 `AsymmetricTransformation(GuiObject Button, UDim2 EndSize)`
 

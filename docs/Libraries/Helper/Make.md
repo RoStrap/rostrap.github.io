@@ -1,5 +1,5 @@
 # Make
-A shortcut function for creating instances
+Shorthand for instance declarations.
 
 You probably shouldn't use this function, but if you really really like it, here it is.
 ```lua

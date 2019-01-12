@@ -1,4 +1,7 @@
 # WeightedProbabilityFunction
+
+A syntactically pleasing way of creating functions which randomly pick an option based upon its relative probability
+
 Example:
 ```lua
 local require = require(game:GetService("ReplicatedStorage"):WaitForChild("Resources")).LoadLibrary

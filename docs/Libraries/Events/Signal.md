@@ -1,7 +1,7 @@
 # Signal
 
 !!! summary
-	A class to create API-compatible Roblox Events
+	A class for creating API-compatible Roblox Events
 
 	This new version originally designed by Anaminus addresses two flaws in previous implementations:
 

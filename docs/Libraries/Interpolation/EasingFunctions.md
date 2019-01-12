@@ -1,5 +1,7 @@
 # EasingFunctions
 
+A bunch of reuseable Easing Functions, including those from the Material Design specification ([Standard, Acceleration, and Deceleration](https://material.io/design/motion/speed.html#easing))
+
 These are the available EasingFunctions:
 
 |   Directionless  |     In    |     Out    |     InOut    |     OutIn    |

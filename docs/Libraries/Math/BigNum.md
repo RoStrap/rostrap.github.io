@@ -1,6 +1,6 @@
 # BigNum
 
-A library for aiding in big-integer calculations, optimized for easy conversion between base64 strings and BigNums.
+A BigNum with Fractions implementation for big-integer calculations, optimized for DataStore storage and networking.
 
 ```lua
 local BigNum = Resources:LoadLibrary("BigNum")
