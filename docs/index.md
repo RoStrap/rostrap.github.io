@@ -1,6 +1,6 @@
 # RoStrap
 
-RoStrap is the name of a [Roblox plugin](https://www.roblox.com/library/725884332/RoStrap) and resource management system designed to expedite game development on Roblox. Its main goals are to increase code reusability and simplify the networking of resources **without penalty for not using features**. The plugin allows for easy access and installation of incredibly useful libraries.
+RoStrap is the name of a [Roblox plugin](https://www.roblox.com/library/725884332/RoStrap) and resource management system designed to expedite game development on Roblox. Its main goals are to increase code reusability and simplify the networking of resources **without penalty for not using features**. The plugin allows for easy access and installation of incredibly useful **open-source** libraries hosted on GitHub.
 
 With the click of a button you can start using an optimized rewrite of the vanilla Lua `os.date` function:
 
@@ -11,7 +11,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
 local Date = Resources:LoadLibrary("Date")
 
-print(Date("!%c", tick())) --> Thu Jan 31 08:55:48 2020
+print(Date("!%c", tick())) --> Sat Dec 31 01:38:01 2022
 ```
 
 Gain access to a variety of beautiful Material Design elements, like the [Choice Dialog](../Libraries/RoStrapUI/ChoiceDialog):
@@ -40,13 +40,4 @@ Or some very clickable Material Design [RippleButtons](../Libraries/RoStrapUI/Ri
 	</video>
 </div>
 
-RoStrap's central library, [Resources](../Resources), can also be used to manage your RemoteEvents and RemoteFunctions!
-
-```lua
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
-
-local Chatted = Resources:GetRemoteEvent("Chatted")
-local ClientLoaded = Resources:GetRemoteFunction("ClientLoaded")
-```
-![](https://user-images.githubusercontent.com/15217173/38775951-d6bfbeee-404b-11e8-8396-9666a0b20b98.png)
+And [much more](../Libraries/)!

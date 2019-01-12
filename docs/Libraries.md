@@ -167,7 +167,7 @@ print(CoinToss()) --> Heads
 </div>
 
 #### Sentry
-<h6><a href="../Libraries/Sentry">Sentry</a> - A library for reporting errors/warnings/messages to your <a href="https://sentry.io">Sentry</a> account</h6>
+<h6><a href="../Libraries/Sentry">Sentry</a> - A library for reporting errors/warnings/messages to your <a href="https://sentry.io">Sentry account</a></h6>
 
 #### Time
 <h6><a href="../Libraries/Time/Date">Date</a> - A reimplementation of the vanilla Lua os.date function built upon the one exposed by RobloxLua</h6>
@@ -197,7 +197,7 @@ print(Date("ISO 8601: %FT%T%#z")) --> ISO 8601: 2020-12-31T01:03:05-05:00
 </div>
 
 #### DataStoreService
-<h6><a href="https://github.com/buildthomas/MockDataStoreService">DataStoreService</a> - An implementation of DataStoreService in Lua for use in Studio</h6>
+<h6><a href="https://github.com/buildthomas/MockDataStoreService">DataStoreService</a> - An implementation of Roblox's DataStoreService in Lua for seamless offline development & testing</h6>
 
 #### EvLightning
 <h6><a href="https://github.com/evaera/EvLightning">EvLightning</a> - Realistic-looking lightning bolt generator</h6>

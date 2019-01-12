@@ -1,6 +1,6 @@
 # Getting Started
 
-To begin using RoStrap, simply install it:
+To begin using RoStrap, simply install it by clicking the icon below and pressing the `Install` button:
 
 [![](https://avatars1.githubusercontent.com/u/22812966?v=4&s=200)](https://www.roblox.com/library/725884332/RoStrap)
 

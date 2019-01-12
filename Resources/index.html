@@ -348,6 +348,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#demo" title="Demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#functionality" title="Functionality" class="md-nav__link">
     Functionality
   </a>
@@ -1201,6 +1208,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#demo" title="Demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#functionality" title="Functionality" class="md-nav__link">
     Functionality
   </a>
@@ -1273,6 +1287,22 @@
                 
                 <h1 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h1>
 <p><a href="https://github.com/RoStrap/Resources/blob/master/Resources.lua">Resources</a> is the core resource manager and library loader for RoStrap. It is designed to streamline the retrieval and networking of resources and centralize the loading of libraries.</p>
+<h2 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h2>
+<p>It can be used to require your libraries:
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
+<span class="kd">local</span> <span class="n">Date</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Date&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Date</span><span class="p">())</span>  <span class="c1">--&gt; Sat Dec 31 15:38:01 2022</span>
+</pre></div></p>
+<p>It can be used to manage your RemoteEvents and RemoteFunctions:</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
+
+<span class="kd">local</span> <span class="n">Chatted</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">GetRemoteEvent</span><span class="p">(</span><span class="s2">&quot;Chatted&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">ClientLoaded</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">GetRemoteFunction</span><span class="p">(</span><span class="s2">&quot;ClientLoaded&quot;</span><span class="p">)</span>
+</pre></div>
+
+<p><img alt="" src="https://user-images.githubusercontent.com/15217173/38775951-d6bfbeee-404b-11e8-8396-9666a0b20b98.png" /></p>
 <h2 id="functionality">Functionality<a class="headerlink" href="#functionality" title="Permanent link">&para;</a></h2>
 <p>Upon being <a href="http://wiki.roblox.com/index.php?title=Global_namespace/Roblox_namespace#require">required</a> on the server for the first time, <a href="https://github.com/RoStrap/Resources/blob/master/Resources.lua">Resources</a> moves libraries within <code>ServerStorage.Repository</code> to folder <code>ReplicatedStorage.Resources.Libraries</code>, where both the client and server can <a href="http://wiki.roblox.com/index.php?title=Global_namespace/Roblox_namespace#require">require</a> them via the function <code>LoadLibrary</code>.</p>
 <p><img alt="" src="https://image.prntscr.com/image/ZonjgCDFQLabru0xbMBUNQ.png" /></p>

@@ -1133,14 +1133,14 @@
                 
                 
                 <h1 id="rostrap">RoStrap<a class="headerlink" href="#rostrap" title="Permanent link">&para;</a></h1>
-<p>RoStrap is the name of a <a href="https://www.roblox.com/library/725884332/RoStrap">Roblox plugin</a> and resource management system designed to expedite game development on Roblox. Its main goals are to increase code reusability and simplify the networking of resources <strong>without penalty for not using features</strong>. The plugin allows for easy access and installation of incredibly useful libraries.</p>
+<p>RoStrap is the name of a <a href="https://www.roblox.com/library/725884332/RoStrap">Roblox plugin</a> and resource management system designed to expedite game development on Roblox. Its main goals are to increase code reusability and simplify the networking of resources <strong>without penalty for not using features</strong>. The plugin allows for easy access and installation of incredibly useful <strong>open-source</strong> libraries hosted on GitHub.</p>
 <p>With the click of a button you can start using an optimized rewrite of the vanilla Lua <code>os.date</code> function:</p>
 <p><img alt="" src="https://user-images.githubusercontent.com/15217173/40766278-978e91b2-6474-11e8-8493-3a1f3faff660.png" /></p>
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
 <span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
 <span class="kd">local</span> <span class="n">Date</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Date&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">Date</span><span class="p">(</span><span class="s2">&quot;!%c&quot;</span><span class="p">,</span> <span class="n">tick</span><span class="p">()))</span> <span class="c1">--&gt; Thu Jan 31 08:55:48 2020</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Date</span><span class="p">(</span><span class="s2">&quot;!%c&quot;</span><span class="p">,</span> <span class="n">tick</span><span class="p">()))</span> <span class="c1">--&gt; Sat Dec 31 01:38:01 2022</span>
 </pre></div>
 
 <p>Gain access to a variety of beautiful Material Design elements, like the <a href="../Libraries/RoStrapUI/ChoiceDialog">Choice Dialog</a>:</p>
@@ -1167,14 +1167,7 @@
     </video>
 </div>
 
-<p>RoStrap's central library, <a href="../Resources">Resources</a>, can also be used to manage your RemoteEvents and RemoteFunctions!</p>
-<p><div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
-<span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
-
-<span class="kd">local</span> <span class="n">Chatted</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">GetRemoteEvent</span><span class="p">(</span><span class="s2">&quot;Chatted&quot;</span><span class="p">)</span>
-<span class="kd">local</span> <span class="n">ClientLoaded</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">GetRemoteFunction</span><span class="p">(</span><span class="s2">&quot;ClientLoaded&quot;</span><span class="p">)</span>
-</pre></div>
-<img alt="" src="https://user-images.githubusercontent.com/15217173/38775951-d6bfbeee-404b-11e8-8396-9666a0b20b98.png" /></p>
+<p>And <a href="../Libraries/">much more</a>!</p>
                 
                   
                 

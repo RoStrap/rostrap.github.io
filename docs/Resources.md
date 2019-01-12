@@ -2,6 +2,28 @@
 
 [Resources](https://github.com/RoStrap/Resources/blob/master/Resources.lua) is the core resource manager and library loader for RoStrap. It is designed to streamline the retrieval and networking of resources and centralize the loading of libraries.
 
+## Demo
+
+It can be used to require your libraries:
+```lua
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
+local Date = Resources:LoadLibrary("Date")
+print(Date())  --> Sat Dec 31 15:38:01 2022
+```
+
+It can be used to manage your RemoteEvents and RemoteFunctions:
+
+```lua
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
+
+local Chatted = Resources:GetRemoteEvent("Chatted")
+local ClientLoaded = Resources:GetRemoteFunction("ClientLoaded")
+```
+
+![](https://user-images.githubusercontent.com/15217173/38775951-d6bfbeee-404b-11e8-8396-9666a0b20b98.png)
+
 ## Functionality
 Upon being [required](http://wiki.roblox.com/index.php?title=Global_namespace/Roblox_namespace#require) on the server for the first time, [Resources](https://github.com/RoStrap/Resources/blob/master/Resources.lua) moves libraries within `ServerStorage.Repository` to folder `ReplicatedStorage.Resources.Libraries`, where both the client and server can [require](http://wiki.roblox.com/index.php?title=Global_namespace/Roblox_namespace#require) them via the function `LoadLibrary`.
 
