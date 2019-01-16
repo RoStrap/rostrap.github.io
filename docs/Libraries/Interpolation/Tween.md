@@ -14,7 +14,7 @@ Once you've loaded the Tween Module, there are two ways to create a Tween. You c
 
 ## Library API
 
-### Tween()
+### Tween
 
 !!! summary "<span style="color:purple;">TweenObject</span> <span style="color:blue;">Tween</span>(Object Object, <span style="color:green;">string</span> PropertyName, Variant EndValue, Enumeration.EasingFunction EasingFunction, <span style="color:teal;">number</span> Time, <span style="color:green;">bool</span> Override = <span style="color:green;">false</span>, <span style="color:green;">function</span>(TweenStatus) Callback = <span style="color:green;">nil</span>, [<span style="color:green;">arg</span> InitialParameter])"
 	Tween function for tweening any property. Like `GuiObject:TweenPosition()` but the first two arguments are Object and Property. If InitialParameter isn't `nil`, it will be pushed to the first argument passed to the Callback.
@@ -26,6 +26,8 @@ Once you've loaded the Tween Module, there are two ways to create a Tween. You c
 	Tween(workspace.Part, "CFrame", CFrame.new(10, 10, 10), OutQuad, 2, true)
 	Tween(workspace.Part, "Transparency", 1, Standard, 2, true)
 	```
+
+	`Override` works a bit differently in this system than in Roblox's. Roblox's override parameter should be named "Overridable" whereas this parameter is whether the new Tween should override any previous open Tweens. The same things can be accomplished with both, but this is a notable difference.
 
 ### Tween.new
 

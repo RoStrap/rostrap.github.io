@@ -77,6 +77,8 @@ nav:
     - Information: Contributing.md
     - Website: Contributing/Website.md
     - Image Standards: Contributing/Image Standards.md
+  - Guides:
+      - Bundling RoStrapUI with a plugin: Guides/PluginBundling.md
 
 markdown_extensions:
   - attr_list

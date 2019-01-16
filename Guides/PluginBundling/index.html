@@ -13,7 +13,7 @@
         <meta name="description" content="Reusable, unified resource networking to expedite game development on ROBLOX">
       
       
-        <link rel="canonical" href="https://rostrap.github.io/Libraries/Debugging/Debug/">
+        <link rel="canonical" href="https://rostrap.github.io/Guides/PluginBundling/">
       
       
         <meta name="author" content="Validark">
@@ -37,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../../../assets/images/RoStrap.png">
+      <link rel="shortcut icon" href="../../assets/images/RoStrap.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
     
     
       
-        <title>Debug - RoStrap</title>
+        <title>Bundling RoStrapUI with a plugin - RoStrap</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.22915126.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="../../../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       
@@ -66,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
     
     
   </head>
@@ -104,10 +104,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="../../../#debug" tabindex="1" class="md-skip">
-        Skip to content
-      </a>
-    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -115,7 +111,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://rostrap.github.io/" title="RoStrap" class="md-header-nav__button md-logo">
           
-            <img src="../../../assets/images/RoStrap.png" width="24" height="24">
+            <img src="../../assets/images/RoStrap.png" width="24" height="24">
           
         </a>
       </div>
@@ -130,7 +126,7 @@
                 RoStrap
               </span>
               <span class="md-header-nav__topic">
-                Debug
+                Bundling RoStrapUI with a plugin
               </span>
             
           
@@ -211,7 +207,7 @@
         
   <li class="md-tabs__item">
     
-      <a href="../../.." title="Introduction" class="md-tabs__link">
+      <a href="../.." title="Introduction" class="md-tabs__link">
         Introduction
       </a>
     
@@ -227,7 +223,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../" title="Libraries" class="md-tabs__link md-tabs__link--active">
+        <a href="../../Libraries/" title="Libraries" class="md-tabs__link">
           Libraries
         </a>
       
@@ -240,7 +236,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../Contributing/" title="Contributing" class="md-tabs__link">
+        <a href="../../Contributing/" title="Contributing" class="md-tabs__link">
           Contributing
         </a>
       
@@ -253,7 +249,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../Guides/PluginBundling/" title="Guides" class="md-tabs__link">
+        <a href="./" title="Guides" class="md-tabs__link md-tabs__link--active">
           Guides
         </a>
       
@@ -276,7 +272,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://rostrap.github.io/" title="RoStrap" class="md-nav__button md-logo">
       
-        <img src="../../../assets/images/RoStrap.png" width="48" height="48">
+        <img src="../../assets/images/RoStrap.png" width="48" height="48">
       
     </a>
     RoStrap
@@ -312,7 +308,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Introduction" class="md-nav__link">
+    <a href="../.." title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -324,7 +320,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Getting-Started/" title="Getting Started" class="md-nav__link">
+    <a href="../../Getting-Started/" title="Getting Started" class="md-nav__link">
       Getting Started
     </a>
   </li>
@@ -336,7 +332,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Resources/" title="Resources" class="md-nav__link">
+    <a href="../../Resources/" title="Resources" class="md-nav__link">
       Resources
     </a>
   </li>
@@ -346,12 +342,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Libraries
@@ -369,7 +363,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../" title="Overview" class="md-nav__link">
+    <a href="../../Libraries/" title="Overview" class="md-nav__link">
       Overview
     </a>
   </li>
@@ -400,7 +394,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Classes/Enumeration/" title="Enumeration" class="md-nav__link">
+    <a href="../../Libraries/Classes/Enumeration/" title="Enumeration" class="md-nav__link">
       Enumeration
     </a>
   </li>
@@ -412,7 +406,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Classes/PseudoInstance/" title="PseudoInstance" class="md-nav__link">
+    <a href="../../Libraries/Classes/PseudoInstance/" title="PseudoInstance" class="md-nav__link">
       PseudoInstance
     </a>
   </li>
@@ -424,7 +418,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Classes/ReplicatedPseudoInstance/" title="ReplicatedPseudoInstance" class="md-nav__link">
+    <a href="../../Libraries/Classes/ReplicatedPseudoInstance/" title="ReplicatedPseudoInstance" class="md-nav__link">
       ReplicatedPseudoInstance
     </a>
   </li>
@@ -460,7 +454,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../DataTypes/Array/" title="Array" class="md-nav__link">
+    <a href="../../Libraries/DataTypes/Array/" title="Array" class="md-nav__link">
       Array
     </a>
   </li>
@@ -472,7 +466,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../DataTypes/SortedArray/" title="SortedArray" class="md-nav__link">
+    <a href="../../Libraries/DataTypes/SortedArray/" title="SortedArray" class="md-nav__link">
       SortedArray
     </a>
   </li>
@@ -484,7 +478,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../DataTypes/Table/" title="Table" class="md-nav__link">
+    <a href="../../Libraries/DataTypes/Table/" title="Table" class="md-nav__link">
       Table
     </a>
   </li>
@@ -499,12 +493,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
     
     <label class="md-nav__link" for="nav-4-4">
       Debugging
@@ -520,118 +512,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Debug
-      </label>
-    
-    <a href="./" title="Debug" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../Libraries/Debugging/Debug/" title="Debug" class="md-nav__link">
       Debug
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#library-api" title="Library API" class="md-nav__link">
-    Library API
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debugtabletostring" title="Debug.TableToString" class="md-nav__link">
-    Debug.TableToString
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugdirectorytostring" title="Debug.DirectoryToString" class="md-nav__link">
-    Debug.DirectoryToString
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debuginspect" title="Debug.Inspect" class="md-nav__link">
-    Debug.Inspect
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugescapestring" title="Debug.EscapeString" class="md-nav__link">
-    Debug.EscapeString
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugalphabeticalorder" title="Debug.AlphabeticalOrder" class="md-nav__link">
-    Debug.AlphabeticalOrder
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugerror" title="Debug.Error" class="md-nav__link">
-    Debug.Error
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugassert" title="Debug.Assert" class="md-nav__link">
-    Debug.Assert
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugwarn" title="Debug.Warn" class="md-nav__link">
-    Debug.Warn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugunioniteratorfunctions" title="Debug.UnionIteratorFunctions" class="md-nav__link">
-    Debug.UnionIteratorFunctions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -641,7 +526,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../Typer/" title="Typer" class="md-nav__link">
+    <a href="../../Libraries/Debugging/Typer/" title="Typer" class="md-nav__link">
       Typer
     </a>
   </li>
@@ -677,7 +562,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Events/Janitor/" title="Janitor" class="md-nav__link">
+    <a href="../../Libraries/Events/Janitor/" title="Janitor" class="md-nav__link">
       Janitor
     </a>
   </li>
@@ -689,7 +574,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Events/Signal/" title="Signal" class="md-nav__link">
+    <a href="../../Libraries/Events/Signal/" title="Signal" class="md-nav__link">
       Signal
     </a>
   </li>
@@ -725,7 +610,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Helper/FastSpawn/" title="FastSpawn" class="md-nav__link">
+    <a href="../../Libraries/Helper/FastSpawn/" title="FastSpawn" class="md-nav__link">
       FastSpawn
     </a>
   </li>
@@ -737,7 +622,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Helper/Make/" title="Make" class="md-nav__link">
+    <a href="../../Libraries/Helper/Make/" title="Make" class="md-nav__link">
       Make
     </a>
   </li>
@@ -773,7 +658,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Input/Keys/" title="Keys" class="md-nav__link">
+    <a href="../../Libraries/Input/Keys/" title="Keys" class="md-nav__link">
       Keys
     </a>
   </li>
@@ -809,7 +694,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Interpolation/Bezier/" title="Bezier" class="md-nav__link">
+    <a href="../../Libraries/Interpolation/Bezier/" title="Bezier" class="md-nav__link">
       Bezier
     </a>
   </li>
@@ -821,7 +706,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Interpolation/EasingFunctions/" title="EasingFunctions" class="md-nav__link">
+    <a href="../../Libraries/Interpolation/EasingFunctions/" title="EasingFunctions" class="md-nav__link">
       EasingFunctions
     </a>
   </li>
@@ -833,7 +718,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Interpolation/Lerps/" title="Lerps" class="md-nav__link">
+    <a href="../../Libraries/Interpolation/Lerps/" title="Lerps" class="md-nav__link">
       Lerps
     </a>
   </li>
@@ -845,7 +730,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Interpolation/Tween/" title="Tween" class="md-nav__link">
+    <a href="../../Libraries/Interpolation/Tween/" title="Tween" class="md-nav__link">
       Tween
     </a>
   </li>
@@ -881,7 +766,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/AsymmetricTransformation/" title="AsymmetricTransformation" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/AsymmetricTransformation/" title="AsymmetricTransformation" class="md-nav__link">
       AsymmetricTransformation
     </a>
   </li>
@@ -893,7 +778,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/Checkbox/" title="Checkbox" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/Checkbox/" title="Checkbox" class="md-nav__link">
       Checkbox
     </a>
   </li>
@@ -905,7 +790,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/ChoiceDialog/" title="ChoiceDialog" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/ChoiceDialog/" title="ChoiceDialog" class="md-nav__link">
       ChoiceDialog
     </a>
   </li>
@@ -917,7 +802,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/Color/" title="Color" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/Color/" title="Color" class="md-nav__link">
       Color
     </a>
   </li>
@@ -929,7 +814,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/Radio/" title="Radio" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/Radio/" title="Radio" class="md-nav__link">
       Radio
     </a>
   </li>
@@ -941,7 +826,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/RadioGroup/" title="RadioGroup" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/RadioGroup/" title="RadioGroup" class="md-nav__link">
       RadioGroup
     </a>
   </li>
@@ -953,7 +838,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/RippleButton/" title="RippleButton" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/RippleButton/" title="RippleButton" class="md-nav__link">
       RippleButton
     </a>
   </li>
@@ -965,7 +850,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/Rippler/" title="Rippler" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/Rippler/" title="Rippler" class="md-nav__link">
       Rippler
     </a>
   </li>
@@ -977,7 +862,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/SelectionController/" title="SelectionController" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/SelectionController/" title="SelectionController" class="md-nav__link">
       SelectionController
     </a>
   </li>
@@ -989,7 +874,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/Shadow/" title="Shadow" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/Shadow/" title="Shadow" class="md-nav__link">
       Shadow
     </a>
   </li>
@@ -1001,7 +886,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../RoStrapUI/Snackbar/" title="Snackbar" class="md-nav__link">
+    <a href="../../Libraries/RoStrapUI/Snackbar/" title="Snackbar" class="md-nav__link">
       Snackbar
     </a>
   </li>
@@ -1037,7 +922,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Math/BigNum/" title="BigNum" class="md-nav__link">
+    <a href="../../Libraries/Math/BigNum/" title="BigNum" class="md-nav__link">
       BigNum
     </a>
   </li>
@@ -1049,7 +934,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Math/Leveler/" title="Leveler" class="md-nav__link">
+    <a href="../../Libraries/Math/Leveler/" title="Leveler" class="md-nav__link">
       Leveler
     </a>
   </li>
@@ -1061,7 +946,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Math/Normal/" title="Normal" class="md-nav__link">
+    <a href="../../Libraries/Math/Normal/" title="Normal" class="md-nav__link">
       Normal
     </a>
   </li>
@@ -1073,7 +958,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Math/WeightedProbabilityFunction/" title="WeightedProbabilityFunction" class="md-nav__link">
+    <a href="../../Libraries/Math/WeightedProbabilityFunction/" title="WeightedProbabilityFunction" class="md-nav__link">
       WeightedProbabilityFunction
     </a>
   </li>
@@ -1090,7 +975,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Sentry/" title="Sentry" class="md-nav__link">
+    <a href="../../Libraries/Sentry/" title="Sentry" class="md-nav__link">
       Sentry
     </a>
   </li>
@@ -1121,7 +1006,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Time/Date/" title="Date" class="md-nav__link">
+    <a href="../../Libraries/Time/Date/" title="Date" class="md-nav__link">
       Date
     </a>
   </li>
@@ -1133,7 +1018,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Time/SyncedPoller/" title="SyncedPoller" class="md-nav__link">
+    <a href="../../Libraries/Time/SyncedPoller/" title="SyncedPoller" class="md-nav__link">
       SyncedPoller
     </a>
   </li>
@@ -1150,7 +1035,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../Try/" title="Try" class="md-nav__link">
+    <a href="../../Libraries/Try/" title="Try" class="md-nav__link">
       Try
     </a>
   </li>
@@ -1186,7 +1071,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Contributing/" title="Information" class="md-nav__link">
+    <a href="../../Contributing/" title="Information" class="md-nav__link">
       Information
     </a>
   </li>
@@ -1198,7 +1083,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Contributing/Website/" title="Website" class="md-nav__link">
+    <a href="../../Contributing/Website/" title="Website" class="md-nav__link">
       Website
     </a>
   </li>
@@ -1210,7 +1095,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Contributing/Image Standards/" title="Image Standards" class="md-nav__link">
+    <a href="../../Contributing/Image Standards/" title="Image Standards" class="md-nav__link">
       Image Standards
     </a>
   </li>
@@ -1225,10 +1110,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
       Guides
@@ -1244,11 +1131,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../Guides/PluginBundling/" title="Bundling RoStrapUI with a plugin" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Bundling RoStrapUI with a plugin" class="md-nav__link md-nav__link--active">
       Bundling RoStrapUI with a plugin
     </a>
+    
   </li>
 
         
@@ -1264,176 +1158,68 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#library-api" title="Library API" class="md-nav__link">
-    Library API
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debugtabletostring" title="Debug.TableToString" class="md-nav__link">
-    Debug.TableToString
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugdirectorytostring" title="Debug.DirectoryToString" class="md-nav__link">
-    Debug.DirectoryToString
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debuginspect" title="Debug.Inspect" class="md-nav__link">
-    Debug.Inspect
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugescapestring" title="Debug.EscapeString" class="md-nav__link">
-    Debug.EscapeString
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugalphabeticalorder" title="Debug.AlphabeticalOrder" class="md-nav__link">
-    Debug.AlphabeticalOrder
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugerror" title="Debug.Error" class="md-nav__link">
-    Debug.Error
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugassert" title="Debug.Assert" class="md-nav__link">
-    Debug.Assert
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugwarn" title="Debug.Warn" class="md-nav__link">
-    Debug.Warn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#debugunioniteratorfunctions" title="Debug.UnionIteratorFunctions" class="md-nav__link">
-    Debug.UnionIteratorFunctions
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                <h1 id="debug"><a href="https://github.com/RoStrap/Debugging/blob/master/Debug.lua">Debug</a><a class="headerlink" href="#debug" title="Permanent link">&para;</a></h1>
-<p>Standard RoStrap debugging library. Contains better error/warn functions and an implementation of <code>TableToString</code>.</p>
-<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Debug</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Debug&quot;</span><span class="p">)</span>
-</pre></div>
+                  <h1>Bundling RoStrapUI with a plugin</h1>
+                
+                <p>Let's say we want to Bundle ChoiceDialog with a plugin. Specifically, an "Object to Lua" plugin.</p>
+<p><img alt="" src="../../assets/images/InstallingChoiceDialog.png" /></p>
+<p>We're going to want all of our libraries under the same Object. In this case we are going to place our libraries under the main Script of the plugin.</p>
+<p><img alt="" src="../../assets/images/DragObjectsIntoScript.png" /> <img alt="" src="../../assets/images/DeleteFolders.png" /></p>
+<p>Next, we are going to run a script that will replace the Resources functions with some simple replacements.</p>
+<p>Enable your command bar (under the View tab) and paste the following script in. Make sure to change <code>PARENT_OF_LIBRARIES</code> to fit your use case.</p>
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">PARENT_OF_LIBRARIES</span> <span class="o">=</span> <span class="n">workspace</span><span class="p">.</span><span class="n">ObjectsToLua</span>
 
-<h2 id="library-api">Library API<a class="headerlink" href="#library-api" title="Permanent link">&para;</a></h2>
-<h3 id="debugtabletostring">Debug.TableToString<a class="headerlink" href="#debugtabletostring" title="Permanent link">&para;</a></h3>
-<div class="admonition summary">
-<p class="admonition-title"><span style="color:purple;">string</span> Debug.<span style="color:blue;">TableToString</span>(<span style="color:green;">table</span> Table [, <span style="color:teal;">bool</span> Multiline = <span style="color:green;">false</span>, <span style="color:green;">string</span> TableName])</p>
-<p>Pretty self-explanatory. Table is the table to convert into a string. String TableName puts <code>local TableName =</code> at the beginning. Multiline makes it multiline. Returns a string-readable version of Table.</p>
-</div>
-<h3 id="debugdirectorytostring">Debug.DirectoryToString<a class="headerlink" href="#debugdirectorytostring" title="Permanent link">&para;</a></h3>
-<div class="admonition summary">
-<p class="admonition-title"><span style="color:purple;">string</span> Debug.<span style="color:blue;">DirectoryToString</span>(<span style="color:green;">RbxObject</span> Object)</p>
-<p>A fixed version of GetFullName.</p>
-</div>
-<h3 id="debuginspect">Debug.Inspect<a class="headerlink" href="#debuginspect" title="Permanent link">&para;</a></h3>
-<div class="admonition summary">
-<p class="admonition-title"><span style="color:purple;">string</span> Debug.<span style="color:blue;">Inspect</span>(<span style="color:green;">any</span> Object)</p>
-<p>Returns a string representation of Object</p>
-</div>
-<h3 id="debugescapestring">Debug.EscapeString<a class="headerlink" href="#debugescapestring" title="Permanent link">&para;</a></h3>
-<div class="admonition summary">
-<p class="admonition-title"><span style="color:purple;">string</span> Debug.<span style="color:blue;">EscapeString</span>(<span style="color:green;">string</span> String)</p>
-<p>Turns strings into Lua-readable format. Returns Objects location in proper Lua format. Useful for when you are doing string-intensive coding. Those minus signs are so tricky!</p>
-</div>
-<h3 id="debugalphabeticalorder">Debug.AlphabeticalOrder<a class="headerlink" href="#debugalphabeticalorder" title="Permanent link">&para;</a></h3>
-<div class="admonition summary">
-<p class="admonition-title"><span style="color:purple;">function</span> Debug.<span style="color:blue;">AlphabeticalOrder</span>(<span style="color:green;">table</span> Dictionary)</p>
-<p>Iteration function that iterates over a dictionary in alphabetical order. Dictionary is that which will be iterated over in alphabetical order. Not case-sensitive.</p>
-</div>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="codehilite"><pre><span></span><span class="kr">for</span> <span class="n">Key</span><span class="p">,</span> <span class="n">Value</span> <span class="kr">in</span> <span class="nb">next</span><span class="p">,</span> <span class="n">Debug</span><span class="p">.</span><span class="n">AlphabeticalOrder</span><span class="p">{</span><span class="n">Apple</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span> <span class="n">Noodles</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span> <span class="n">Soup</span> <span class="o">=</span> <span class="kc">false</span><span class="p">}</span> <span class="kr">do</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">Key</span><span class="p">,</span> <span class="n">Value</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">LocalTables</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="kr">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">Object</span> <span class="kr">in</span> <span class="nb">next</span><span class="p">,</span> <span class="n">PARENT_OF_LIBRARIES</span><span class="p">:</span><span class="n">GetDescendants</span><span class="p">()</span> <span class="kr">do</span>
+    <span class="kr">if</span> <span class="n">Object</span><span class="p">:</span><span class="n">IsA</span><span class="p">(</span><span class="s2">&quot;LuaSourceContainer&quot;</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="kd">local</span> <span class="n">Source</span> <span class="o">=</span> <span class="n">Object</span><span class="p">.</span><span class="n">Source</span>
+
+        <span class="n">Object</span><span class="p">.</span><span class="n">Source</span> <span class="o">=</span> <span class="n">Source</span>
+            <span class="p">:</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&quot;local Resources = [^</span><span class="se">\r\n</span><span class="s2">]+[</span><span class="se">\r\n</span><span class="s2">]&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">local function LoadLibrary(Name)</span><span class="se">\n\t</span><span class="s2">return require(script.Parent[Name])</span><span class="se">\n</span><span class="s2">end</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="p">:</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&quot;Resources:LoadLibrary(%b())&quot;</span><span class="p">,</span> <span class="s2">&quot;LoadLibrary%1&quot;</span><span class="p">)</span>
+            <span class="p">:</span><span class="n">gsub</span><span class="p">(</span><span class="s2">&quot;Resources:GetLocalTable(%b())&quot;</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+                <span class="kd">local</span> <span class="n">Name</span> <span class="o">=</span> <span class="s2">&quot;LocalTable&quot;</span> <span class="o">..</span> <span class="n">x</span><span class="p">:</span><span class="n">sub</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">)</span>
+
+                <span class="kr">if</span> <span class="ow">not</span> <span class="n">LocalTables</span><span class="p">[</span><span class="n">Name</span><span class="p">]</span> <span class="kr">then</span>
+                    <span class="n">LocalTables</span><span class="p">[</span><span class="n">Name</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span>
+                    <span class="kd">local</span> <span class="n">Mod</span> <span class="o">=</span> <span class="n">Instance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;ModuleScript&quot;</span><span class="p">,</span> <span class="n">PARENT_OF_LIBRARIES</span><span class="p">)</span>
+                    <span class="n">Mod</span><span class="p">.</span><span class="n">Source</span> <span class="o">=</span> <span class="s2">&quot;return {}</span><span class="se">\n</span><span class="s2">&quot;</span>
+                    <span class="n">Mod</span><span class="p">.</span><span class="n">Name</span> <span class="o">=</span> <span class="n">Name</span>
+                <span class="kr">end</span>
+
+                <span class="kr">return</span> <span class="s2">&quot;LoadLibrary(</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">..</span> <span class="n">Name</span> <span class="o">..</span> <span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">)&quot;</span>
+            <span class="kr">end</span><span class="p">)</span>
+    <span class="kr">end</span>
 <span class="kr">end</span>
 </pre></div>
 
-</div>
-<h3 id="debugerror">Debug.Error<a class="headerlink" href="#debugerror" title="Permanent link">&para;</a></h3>
-<div class="admonition summary">
-<p class="admonition-title"><span style="color:purple;">void</span> Debug.<span style="color:blue;">Error</span>(<span style="color:green;">string</span> ErrorMessage, ... <span style="color:teal;">strings</span> <span style="color:green;">argumentsToFormatIn</span>)</p>
-<p>Standard RoStrap Erroring system. Prefixing ErrorMessage with '!' makes it expect the <code>[error origin script].Name</code> as first parameter in <code>{...}</code>. Past the initial Error string, subsequent arguments get unpacked in a string.format of the error string. Assert falls back on Error. Error blames the latest item on the traceback as the cause of the error. Error makes it clear which Library and function are being misused.</p>
-</div>
-<h3 id="debugassert">Debug.Assert<a class="headerlink" href="#debugassert" title="Permanent link">&para;</a></h3>
-<div class="admonition summary">
-<p class="admonition-title"><span style="color:purple;">Condition</span> Debug.<span style="color:blue;">Assert</span>(Variant Condition, ... <span style="color:green;">strings</span> TupleToSendToError)</p>
-<p>Returns <code>Condition or Debug.Error(...)</code></p>
-</div>
-<h3 id="debugwarn">Debug.Warn<a class="headerlink" href="#debugwarn" title="Permanent link">&para;</a></h3>
-<div class="admonition summary">
-<p class="admonition-title"><span style="color:purple;">void</span> Debug.<span style="color:blue;">Warn</span>(<span style="color:green;">string</span> ErrorMessage, ... <span style="color:teal;">strings</span> <span style="color:green;">argumentsToFormatIn</span>)</p>
-<p>Functions the same as Debug.Error, but internally calls warn instead of error.</p>
-</div>
-<h3 id="debugunioniteratorfunctions">Debug.UnionIteratorFunctions<a class="headerlink" href="#debugunioniteratorfunctions" title="Permanent link">&para;</a></h3>
-<div class="admonition summary">
-<p class="admonition-title"><span style="color:purple;">function</span> Debug.<span style="color:blue;">UnionIteratorFunctions</span>(<span style="color:green;">functions</span> ...)</p>
-<p>Unions iterator functions in the order they are passed in, without duplicates from overlap.</p>
-<div class="codehilite"><pre><span></span><span class="kr">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="kr">in</span> <span class="n">Debug</span><span class="p">.</span><span class="n">UnionIteratorFunctions</span><span class="p">(</span><span class="nb">ipairs</span><span class="p">,</span> <span class="nb">pairs</span><span class="p">){</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">2</span><span class="p">}</span> <span class="kr">do</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
-<span class="kr">end</span>
+<p>This code should work for any of the libraries under the RoStrap organization, with the exception of the <code>Sentry</code> library.</p>
+<p>Now we can write some code for the plugin:</p>
+<div class="codehilite"><pre><span></span><span class="nb">require</span><span class="p">(</span><span class="n">script</span><span class="p">.</span><span class="n">ChoiceDialog</span><span class="p">)</span> <span class="c1">-- Preload the libraries</span>
+<span class="nb">require</span><span class="p">(</span><span class="n">script</span><span class="p">.</span><span class="n">ReplicatedPseudoInstance</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">script</span><span class="p">.</span><span class="n">PseudoInstance</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Dialog</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;ChoiceDialog&quot;</span><span class="p">)</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">HeaderText</span> <span class="o">=</span> <span class="s2">&quot;Script Class&quot;</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">Options</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;ModuleScript&quot;</span><span class="p">,</span> <span class="s2">&quot;Script&quot;</span><span class="p">,</span> <span class="s2">&quot;LocalScript&quot;</span><span class="p">}</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">DismissText</span> <span class="o">=</span> <span class="s2">&quot;CANCEL&quot;</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">ConfirmText</span> <span class="o">=</span> <span class="s2">&quot;CONVERT&quot;</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">PrimaryColor3</span> <span class="o">=</span> <span class="n">PrimaryColor3</span>
+<span class="n">Dialog</span><span class="p">.</span><span class="n">Parent</span> <span class="o">=</span> <span class="n">game</span>
+
+<span class="kd">local</span> <span class="n">_</span><span class="p">,</span> <span class="n">Choice</span> <span class="o">=</span> <span class="n">Dialog</span><span class="p">.</span><span class="n">OnConfirmed</span><span class="p">:</span><span class="n">Wait</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Choice</span><span class="p">)</span>
 </pre></div>
 
-</div>
+<p><img alt="" src="../../assets/images/ScriptClass.png" /></p>
+<p>Add some glue, and you've got yourself a plugin running RoStrapUI! Publish your plugin and try it out. Also be sure to check out my RbxObject2Lua plugin by clicking the following image:</p>
+<p><a href="https://www.roblox.com/library/2307140444/Obj2Lua"><img alt="" src="../../assets/images/Model2Lua.png" /></a></p>
                 
                   
                 
@@ -1454,7 +1240,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../DataTypes/Table/" title="Table" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../Contributing/Image Standards/" title="Image Standards" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1463,25 +1249,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Table
+                Image Standards
               </span>
             </div>
           </a>
         
-        
-          <a href="../Typer/" title="Typer" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Typer
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
@@ -1499,7 +1271,7 @@
       
         
   <div class="md-footer-social">
-    <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
     
       <a href="https://discord.gg/pjJw8s4" class="md-footer-social__link fa fa-discord"></a>
     
@@ -1514,9 +1286,9 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/application.583bbe55.js"></script>
+      <script src="../../assets/javascripts/application.583bbe55.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
