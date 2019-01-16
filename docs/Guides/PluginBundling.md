@@ -16,11 +16,9 @@ local PARENT_OF_LIBRARIES = workspace.ObjectsToLua
 local LocalTables = {}
 for _, Object in next, PARENT_OF_LIBRARIES:GetDescendants() do
 	if Object:IsA("LuaSourceContainer") then
-		local Source = Object.Source
-
-		Object.Source = Source
-			:gsub("local Resources = [^\r\n]+[\r\n]", "\nlocal function LoadLibrary(Name)\n\treturn require(script.Parent[Name])\nend\n")
-			:gsub("Resources:LoadLibrary(%b())", "LoadLibrary%1")
+		local Source, Reps = Object.Source
+			:gsub("local Resources = [^\r\n]+[\r\n]", "\nlocal function _Load_Library_(Name)\n\treturn require(script.Parent[Name])\nend\n")
+			:gsub("Resources:LoadLibrary(%b())", "_Load_Library_%1")
 			:gsub("Resources:GetLocalTable(%b())", function(x)
 				local Name = "LocalTable" .. x:sub(3, -3)
 
@@ -31,8 +29,17 @@ for _, Object in next, PARENT_OF_LIBRARIES:GetDescendants() do
 					Mod.Name = Name
 				end
 
-				return "LoadLibrary(\"" .. Name .. "\")"
+				return "_Load_Library_(\"" .. Name .. "\")"
 			end)
+			:gsub("Resources:Get(%a+)(%b())", function(x, y)
+				return "_Resource_Get_(\"" .. x .. "\", " .. y:sub(2, -2) .. ")"
+			end)
+
+		if Reps > 0 then
+			Source = "local function _Resource_Get_(ClassName, Name, Parent)\n\tlocal IsPlugin = script.Parent.Parent.ClassName == \"Plugin\"\n\n\tif not Parent then\n\t\tParent = _Resource_Get_(\"Folder\", ClassName .. \"Folder\", game:GetService(IsPlugin and \"CoreGui\" or \"ReplicatedStorage\"))\n\tend\n\n\tif IsPlugin or game:GetService(\"RunService\"):IsServer() then\n\t\tlocal Object = Instance.new(ClassName)\n\t\tObject.Name = Name\n\t\tObject.Parent = Parent\n\t\treturn Object\n\telse\n\t\treturn Parent:WaitForChild(Name)\n\tend\nend\n\n" .. Source
+		end
+
+		Object.Source = Source
 	end
 end
 ```
