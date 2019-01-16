@@ -24,9 +24,9 @@ theme:
 nav:
   - Introduction: index.md
   - Getting Started: Getting-Started.md
-  - Resources: Resources.md
   - Libraries:
       - Overview: Libraries.md
+      - Resources: Resources.md
       - Classes:
         - Enumeration: Libraries/Classes/Enumeration.md
         - PseudoInstance: Libraries/Classes/PseudoInstance.md

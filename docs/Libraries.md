@@ -3,6 +3,9 @@
 What follows is an overview of the [libraries installable by RoStrap](https://github.com/RoStrap/Libraries/blob/master/Libraries.lua):
 
 ## RoStrap-owned Libraries by category
+#### Core
+<h6><a href="../../Resources">Resources</a> - The core resource manager and library loader for RoStrap. Centralizes library loading and simplifies resource management.</h6>
+
 #### Classes
 <h6><a href="../Libraries/Classes/Enumeration">Enumeration</a> - A Lua implementation of Roblox Enums with the ability to declare new ones</h6>
 

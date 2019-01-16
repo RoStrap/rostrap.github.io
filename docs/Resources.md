@@ -1,6 +1,6 @@
-# Resources
+# [Resources](https://github.com/RoStrap/Resources/blob/master/Resources.lua)
 
-[Resources](https://github.com/RoStrap/Resources/blob/master/Resources.lua) is the core resource manager and library loader for RoStrap. It is designed to streamline the retrieval and networking of resources and centralize the loading of libraries.
+The core resource manager and library loader for RoStrap. It is designed to streamline the retrieval and networking of resources and centralize the loading of libraries.
 
 ## Demo
 
