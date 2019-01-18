@@ -56,6 +56,8 @@ Properties which access its top-level ImageButton:
 |:-:|:-:|
 |OnChecked|Fires after the `Checked` property was changed|
 
+###### Radio inherits from [PseudoInstance](https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstance-api)
+
 ### Example
 ```lua
 local Players = game:GetService("Players")

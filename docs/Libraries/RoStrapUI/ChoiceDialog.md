@@ -38,6 +38,8 @@ ChoiceDialog inherits from [ReplicatedPseudoInstance](../../Classes/ReplicatedPs
 |:-:|:-:|:-:|
 |OnConfirmed|Fires after the ChoiceDialog was Confirmed/Dismissed: if confirmed, passes in string `OptionChosen`|(Player Player, string Choice)|
 
+###### ChoiceDialog also inherits from [PseudoInstance](https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstance-api)
+
 ## Demo
 ```lua
 -- This code is valid on the client and server

@@ -57,6 +57,7 @@ Properties which access its Shadow:
 |BorderRadius|Enumeration.BorderRadius|How rounded the corners should be (0, 2, 4, or 8)|
 |Style|Enumeration.ButtonStyle|"Flat", "Outlined", or "Contained" style|
 |PrimaryColor3|Color3|The color of the text in Flat and Outlined styles or the color of the background in a Contained style when not Disabled|
+|SecondaryColor3|Color3|The color of the text in Raised style, by popular request, despite my insistance to conform to Material Design. Not the original intention.|
 
 #### Events
 
@@ -65,6 +66,8 @@ Properties which access its Shadow:
 |OnPressed|Fires after the Button was tapped or left-clicked|
 |OnRightPressed|Fires after the Button was right-clicked|
 |OnMiddlePressed|Fires after the Button was middle-clicked|
+
+###### RippleButton inherits from [PseudoInstance](https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstance-api)
 
 !!! example
 	```lua

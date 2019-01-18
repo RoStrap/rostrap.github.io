@@ -31,3 +31,4 @@ Registers a Material Design Shadow PseudoInstance which can be instantiated via 
 |Elevation|Enumeration.ShadowElevation|The Elevation of the Shadow|
 |Transparency|number|How transparent the Shadow is|
 
+###### Shadow inherits from [PseudoInstance](https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstance-api)

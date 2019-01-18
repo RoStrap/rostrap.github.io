@@ -36,6 +36,8 @@ Only one can be present on the screen at once.
 |:-:|:-:|:-:|
 |OnAction|Fires after the Action button on the Snackbar was pressed|(Player Player)|
 
+###### Snackbar also inherits from [PseudoInstance](https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstance-api)
+
 Video Demo code:
 ```lua
 -- This code is valid on the client and server
