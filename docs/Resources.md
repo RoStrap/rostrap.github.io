@@ -164,7 +164,7 @@ The following is the internal call tree. Keep in mind that these functions cache
 Questions? Comments? Concerns? Join us!
 
 <div align="left">
-	<a href="https://discord.gg/pjJw8s4">
+	<a href="https://discord.gg/ZaT5RwV">
 		<img src="https://discordapp.com/assets/94db9c3c1eba8a38a1fcf4f223294185.png" alt="Discord" width=200 height=68 />
 	</a>
 </div>
