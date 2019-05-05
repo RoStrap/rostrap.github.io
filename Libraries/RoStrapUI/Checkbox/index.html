@@ -1378,13 +1378,16 @@
 <span class="kd">local</span> <span class="n">Checkbox</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Checkbox&quot;</span><span class="p">)</span>
 </pre></div>
 
+<div class="admonition warning">
+<p>Only Global ZIndexBehavior is officially supported.</p>
+</div>
 <h2 id="checkbox-api">Checkbox API<a class="headerlink" href="#checkbox-api" title="Permanent link">&para;</a></h2>
 <p>Checkbox inherits from PseudoInstance and SelectionController, so all properties, methods, and events of these can also be used on Checkboxes.</p>
 <h3 id="checkboxsetchecked">Checkbox:SetChecked<a class="headerlink" href="#checkboxsetchecked" title="Permanent link">&para;</a></h3>
 <div class="admonition summary">
 <p class="admonition-title"><span style="color:purple;">void</span>&nbsp;Checkbox&colon;<span style="color:blue;">SetChecked</span>&lpar;<span style="color:green;">boolean</span>&nbsp;Checked&nbsp;&equals;&nbsp;<span style="color:blue;">not</span>&nbsp;<span style="color:red;">self</span>&period;Checked&rpar;</p>
-<p>Sets the <code>Checked</code> property and animates to the new state. Fires <code>OnChecked</code></p>
 </div>
+<p>Sets the <code>Checked</code> property and animates to the new state. Fires <code>OnChecked</code></p>
 <h3 id="fields">Fields<a class="headerlink" href="#fields" title="Permanent link">&para;</a></h3>
 <h4 id="wrapped-properties">Wrapped Properties<a class="headerlink" href="#wrapped-properties" title="Permanent link">&para;</a></h4>
 <p>Properties which access its top-level ImageButton:</p>
@@ -1492,6 +1495,8 @@
 </table>
 <h6 id="checkbox-inherits-from-pseudoinstance">Checkbox inherits from <a href="https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstance-api">PseudoInstance</a><a class="headerlink" href="#checkbox-inherits-from-pseudoinstance" title="Permanent link">&para;</a></h6>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
+<p><a href="../../../assets/demos/Checkbox.rbxl">Click here for the demo place</a></p>
+<p>Demo code:</p>
 <div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">Players</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;Players&quot;</span><span class="p">)</span>
 <span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
 
@@ -1587,7 +1592,7 @@
   <div class="md-footer-social">
     <link rel="stylesheet" href="../../../assets/fonts/font-awesome.css">
     
-      <a href="https://discord.gg/pjJw8s4" class="md-footer-social__link fa fa-discord"></a>
+      <a href="https://discord.gg/ZaT5RwV" class="md-footer-social__link fa fa-discord"></a>
     
       <a href="https://github.com/RoStrap" class="md-footer-social__link fa fa-github-alt"></a>
     

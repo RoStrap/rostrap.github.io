@@ -61,7 +61,7 @@ The following tags will be replaced as follows:
 %G = a 4-digit year as a decimal number with century
 %H = hour, using a 24-hour clock (23) [00-23]
 %I = hour, using a 12-hour clock (11) [01-12]
-%j = day of year [001-366] (March 1st is treated as day 0 of year)
+%j = day of year [001-366]
 %k = Hour in 24-hour format [ 0, 23]
 %l = Hour in 12-hour format [ 1, 12]
 %m = month (09) [01, 12]
