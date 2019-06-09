@@ -11,7 +11,7 @@ Registers a Material Design Checkbox PseudoInstance which can be instantiated vi
 
 ```lua
 local Resources = require(game:GetService("ReplicatedStorage"):WaitForChild("Resources"))
-local PsuedoInstance = Resources:LoadLibrary("PsuedoInstance")
+local PseudoInstance = Resources:LoadLibrary("PseudoInstance")
 local Checkbox = PseudoInstance.new("Checkbox")
 ```
 
