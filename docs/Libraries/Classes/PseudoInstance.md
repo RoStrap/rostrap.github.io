@@ -1,7 +1,7 @@
 # [PseudoInstance](https://github.com/RoStrap/Classes/blob/master/PseudoInstance.lua)
 
 !!! summary
-Rigidly defined PseudoInstance class system based upon Roblox Instances. The goal is to create encapsulated instances whose state is simply a function of its externally accessible properties. In other words, a cloned instance should render exactly the same as the original instance.
+	Rigidly defined PseudoInstance class system based upon Roblox Instances. The goal is to create encapsulated instances whose state is simply a function of its externally accessible properties. In other words, a cloned instance should render exactly the same as the original instance.
 
 ## Library API
 
@@ -21,7 +21,7 @@ Rigidly defined PseudoInstance class system based upon Roblox Instances. The goa
     ```
 
 !!! note
-Only classes which have been [Registered](https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstanceregister) may be instantiated. If you attempt to instantiate a class which has not been [Registered](https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstanceregister), it will call `Resources:LoadLibrary(ClassName)` and try again.
+	Only classes which have been [Registered](https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstanceregister) may be instantiated. If you attempt to instantiate a class which has not been [Registered](https://rostrap.github.io/Libraries/Classes/PseudoInstance/#pseudoinstanceregister), it will call `Resources:LoadLibrary(ClassName)` and try again.
 
 ### PseudoInstance.Make
 
