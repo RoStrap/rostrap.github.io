@@ -12,8 +12,8 @@ Rigidly defined PseudoInstance class system based upon Roblox Instances. The goa
     Instantiates a new PseudoInstance of type `ClassName`. Arguments (...) are passed to the `Init` constructor.
 
 !!! example
-```lua
-local PseudoInstance = Resources:LoadLibrary("PseudoInstance")
+	```lua
+	local PseudoInstance = Resources:LoadLibrary("PseudoInstance")
 
     local Shadow = PseudoInstance.new("Shadow")
     Shadow.Elevation = 8 -- this will cast to Enumeration.ShadowElevation.Elevation8
@@ -30,8 +30,8 @@ Only classes which have been [Registered](https://rostrap.github.io/Libraries/Cl
     `PseudoInstance.new` wrapper which automatically assigns properties in dictionary `Properties`. Arguments passed to (...) must be dictionaries of Properties too. The only downside is you cannot pass any parameters to the `Init` constructor, but you probably don't need to. [See the Make library's documentation for more information, as it works identically.](https://rostrap.github.io/Libraries/Helper/Make/)
 
 !!! example
-```lua
-local PseudoInstance = Resources:LoadLibrary("PseudoInstance")
+	```lua
+	local PseudoInstance = Resources:LoadLibrary("PseudoInstance")
 
     local Shadow = PseudoInstance.Make("Shadow", {
     	Elevation = 8; -- this will cast to Enumeration.ShadowElevation.Elevation8

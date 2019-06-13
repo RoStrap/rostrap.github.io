@@ -1311,16 +1311,14 @@
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-</div>
-<p>```lua
-local PseudoInstance = Resources:LoadLibrary("PseudoInstance")</p>
-<div class="codehilite"><pre><span></span>local Shadow = PseudoInstance.new(&quot;Shadow&quot;)
-Shadow.Elevation = 8 -- this will cast to Enumeration.ShadowElevation.Elevation8
-Shadow.Parent = Background -- Whatever Gui you wish
-```
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Shadow</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Shadow&quot;</span><span class="p">)</span>
+<span class="n">Shadow</span><span class="p">.</span><span class="n">Elevation</span> <span class="o">=</span> <span class="mi">8</span> <span class="c1">-- this will cast to Enumeration.ShadowElevation.Elevation8</span>
+<span class="n">Shadow</span><span class="p">.</span><span class="n">Parent</span> <span class="o">=</span> <span class="n">Background</span> <span class="c1">-- Whatever Gui you wish</span>
 </pre></div>
 
-
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 </div>
@@ -1332,141 +1330,144 @@ Shadow.Parent = Background -- Whatever Gui you wish
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-</div>
-<p>```lua
-local PseudoInstance = Resources:LoadLibrary("PseudoInstance")</p>
-<div class="codehilite"><pre><span></span>local Shadow = PseudoInstance.Make(&quot;Shadow&quot;, {
-    Elevation = 8; -- this will cast to Enumeration.ShadowElevation.Elevation8
-    Parent = Background; -- Parent is set last
-})
-```
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">Shadow</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">Make</span><span class="p">(</span><span class="s2">&quot;Shadow&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">Elevation</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span> <span class="c1">-- this will cast to Enumeration.ShadowElevation.Elevation8</span>
+    <span class="n">Parent</span> <span class="o">=</span> <span class="n">Background</span><span class="p">;</span> <span class="c1">-- Parent is set last</span>
+<span class="p">})</span>
 </pre></div>
 
-
+</div>
 <h3 id="pseudoinstanceregister">PseudoInstance:Register<a class="headerlink" href="#pseudoinstanceregister" title="Permanent link">&para;</a></h3>
 <div class="admonition summary">
 <p class="admonition-title"><span style="color:purple;">PseudoTemplate</span> PseudoInstance:<span style="color:blue;">Register</span>(<span style="color:green;">string</span> ClassName, <span style="color:teal;">table</span> Template, <span style="color:green;">table</span> InheritsFrom = PseudoInstance)</p>
 <p>Registers a new class of PseudoInstances which can be instantiated via <code>PseudoInstance.new(ClassName)</code>. Please read all the documentation in the example below:</p>
-<p>```lua
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
-local Typer = Resources:LoadLibrary("Typer")
-local Enumeration = Resources:LoadLibrary("Enumeration")
-local PseudoInstance = Resources:LoadLibrary("PseudoInstance")</p>
-<p>Enumeration.PastaStyle = {"Spaghetti", "Fusilli", "Penne", "Rigatoni", "Rotelle"}</p>
-<p>local ClassNameTemplate = PseudoInstance:Register("ClassName", {
-    Events = {
-        -- These are the events (see: Signal) of the PseudoInstance. These can be Connect()ed to,
-        -- Fire()d, Wait()ed on, etc</p>
-<div class="codehilite"><pre><span></span>    -- implicit numerical indeces define an Event member without Constuctors or Destructors
-    &quot;OnPressed&quot;;
+<div class="codehilite"><pre><span></span><span class="kd">local</span> <span class="n">ReplicatedStorage</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetService</span><span class="p">(</span><span class="s2">&quot;ReplicatedStorage&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Resources</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="n">ReplicatedStorage</span><span class="p">:</span><span class="n">WaitForChild</span><span class="p">(</span><span class="s2">&quot;Resources&quot;</span><span class="p">))</span>
+<span class="kd">local</span> <span class="n">Typer</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Typer&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Enumeration</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;Enumeration&quot;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PseudoInstance</span> <span class="o">=</span> <span class="n">Resources</span><span class="p">:</span><span class="n">LoadLibrary</span><span class="p">(</span><span class="s2">&quot;PseudoInstance&quot;</span><span class="p">)</span>
 
-    OnRightPressed = function(self)
-        -- self is the PseudoInstance for which this Event is being constructed.
-        -- Must return two functions, one constuctor and
-        -- one destructor with which to call Signal.new (see docs)
-        return function()
-        end, function()
-        end
-    end;
-};
+<span class="n">Enumeration</span><span class="p">.</span><span class="n">PastaStyle</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Spaghetti&quot;</span><span class="p">,</span> <span class="s2">&quot;Fusilli&quot;</span><span class="p">,</span> <span class="s2">&quot;Penne&quot;</span><span class="p">,</span> <span class="s2">&quot;Rigatoni&quot;</span><span class="p">,</span> <span class="s2">&quot;Rotelle&quot;</span><span class="p">}</span>
 
-Internals = {
-    -- These values are internal-only and not externally accessible
+<span class="kd">local</span> <span class="n">ClassNameTemplate</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">:</span><span class="n">Register</span><span class="p">(</span><span class="s2">&quot;ClassName&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">Events</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1">-- These are the events (see: Signal) of the PseudoInstance. These can be Connect()ed to,</span>
+        <span class="c1">-- Fire()d, Wait()ed on, etc</span>
 
-    -- implicit numerical indeces are set by default to false, to be defined at run-time
-    &quot;NumChildren&quot;;
+        <span class="c1">-- implicit numerical indeces define an Event member without Constuctors or Destructors</span>
+        <span class="s2">&quot;OnPressed&quot;</span><span class="p">;</span>
 
-    Set = function(self, Bool) -- These can be set to anything
-        return Bool == true and 1 or 0
-    end;
-};
+        <span class="n">OnRightPressed</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+            <span class="c1">-- self is the PseudoInstance for which this Event is being constructed.</span>
+            <span class="c1">-- Must return two functions, one constuctor and</span>
+            <span class="c1">-- one destructor with which to call Signal.new (see docs)</span>
+            <span class="kr">return</span> <span class="kr">function</span><span class="p">()</span>
+            <span class="kr">end</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span>
+            <span class="kr">end</span>
+        <span class="kr">end</span><span class="p">;</span>
+    <span class="p">};</span>
 
-Methods = {
-    Kill = function(self)
-        -- Methods and the Init functions are sent an internal-access table version of self
+    <span class="n">Internals</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1">-- These values are internal-only and not externally accessible</span>
 
-        self.OnPressed:Fire() -- Internal Signal-access has full control
-        return self:Set(true)
-    end;
+        <span class="c1">-- implicit numerical indeces are set by default to false, to be defined at run-time</span>
+        <span class="s2">&quot;NumChildren&quot;</span><span class="p">;</span>
 
-    Destroy = function(self, ...)
-        print(&quot;We are being destroyed!&quot;)
+        <span class="n">Set</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Bool</span><span class="p">)</span> <span class="c1">-- These can be set to anything</span>
+            <span class="kr">return</span> <span class="n">Bool</span> <span class="o">==</span> <span class="kc">true</span> <span class="ow">and</span> <span class="mi">1</span> <span class="ow">or</span> <span class="mi">0</span>
+        <span class="kr">end</span><span class="p">;</span>
+    <span class="p">};</span>
 
-        -- self:super() calls the superclass&#39;s method by the name of the first parameter
-        -- In this case, this calls Superclass.Destroy(self, ...)
-        self:super(&quot;Destroy&quot;, ...)
-    end;
+    <span class="n">Methods</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">Kill</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+            <span class="c1">-- Methods and the Init functions are sent an internal-access table version of self</span>
 
-    -- When set to 0, it makes the class Abstract
-    FunctionWhichMustBeImplementedByAClassThatInheritsFromThisOne = 0;
-};
+            <span class="n">self</span><span class="p">.</span><span class="n">OnPressed</span><span class="p">:</span><span class="n">Fire</span><span class="p">()</span> <span class="c1">-- Internal Signal-access has full control</span>
+            <span class="kr">return</span> <span class="n">self</span><span class="p">:</span><span class="n">Set</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+        <span class="kr">end</span><span class="p">;</span>
 
-Properties = {
-    -- Can be set to a Typer value for typechecking
-    Name = Typer.String;
+        <span class="n">Destroy</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="p">...)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We are being destroyed!&quot;</span><span class="p">)</span>
 
-    -- This is equivalent to the previous declaration
-    Name = Typer.AssignSignature(2, Typer.String, function(self, Value)
-        self:rawset(&quot;Name&quot;, Value)
-    end)
+            <span class="c1">-- self:super() calls the superclass&#39;s method by the name of the first parameter</span>
+            <span class="c1">-- In this case, this calls Superclass.Destroy(self, ...)</span>
+            <span class="n">self</span><span class="p">:</span><span class="n">super</span><span class="p">(</span><span class="s2">&quot;Destroy&quot;</span><span class="p">,</span> <span class="p">...)</span>
+        <span class="kr">end</span><span class="p">;</span>
 
-    -- Can also be constrained to a certain EnumerationType
-    Style = Typer.EnumerationOfTypePastaStyle;
+        <span class="c1">-- When set to 0, it makes the class Abstract</span>
+        <span class="n">FunctionWhichMustBeImplementedByAClassThatInheritsFromThisOne</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="p">};</span>
 
-    Parent = function(self, Parent)
-        -- Always called with the Object and the Property value it is being set to
+    <span class="n">Properties</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="c1">-- Can be set to a Typer value for typechecking</span>
+        <span class="n">Name</span> <span class="o">=</span> <span class="n">Typer</span><span class="p">.</span><span class="n">String</span><span class="p">;</span>
 
-        -- Do stuff
-        self:rawset(&quot;Parent&quot;, Parent) -- Make sure to rawset the Property to what it should be
-    end;
-};
+        <span class="c1">-- This is equivalent to the previous declaration</span>
+        <span class="n">Name</span> <span class="o">=</span> <span class="n">Typer</span><span class="p">.</span><span class="n">AssignSignature</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">Typer</span><span class="p">.</span><span class="n">String</span><span class="p">,</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Value</span><span class="p">)</span>
+            <span class="n">self</span><span class="p">:</span><span class="nb">rawset</span><span class="p">(</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="n">Value</span><span class="p">)</span>
+        <span class="kr">end</span><span class="p">)</span>
 
-Init = function(self)
-    -- Called by PseudoInstance.new()
+        <span class="c1">-- Can also be constrained to a certain EnumerationType</span>
+        <span class="n">Style</span> <span class="o">=</span> <span class="n">Typer</span><span class="p">.</span><span class="n">EnumerationOfTypePastaStyle</span><span class="p">;</span>
 
-    -- Every PseudoInstance comes with a built-in Janitor which is called upon Destruction
-    self.Janitor:Add(workspace.ChildAdded:Connect(function() end))
+        <span class="n">Parent</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">Parent</span><span class="p">)</span>
+            <span class="c1">-- Always called with the Object and the Property value it is being set to</span>
 
-    -- Sets externally-accessible Value of PseudoInstance directly
-    -- without calling a Property setting function
-    -- This can also be used for read-only values
-    self:rawset(&quot;IsPlayer&quot;, true)
+            <span class="c1">-- Do stuff</span>
+            <span class="n">self</span><span class="p">:</span><span class="nb">rawset</span><span class="p">(</span><span class="s2">&quot;Parent&quot;</span><span class="p">,</span> <span class="n">Parent</span><span class="p">)</span> <span class="c1">-- Make sure to rawset the Property to what it should be</span>
+        <span class="kr">end</span><span class="p">;</span>
+    <span class="p">};</span>
 
-    -- Must be in your init function, to run the constructor in the superclass
-    -- Will not exist after the Init function runs if the constructors resolved properly
-    self:superinit()
-end;
+    <span class="n">Init</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+        <span class="c1">-- Called by PseudoInstance.new()</span>
+
+        <span class="c1">-- Every PseudoInstance comes with a built-in Janitor which is called upon Destruction</span>
+        <span class="n">self</span><span class="p">.</span><span class="n">Janitor</span><span class="p">:</span><span class="n">Add</span><span class="p">(</span><span class="n">workspace</span><span class="p">.</span><span class="n">ChildAdded</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span> <span class="kr">end</span><span class="p">))</span>
+
+
+        <span class="c1">-- Sets externally-accessible Value of PseudoInstance directly</span>
+        <span class="c1">-- without calling a Property setting function</span>
+        <span class="c1">-- This can also be used for read-only values</span>
+        <span class="n">self</span><span class="p">:</span><span class="nb">rawset</span><span class="p">(</span><span class="s2">&quot;IsPlayer&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+
+        <span class="c1">-- Must be in your init function, to run the constructor in the superclass</span>
+        <span class="c1">-- Will not exist after the Init function runs if the constructors resolved properly</span>
+        <span class="n">self</span><span class="p">:</span><span class="n">superinit</span><span class="p">()</span>
+    <span class="kr">end</span><span class="p">;</span>
+<span class="p">})</span>
+
+<span class="c1">-- Will Error, because `ClassName` is Abstract</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">pcall</span><span class="p">(</span><span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">,</span> <span class="s2">&quot;ClassName&quot;</span><span class="p">))</span>
+
+<span class="kd">local</span> <span class="n">MyClass</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">:</span><span class="n">Register</span><span class="p">(</span><span class="s2">&quot;MyClass&quot;</span><span class="p">,</span> <span class="p">{</span>
+    <span class="n">Methods</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="n">FunctionWhichMustBeImplementedByAClassThatInheritsFromThisOne</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+        <span class="kr">end</span><span class="p">;</span>
+    <span class="p">};</span>
+
+    <span class="n">Init</span> <span class="o">=</span> <span class="kr">function</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
+        <span class="n">self</span><span class="p">:</span><span class="n">superinit</span><span class="p">()</span>
+    <span class="kr">end</span><span class="p">;</span>
+<span class="p">},</span> <span class="n">ClassNameTemplate</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">MyInstance</span> <span class="o">=</span> <span class="n">PseudoInstance</span><span class="p">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;MyClass&quot;</span><span class="p">)</span>
+<span class="n">MyInstance</span><span class="p">.</span><span class="n">Style</span> <span class="o">=</span> <span class="s2">&quot;Rigatoni&quot;</span> <span class="c1">-- Gets cast to Enumeration</span>
+<span class="n">MyInstance</span><span class="p">.</span><span class="n">Style</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1">-- Gets cast to Rigatoni</span>
+<span class="n">MyInstance</span><span class="p">:</span><span class="n">Kill</span><span class="p">()</span>
+
+<span class="c1">-- Externally, one only may Connect() and Wait() on events</span>
+<span class="n">MyInstance</span><span class="p">.</span><span class="n">OnPressed</span><span class="p">:</span><span class="n">Connect</span><span class="p">(</span><span class="nb">print</span><span class="p">)</span>
+
+<span class="c1">-- Error: Cannot `Fire` externally.</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">pcall</span><span class="p">(</span><span class="n">MyInstance</span><span class="p">.</span><span class="n">OnPressed</span><span class="p">.</span><span class="n">Fire</span><span class="p">,</span> <span class="n">MyInstance</span><span class="p">.</span><span class="n">OnPressed</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">pcall</span><span class="p">(</span><span class="kr">function</span><span class="p">()</span>
+    <span class="n">MyInstance</span><span class="p">:</span><span class="n">Set</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="kr">end</span><span class="p">))</span> <span class="c1">-- Set does not exist externally</span>
 </pre></div>
 
-
-<p>})</p>
-<p>-- Will Error, because <code>ClassName</code> is Abstract
-print(pcall(PseudoInstance.new, "ClassName"))</p>
-<p>local MyClass = PseudoInstance:Register("MyClass", {
-    Methods = {
-        FunctionWhichMustBeImplementedByAClassThatInheritsFromThisOne = function(self)
-        end;
-    };</p>
-<div class="codehilite"><pre><span></span>Init = function(self)
-    self:superinit()
-end;
-</pre></div>
-
-
-<p>}, ClassNameTemplate)</p>
-<p>local MyInstance = PseudoInstance.new("MyClass")
-MyInstance.Style = "Rigatoni" -- Gets cast to Enumeration
-MyInstance.Style = 3 -- Gets cast to Rigatoni
-MyInstance:Kill()</p>
-<p>-- Externally, one only may Connect() and Wait() on events
-MyInstance.OnPressed:Connect(print)</p>
-<p>-- Error: Cannot <code>Fire</code> externally.
-print(pcall(MyInstance.OnPressed.Fire, MyInstance.OnPressed))</p>
-<p>print(pcall(function()
-    MyInstance:Set(true)
-end)) -- Set does not exist externally
-```</p>
 </div>
 <h2 id="pseudoinstance-api">PseudoInstance API<a class="headerlink" href="#pseudoinstance-api" title="Permanent link">&para;</a></h2>
 <table>
