@@ -193,10 +193,9 @@ print(Date("ISO 8601: %FT%T%#z")) --> ISO 8601: 2020-12-31T01:03:05-05:00
 <h6><a href="https://github.com/evaera/Aurora">Aurora</a> - Manages status effects (known as "Auras")</h6>
 <h6><a href="https://github.com/buildthomas/MockDataStoreService">DataStoreService</a> - An implementation of Roblox's DataStoreService in Lua for seamless offline development & testing</h6>
 <h6><a href="https://github.com/evaera/Cmdr">Cmdr</a> - A fully extensible and type-safe admin command console</h6>
-
-<div align="center">
-	<img src="https://camo.githubusercontent.com/a3a00fd1e01b48d27f080663e0c60f0e1e439b73/68747470733a2f2f692e6572796e2e696f2f74783239766871626c612e676966" alt="Cmdr">
-</div>
+<p align="center">
+  <a href="https://giant.gfycat.com/HatefulTanAzurewingedmagpie.mp4"><img src="https://thumbs.gfycat.com/HatefulTanAzurewingedmagpie-size_restricted.gif" alt="Demo video" /></a>
+</p>
 <h6><a href="https://github.com/evaera/EvLightning">EvLightning</a> - Realistic-looking lightning bolt generator</h6>
 
 ![](https://camo.githubusercontent.com/41b61e0dcc11475c06f617b0b8a1e8232ebe3a49/68747470733a2f2f7468756d62732e6766796361742e636f6d2f436c756d737941646f6c657363656e74436f6c6c69652d73697a655f726573747269637465642e676966)
