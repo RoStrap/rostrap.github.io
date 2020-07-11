@@ -30,7 +30,6 @@ Properties which access its top-level ImageButton:
 |Parent|Instance|
 |Size|UDim2|
 |Position|UDim2|
-|TextTransparency|string|
 |LayoutOrder|int|
 |NextSelectionDown|Instance|
 |NextSelectionLeft|Instance|
@@ -46,6 +45,7 @@ Properties which access its TextLabel:
 |Font|Enum.Font|
 |Text|string|
 |TextSize|number|
+|TextTransparency|string|
 |TextXAlignment|Enum.TextXAlignment|
 |TextYAlignment|Enum.TextYAlignment|
 
